@@ -1,0 +1,416 @@
+/*
+Theme Name: Hello Elementor Child EME
+Theme URI: https://escolaeme.com/
+Description: Tema filho customizado para a Escola de Música Esperança (EME / NAME).
+Author: EME Dev Team
+Template: hello-elementor
+Version: 1.0.2
+*/
+
+/* ==========================================================================
+   Escola de Música Esperança (EME) / NAME - Premium Design System
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    /* Palette Tokens */
+    --verde-escuro: #0F2E23;
+    --verde: #1B4332;
+    --verde-claro: #2D6A4F;
+    --terracota: #C17B4A;
+    --terracota-escuro: #A5613A;
+    --ambar: #D97706;
+    --ambar-ouro: #E5A93C;
+    --off-white: #FDFBF7;
+    --off-white-escuro: #F4EFE6;
+    --branco-puro: #FFFFFF;
+    --grafite: #22252A;
+    --cinza-suave: #6B7280;
+    --cinza-borda: #E2DACD;
+
+    /* Elevation & Shadows */
+    --sombra-suave: 0 10px 30px -5px rgba(15, 46, 35, 0.07);
+    --sombra-card: 0 14px 35px -10px rgba(15, 46, 35, 0.1);
+    --sombra-hover: 0 20px 45px -12px rgba(193, 123, 74, 0.22);
+    --sombra-header: 0 4px 25px rgba(15, 46, 35, 0.08);
+
+    /* Transitions */
+    --transicao: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset & Global Typography */
+body {
+    font-family: 'Source Sans 3', sans-serif !important;
+    color: var(--grafite) !important;
+    background-color: var(--off-white) !important;
+    line-height: 1.65 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .eme-font-serif {
+    font-family: 'Cinzel', 'Montserrat', serif !important;
+    color: var(--verde-escuro) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.2px !important;
+}
+
+/* Header Glassmorphism Fixo */
+.eme-main-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    box-shadow: var(--sombra-header) !important;
+    z-index: 1000 !important;
+    border-bottom: 2px solid rgba(193, 123, 74, 0.3) !important;
+    transition: var(--transicao);
+}
+
+.eme-header-spacer {
+    height: 80px !important;
+}
+
+.eme-header-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 80px !important;
+}
+
+.eme-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-decoration: none !important;
+}
+
+.eme-header-logo {
+    height: 48px !important;
+    max-height: 48px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    transition: var(--transicao);
+}
+
+.eme-footer-logo {
+    height: 52px !important;
+    max-height: 52px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin-bottom: 12px !important;
+    filter: brightness(0) invert(1) !important;
+    opacity: 0.95 !important;
+}
+
+.eme-brand-icon {
+    font-size: 30px !important;
+    line-height: 1 !important;
+    filter: drop-shadow(0 2px 4px rgba(193, 123, 74, 0.3)) !important;
+}
+
+.eme-brand-text {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.eme-brand-title {
+    font-family: 'Cinzel', serif !important;
+    font-weight: 800 !important;
+    font-size: 24px !important;
+    color: var(--verde-escuro) !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1 !important;
+}
+
+.eme-brand-sub {
+    font-size: 11px !important;
+    color: var(--terracota) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+}
+
+/* Nav Menu Styles */
+.eme-main-nav {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.eme-nav-list {
+    display: flex !important;
+    flex-direction: row !important;
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 22px !important;
+}
+
+.eme-nav-list li {
+    list-style-type: none !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.eme-nav-list a {
+    text-decoration: none !important;
+    color: var(--grafite) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    position: relative !important;
+    padding: 5px 0 !important;
+    transition: var(--transicao);
+}
+
+.eme-nav-list a::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 2px !important;
+    background: var(--terracota) !important;
+    transform: scaleX(0) !important;
+    transform-origin: right !important;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.eme-nav-list a:hover {
+    color: var(--terracota) !important;
+}
+
+.eme-nav-list a:hover::after {
+    transform: scaleX(1) !important;
+    transform-origin: left !important;
+}
+
+.eme-header-btn {
+    padding: 11px 24px !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px !important;
+    border-radius: 30px !important;
+}
+
+.eme-mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.eme-mobile-toggle span {
+    width: 26px;
+    height: 3px;
+    background: var(--verde-escuro);
+    border-radius: 2px;
+    transition: var(--transicao);
+}
+
+/* Layout System */
+.eme-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.eme-section {
+    padding: 80px 0;
+}
+
+.eme-bg-light {
+    background-color: var(--off-white-escuro);
+}
+
+.eme-section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.eme-section-desc {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 45px;
+    font-size: 18px;
+    color: var(--cinza-suave);
+}
+
+.eme-divider {
+    width: 75px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--terracota) 0%, var(--ambar-ouro) 100%);
+    margin: 0 auto 30px;
+    border-radius: 4px;
+}
+
+.divider-left {
+    margin-left: 0 !important;
+}
+
+.eme-badge-tag {
+    display: inline-block;
+    background: rgba(193, 123, 74, 0.12);
+    color: var(--terracota-escuro);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(193, 123, 74, 0.2);
+}
+
+/* Grids */
+.eme-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.eme-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.eme-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Buttons System */
+.eme-btn-primary {
+    background: linear-gradient(135deg, var(--terracota) 0%, var(--terracota-escuro) 100%);
+    color: #fff !important;
+    padding: 15px 36px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    transition: var(--transicao);
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(193, 123, 74, 0.28);
+}
+
+.eme-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(165, 97, 58, 0.38);
+    background: linear-gradient(135deg, var(--terracota-escuro) 0%, var(--terracota) 100%);
+}
+
+.eme-btn-outline {
+    border: 2px solid var(--terracota);
+    color: var(--terracota) !important;
+    padding: 13px 32px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    transition: var(--transicao);
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.eme-btn-outline:hover {
+    background-color: var(--terracota);
+    color: #fff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(193, 123, 74, 0.25);
+}
+
+/* Hero Principal */
+.eme-hero {
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde) 60%, var(--verde-claro) 100%);
+    color: #fff;
+    padding: 110px 0 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid var(--terracota);
+}
+
+.eme-hero-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+.eme-hero-subtitle {
+    font-size: 21px;
+    max-width: 760px;
+    margin: 0 auto 40px;
+    opacity: 0.94;
+}
+
+/* Responsividade Mobile & Tablet */
+@media (max-width: 992px) {
+    .eme-main-nav {
+        display: none !important;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        padding: 25px;
+        box-sizing: border-box;
+        border-bottom: 3px solid var(--terracota);
+    }
+    .eme-main-nav.active {
+        display: block !important;
+    }
+    .eme-nav-list {
+        flex-direction: column !important;
+        gap: 18px !important;
+    }
+    .eme-mobile-toggle {
+        display: flex !important;
+    }
+    .eme-header-cta {
+        display: none !important;
+    }
+    .eme-grid-4, .eme-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .eme-grid-2, .eme-grid-3, .eme-grid-4 {
+        grid-template-columns: 1fr;
+    }
+}

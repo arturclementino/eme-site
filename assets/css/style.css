@@ -1,0 +1,1540 @@
+/* ==========================================================================
+   Escola de Música Esperança (EME) / NAME - Premium Design System
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    /* Palette Tokens */
+    --verde-escuro: #0F2E23;
+    --verde: #1B4332;
+    --verde-claro: #2D6A4F;
+    --terracota: #C17B4A;
+    --terracota-escuro: #A5613A;
+    --ambar: #D97706;
+    --ambar-ouro: #E5A93C;
+    --off-white: #FDFBF7;
+    --off-white-escuro: #F4EFE6;
+    --branco-puro: #FFFFFF;
+    --grafite: #22252A;
+    --cinza-suave: #6B7280;
+    --cinza-borda: #E2DACD;
+
+    /* Elevation & Shadows */
+    --sombra-suave: 0 10px 30px -5px rgba(15, 46, 35, 0.07);
+    --sombra-card: 0 14px 35px -10px rgba(15, 46, 35, 0.1);
+    --sombra-hover: 0 20px 45px -12px rgba(193, 123, 74, 0.22);
+    --sombra-header: 0 4px 25px rgba(15, 46, 35, 0.08);
+
+    /* Transitions */
+    --transicao: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset & Global Typography */
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--grafite);
+    background-color: var(--off-white);
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .eme-font-serif {
+    font-family: 'Cinzel', 'Montserrat', serif;
+    color: var(--verde-escuro);
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+}
+
+/* Header Glassmorphism Fixo */
+.eme-main-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    box-shadow: var(--sombra-header) !important;
+    z-index: 1000 !important;
+    border-bottom: 2px solid rgba(193, 123, 74, 0.3) !important;
+    transition: var(--transicao);
+}
+
+.eme-header-spacer {
+    height: 80px !important;
+}
+
+.eme-header-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 80px !important;
+}
+
+.eme-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-decoration: none !important;
+}
+
+.eme-header-logo {
+    height: 48px !important;
+    max-height: 48px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    transition: var(--transicao);
+}
+
+.eme-footer-logo {
+    height: 52px !important;
+    max-height: 52px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin-bottom: 12px !important;
+    filter: brightness(0) invert(1) !important;
+    opacity: 0.95 !important;
+}
+
+.eme-brand-icon {
+    font-size: 30px !important;
+    line-height: 1 !important;
+    filter: drop-shadow(0 2px 4px rgba(193, 123, 74, 0.3)) !important;
+}
+
+.eme-brand-text {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.eme-brand-title {
+    font-family: 'Cinzel', serif !important;
+    font-weight: 800 !important;
+    font-size: 24px !important;
+    color: var(--verde-escuro) !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1 !important;
+}
+
+.eme-brand-sub {
+    font-size: 11px !important;
+    color: var(--terracota) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+}
+
+/* Nav Menu Styles */
+.eme-main-nav {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.eme-nav-list {
+    display: flex !important;
+    flex-direction: row !important;
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 22px !important;
+}
+
+.eme-nav-list li {
+    list-style-type: none !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.eme-nav-list a {
+    text-decoration: none !important;
+    color: var(--grafite) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    position: relative !important;
+    padding: 5px 0 !important;
+    transition: var(--transicao);
+}
+
+.eme-nav-list a::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 2px !important;
+    background: var(--terracota) !important;
+    transform: scaleX(0) !important;
+    transform-origin: right !important;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.eme-nav-list a:hover {
+    color: var(--terracota) !important;
+}
+
+.eme-nav-list a:hover::after {
+    transform: scaleX(1) !important;
+    transform-origin: left !important;
+}
+
+.eme-header-btn {
+    padding: 11px 24px !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px !important;
+    border-radius: 30px !important;
+}
+
+.eme-mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.eme-mobile-toggle span {
+    width: 26px;
+    height: 3px;
+    background: var(--verde-escuro);
+    border-radius: 2px;
+    transition: var(--transicao);
+}
+
+.eme-mobile-toggle.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.eme-mobile-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.eme-mobile-toggle.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Layout System */
+.eme-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.eme-section {
+    padding: 80px 0;
+}
+
+.eme-bg-light {
+    background-color: var(--off-white-escuro);
+}
+
+.eme-section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.eme-section-desc {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 45px;
+    font-size: 18px;
+    color: var(--cinza-suave);
+}
+
+.eme-divider {
+    width: 75px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--terracota) 0%, var(--ambar-ouro) 100%);
+    margin: 0 auto 30px;
+    border-radius: 4px;
+}
+
+.divider-left {
+    margin-left: 0 !important;
+}
+
+.eme-badge-tag {
+    display: inline-block;
+    background: rgba(193, 123, 74, 0.12);
+    color: var(--terracota-escuro);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(193, 123, 74, 0.2);
+}
+
+/* Grids */
+.eme-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.eme-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.eme-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.eme-align-center {
+    align-items: center;
+}
+
+/* Buttons System */
+.eme-btn-primary {
+    background: linear-gradient(135deg, var(--terracota) 0%, var(--terracota-escuro) 100%);
+    color: #fff !important;
+    padding: 15px 36px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    transition: var(--transicao);
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(193, 123, 74, 0.28);
+}
+
+.eme-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(165, 97, 58, 0.38);
+    background: linear-gradient(135deg, var(--terracota-escuro) 0%, var(--terracota) 100%);
+}
+
+.eme-btn-outline {
+    border: 2px solid var(--terracota);
+    color: var(--terracota) !important;
+    padding: 13px 32px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    transition: var(--transicao);
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.eme-btn-outline:hover {
+    background-color: var(--terracota);
+    color: #fff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(193, 123, 74, 0.25);
+}
+
+.eme-btn-block {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* WhatsApp Flutuante */
+.eme-whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: #fff;
+    width: 62px;
+    height: 62px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.38);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transicao);
+    text-decoration: none;
+}
+
+.eme-whatsapp-float:hover {
+    transform: scale(1.12) rotate(5deg);
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5);
+}
+
+/* Hero Principal */
+.eme-hero {
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde) 60%, var(--verde-claro) 100%);
+    color: #fff;
+    padding: 110px 0 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid var(--terracota);
+}
+
+.eme-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(229, 169, 60, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.eme-hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 9px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.eme-hero-badge .eme-stars {
+    color: var(--ambar-ouro);
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.eme-hero-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eme-hero-subtitle {
+    font-size: 21px;
+    max-width: 760px;
+    margin: 0 auto 40px;
+    opacity: 0.94;
+    font-weight: 400;
+}
+
+.eme-hero-actions {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.eme-hero-actions .eme-btn-outline {
+    border-color: rgba(255, 255, 255, 0.8);
+    color: #fff !important;
+}
+
+.eme-hero-actions .eme-btn-outline:hover {
+    background: #fff;
+    color: var(--verde-escuro) !important;
+}
+
+/* Hero de Subpáginas */
+.eme-hero-sub {
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde) 100%);
+    color: #fff;
+    padding: 70px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--terracota);
+}
+
+.eme-hero-sub .eme-hero-title {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.eme-hero-sub .eme-hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+.eme-hero-sub .eme-badge-tag {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--ambar-ouro);
+    border-color: rgba(229, 169, 60, 0.3);
+}
+
+/* Cards & Modern Component Styling */
+.eme-card-item,
+.eme-diff-card,
+.eme-pillar-card,
+.eme-method-card,
+.eme-admin-card,
+.eme-aula-card,
+.eme-prof-card,
+.eme-facility-card,
+.eme-gallery-card,
+.eme-blog-card,
+.eme-info-card,
+.eme-social-box,
+.eme-prev-event-card {
+    background: var(--branco-puro);
+    border-radius: 14px;
+    box-shadow: var(--sombra-card);
+    border: 1px solid var(--cinza-borda);
+    transition: var(--transicao);
+}
+
+.eme-card-item:hover,
+.eme-diff-card:hover,
+.eme-pillar-card:hover,
+.eme-method-card:hover,
+.eme-admin-card:hover,
+.eme-aula-card:hover,
+.eme-prof-card:hover,
+.eme-facility-card:hover,
+.eme-gallery-card:hover,
+.eme-blog-card:hover,
+.eme-info-card:hover,
+.eme-prev-event-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--sombra-hover);
+    border-color: rgba(193, 123, 74, 0.5);
+}
+
+.eme-diff-card,
+.eme-card-item {
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.eme-diff-icon,
+.eme-card-item .eme-icon {
+    font-size: 44px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.eme-diff-card:hover .eme-diff-icon,
+.eme-card-item:hover .eme-icon {
+    transform: scale(1.18);
+}
+
+.eme-diff-card h3,
+.eme-card-item h3 {
+    font-size: 19px;
+    margin: 0 0 10px;
+    color: var(--verde-escuro);
+}
+
+.eme-diff-card p,
+.eme-card-item p {
+    font-size: 15px;
+    color: var(--cinza-suave);
+    margin: 0;
+}
+
+/* Eventos Cards */
+.eme-events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.eme-event-card {
+    background: var(--branco-puro);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--sombra-card);
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    border: 1px solid var(--cinza-borda);
+    transition: var(--transicao);
+}
+
+.eme-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
+}
+
+.eme-event-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.eme-event-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.eme-event-card:hover .eme-event-img img {
+    transform: scale(1.06);
+}
+
+.eme-event-tag {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: var(--terracota);
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.eme-event-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eme-event-meta {
+    display: flex;
+    gap: 18px;
+    font-size: 14px;
+    color: var(--cinza-suave);
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+.eme-event-content h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.eme-event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--cinza-borda);
+}
+
+/* Event Mini Card (Home) */
+.eme-event-mini-card {
+    background: var(--branco-puro);
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: var(--sombra-card);
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    border: 1px solid var(--cinza-borda);
+    transition: var(--transicao);
+}
+
+.eme-event-mini-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
+}
+
+.eme-event-date-badge {
+    background: linear-gradient(135deg, var(--terracota) 0%, var(--terracota-escuro) 100%);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 12px;
+    text-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(193, 123, 74, 0.3);
+}
+
+.eme-event-date-badge .day {
+    display: block;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.eme-event-date-badge .month {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Testimonials */
+.eme-testimonial-card {
+    background: var(--branco-puro);
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: var(--sombra-card);
+    border-left: 6px solid var(--terracota);
+    position: relative;
+}
+
+.eme-quote-icon {
+    font-size: 55px;
+    line-height: 1;
+    color: var(--terracota);
+    margin-bottom: -15px;
+    opacity: 0.8;
+}
+
+.eme-testimonial-text {
+    font-size: 17px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 22px;
+    line-height: 1.7;
+}
+
+.eme-testimonial-author strong {
+    display: block;
+    color: var(--verde-escuro);
+    font-size: 16px;
+}
+
+.eme-testimonial-author span {
+    font-size: 13px;
+    color: var(--cinza-suave);
+}
+
+/* Lead Section & Forms */
+.eme-cta-lead-section {
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde) 100%);
+    color: #fff;
+    padding: 85px 0;
+    position: relative;
+    border-top: 4px solid var(--terracota);
+}
+
+.eme-lead-info h2 {
+    color: #fff;
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.eme-lead-info p {
+    font-size: 18px;
+    opacity: 0.92;
+    margin-bottom: 28px;
+}
+
+.eme-lead-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eme-lead-check-list li {
+    font-size: 17px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eme-lead-form-box {
+    background: var(--branco-puro);
+    color: var(--grafite);
+    padding: 38px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.eme-lead-form-box h3 {
+    margin: 0 0 22px;
+    font-size: 22px;
+    text-align: center;
+    color: var(--verde-escuro);
+}
+
+.eme-form-group {
+    margin-bottom: 20px;
+}
+
+.eme-form-group label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 7px;
+    color: var(--verde-escuro);
+}
+
+.eme-form-group input,
+.eme-form-group select,
+.eme-form-group textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid var(--cinza-borda);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: var(--transicao);
+    background-color: var(--off-white);
+}
+
+.eme-form-group input:focus,
+.eme-form-group select:focus,
+.eme-form-group textarea:focus {
+    border-color: var(--terracota);
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(193, 123, 74, 0.15);
+}
+
+.eme-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* Professores Grid & Cards */
+.eme-prof-card {
+    padding: 28px;
+}
+
+.eme-prof-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+.eme-prof-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde-claro) 100%);
+    color: var(--ambar-ouro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    flex-shrink: 0;
+    border: 2px solid var(--ambar-ouro);
+}
+
+.eme-prof-name {
+    font-size: 19px;
+    margin: 0 0 4px;
+    color: var(--verde-escuro);
+}
+
+.eme-prof-instr {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--terracota);
+}
+
+.eme-prof-form {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 14px;
+    background: var(--off-white);
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-left: 3px solid var(--terracota);
+}
+
+.eme-prof-bio {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 16px;
+    line-height: 1.6;
+}
+
+.eme-prof-footer {
+    border-top: 1px solid var(--cinza-borda);
+    padding-top: 14px;
+}
+
+.eme-prof-link-btn {
+    color: var(--terracota);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.eme-prof-link-btn:hover {
+    text-decoration: underline;
+}
+
+.eme-recruitment-box {
+    background: var(--off-white-escuro);
+    padding: 45px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 55px;
+    border: 2px dashed var(--terracota);
+}
+
+.eme-recruitment-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.eme-recruitment-box h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+/* Aulas & Cursos */
+.eme-aula-card {
+    padding: 28px;
+}
+
+.eme-aula-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.eme-aula-icon {
+    font-size: 32px;
+}
+
+.eme-aula-cat-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background: var(--off-white-escuro);
+    color: var(--terracota-escuro);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.eme-aula-title {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.eme-aula-desc {
+    font-size: 14px;
+    color: var(--cinza-suave);
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.eme-aula-details {
+    background: var(--off-white);
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid var(--cinza-borda);
+}
+
+/* Filtro Component */
+.eme-filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.eme-filter-btn {
+    background: var(--branco-puro);
+    border: 1.5px solid var(--cinza-borda);
+    padding: 11px 24px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--grafite);
+    cursor: pointer;
+    transition: var(--transicao);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.eme-filter-btn:hover,
+.eme-filter-btn.active {
+    background: var(--verde-escuro);
+    color: var(--ambar-ouro);
+    border-color: var(--verde-escuro);
+    box-shadow: 0 6px 18px rgba(15, 46, 35, 0.25);
+}
+
+/* FAQ Accordion */
+.eme-faq-accordion-list {
+    max-width: 840px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.eme-faq-item {
+    background: var(--branco-puro);
+    border-radius: 12px;
+    border: 1px solid var(--cinza-borda);
+    overflow: hidden;
+    box-shadow: var(--sombra-card);
+    transition: var(--transicao);
+}
+
+.eme-faq-question {
+    width: 100%;
+    text-align: left;
+    background: var(--branco-puro);
+    padding: 22px 26px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+
+.eme-faq-question:hover {
+    background: var(--off-white);
+}
+
+.eme-faq-icon {
+    font-size: 22px;
+    color: var(--terracota);
+    font-weight: 700;
+}
+
+.eme-faq-answer {
+    display: none;
+    padding: 0 26px 24px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.7;
+    border-top: 1px solid var(--off-white);
+}
+
+/* Footer Styling */
+.eme-main-footer {
+    background: var(--verde-escuro);
+    color: #fff;
+    padding: 70px 0 30px;
+    border-top: 5px solid var(--terracota);
+}
+
+.eme-footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 45px;
+}
+
+.eme-footer-brand .eme-brand-title {
+    color: #fff;
+}
+
+.eme-footer-brand .eme-brand-sub {
+    color: var(--ambar-ouro);
+}
+
+.eme-footer-about {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-top: 18px;
+    line-height: 1.6;
+}
+
+.eme-footer-col h4 {
+    color: var(--ambar-ouro);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.eme-footer-links,
+.eme-footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eme-footer-links li,
+.eme-footer-contact li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.eme-footer-links a,
+.eme-footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.eme-footer-links a:hover,
+.eme-footer-contact a:hover {
+    color: var(--ambar-ouro);
+}
+
+.eme-footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.eme-social-pill {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 9px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: var(--transicao);
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.eme-social-pill:hover {
+    background: var(--terracota);
+    color: #fff;
+    border-color: var(--terracota);
+}
+
+.eme-footer-policy-link {
+    color: var(--ambar-ouro);
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.eme-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+/* Professores Card Expander & WhatsApp Link */
+.eme-prof-bio-box {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.eme-prof-bio.eme-bio-truncated {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.6;
+    margin: 0 0 6px 0;
+}
+
+.eme-prof-bio.eme-bio-expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+.eme-bio-toggle-btn {
+    background: transparent;
+    border: none;
+    color: var(--terracota);
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 2px 0;
+    display: inline-block;
+    text-decoration: underline;
+    transition: var(--transicao);
+}
+
+.eme-bio-toggle-btn:hover {
+    color: var(--terracota-escuro);
+}
+
+.eme-prof-wa-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    background: rgba(37, 211, 102, 0.1);
+    color: #128c7e;
+    border: 1px solid rgba(37, 211, 102, 0.4);
+    padding: 11px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    transition: var(--transicao);
+    box-sizing: border-box;
+}
+
+.eme-prof-wa-btn:hover {
+    background: #25d366;
+    color: #fff;
+    border-color: #25d366;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+}
+
+/* Checkbox LGPD */
+.eme-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--cinza-suave);
+    cursor: pointer;
+    line-height: 1.4;
+    user-select: none;
+}
+
+.eme-checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    cursor: pointer;
+    accent-color: var(--terracota);
+}
+
+/* Footer Newsletter */
+.eme-footer-newsletter {
+    margin-top: 20px;
+}
+
+.eme-footer-newsletter h5 {
+    color: var(--ambar-ouro);
+    font-size: 14px;
+    margin: 0 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.eme-newsletter-form {
+    display: flex;
+    gap: 8px;
+}
+
+.eme-newsletter-form input {
+    flex: 1;
+    padding: 9px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 13px;
+}
+
+.eme-newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.eme-newsletter-form button {
+    background: var(--terracota);
+    color: #fff;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transicao);
+}
+
+.eme-newsletter-form button:hover {
+    background: var(--terracota-escuro);
+}
+
+/* Componentes Quem Somos / Amigos / Galeria / Blog */
+.eme-room-header {
+    background: var(--verde-escuro);
+    color: var(--ambar-ouro);
+    padding: 12px 18px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.eme-pedagogia-box {
+    background: var(--branco-puro);
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: var(--sombra-card);
+    border-left: 5px solid var(--terracota);
+}
+
+.eme-pedagogia-badge {
+    display: inline-block;
+    background: rgba(193, 123, 74, 0.15);
+    color: var(--terracota-escuro);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.eme-partner-card {
+    background: var(--branco-puro);
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: var(--sombra-card);
+    border: 1px solid var(--cinza-borda);
+    text-align: center;
+    transition: var(--transicao);
+}
+
+.eme-partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
+}
+
+.eme-partner-logo {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.eme-stat-box {
+    background: var(--branco-puro);
+    padding: 26px;
+    border-radius: 14px;
+    border: 1px solid var(--cinza-borda);
+    text-align: center;
+    margin-bottom: 16px;
+    box-shadow: var(--sombra-card);
+}
+
+.eme-stat-number {
+    display: block;
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--terracota);
+    line-height: 1;
+    margin-bottom: 6px;
+    font-family: 'Cinzel', serif;
+}
+
+.eme-stat-label {
+    font-size: 13px;
+    color: var(--cinza-suave);
+    font-weight: 600;
+}
+
+.eme-doacao-card {
+    background: var(--branco-puro);
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid var(--cinza-borda);
+    box-shadow: var(--sombra-card);
+}
+
+.eme-doacao-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.eme-doacao-card h4 {
+    font-size: 16px;
+    margin: 0 0 6px;
+    color: var(--verde-escuro);
+}
+
+.eme-doacao-card p {
+    font-size: 13px;
+    color: var(--cinza-suave);
+    margin: 0;
+}
+
+/* Blog Cards */
+.eme-blog-card {
+    overflow: hidden;
+}
+
+.eme-blog-img-box {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+}
+
+.eme-blog-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.eme-blog-card:hover .eme-blog-img-box img {
+    transform: scale(1.08);
+}
+
+.eme-blog-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--verde-escuro);
+    color: var(--ambar-ouro);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.eme-blog-content {
+    padding: 22px;
+}
+
+.eme-blog-meta {
+    display: flex;
+    gap: 14px;
+    font-size: 12px;
+    color: var(--cinza-suave);
+    margin-bottom: 10px;
+}
+
+.eme-blog-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+    line-height: 1.35;
+}
+
+.eme-blog-excerpt {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.eme-blog-link {
+    color: var(--terracota);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.eme-blog-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade Mobile & Tablet */
+@media (max-width: 992px) {
+    .eme-main-nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        padding: 25px;
+        box-sizing: border-box;
+        border-bottom: 3px solid var(--terracota);
+    }
+    .eme-main-nav.active {
+        display: block;
+    }
+    .eme-nav-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .eme-mobile-toggle {
+        display: flex;
+    }
+    .eme-header-cta {
+        display: none;
+    }
+    .eme-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .eme-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .eme-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .eme-grid-contato,
+    .eme-event-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .eme-footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .eme-hero-title {
+        font-size: 30px;
+    }
+    .eme-hero-subtitle {
+        font-size: 17px;
+    }
+    .eme-section-title {
+        font-size: 26px;
+    }
+    .eme-grid-2,
+    .eme-grid-3,
+    .eme-grid-4 {
+        grid-template-columns: 1fr;
+    }
+    .eme-form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Logo Cabeçalho EME Override */
+.eme-brand-icon {
+    display: inline-block !important;
+    width: 46px !important;
+    height: 46px !important;
+    background-image: url('https://escolaeme.com/wp-content/uploads/2026/08/Circular-verde-renovo-1.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    font-size: 0 !important;
+    color: transparent !important;
+    filter: none !important;
+    vertical-align: middle !important;
+    margin-right: 8px !important;
+}
+
+.eme-header-logo {
+    height: 48px !important;
+    max-height: 48px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
