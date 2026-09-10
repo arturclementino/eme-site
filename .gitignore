@@ -1,0 +1,11 @@
+# Environment & Credentials
+.env
+.vscode/
+
+# Temporary / Scratch Upload Scripts
+upload.bat
+upload_header.ps1
+upload_to_hostinger.js
+test_auth.js
+upload_all_ftp.ps1
+upload_shortcodes_ftp.ps1
