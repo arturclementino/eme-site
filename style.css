@@ -56,6 +56,25 @@ h1, h2, h3, h4, .eme-font-serif {
     letter-spacing: -0.2px !important;
 }
 
+/* Títulos em seções hero com fundo escuro devem ser obrigatoriamente brancos */
+.eme-hero h1,
+.eme-hero-sub h1,
+.eme-hero-title,
+.eme-hero-sub .eme-hero-title {
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+}
+.eme-hero-subtitle,
+.eme-hero-sub .eme-hero-subtitle {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+.eme-hero-sub .eme-badge-tag,
+.eme-hero .eme-badge-tag {
+    background: rgba(255, 255, 255, 0.18) !important;
+    color: #F59E0B !important;
+    border: 1px solid rgba(245, 158, 11, 0.5) !important;
+}
+
 /* Header Glassmorphism Fixo */
 .eme-main-header {
     position: fixed !important;
