@@ -191,7 +191,59 @@ jQuery(document).ready(function($) {
         $('html, body').animate({ scrollTop: 0 }, 600, 'swing');
     });
 
+    // ─── 11. Universal Pop-up Modal LGPD (Home, Contato, Footer) ─────────────
+    function openLgpdModal() {
+        var $modal = $('#eme-modal-lgpd-global');
+        if (!$modal.length) {
+            $modal = $('#eme-modal-lgpd-home, #eme-modal-lgpd').first();
+        }
+        if ($modal.length) {
+            $modal.addClass('active').attr('aria-hidden', 'false');
+            $('body').css('overflow', 'hidden');
+        }
+    }
+
+    function closeLgpdModal() {
+        $('.eme-modal-overlay').removeClass('active').attr('aria-hidden', 'true');
+        $('body').css('overflow', '');
+    }
+
+    // Open handlers
+    $(document).on('click', '.eme-open-lgpd-modal, .eme-open-modal-btn, #eme-open-modal-home-btn, #eme-open-modal-btn, #eme-footer-lgpd-btn', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openLgpdModal();
+    });
+
+    // Close handlers (Close button)
+    $(document).on('click', '.eme-modal-close, .eme-modal-close-btn, #eme-close-modal-home-btn, #eme-close-modal-btn', function(e) {
+        e.preventDefault();
+        closeLgpdModal();
+    });
+
+    // Accept handler
+    $(document).on('click', '.eme-modal-accept-btn, #eme-accept-modal-home-btn, #eme-accept-modal-btn', function(e) {
+        e.preventDefault();
+        closeLgpdModal();
+        $('#eme-lgpd-check-home, #eme-lgpd-check, input[name="lgpd_agree"]').prop('checked', true).trigger('change');
+    });
+
+    // Backdrop click
+    $(document).on('click', '.eme-modal-overlay', function(e) {
+        if ($(e.target).hasClass('eme-modal-overlay')) {
+            closeLgpdModal();
+        }
+    });
+
+    // Keyboard ESC key to close
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape' && $('.eme-modal-overlay.active').length) {
+            closeLgpdModal();
+        }
+    });
+
 });
+
 
 // ─── 11. Toast Notification System ───────────────────────────────────────────
 window.emeToast = function(message, type) {

@@ -302,7 +302,7 @@ function eme_shortcode_home($atts) {
                                 <label class="eme-checkbox-label" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; margin: 0; padding: 4px 0; width: 100%;">
                                     <input type="checkbox" id="eme-lgpd-check-home" name="lgpd_agree" required style="width: 22px; height: 22px; min-width: 22px; min-height: 22px; accent-color: #C17B4A; cursor: pointer; flex-shrink: 0; margin-top: 2px; opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; display: inline-block !important; -webkit-appearance: checkbox !important; appearance: checkbox !important; z-index: 10 !important;" />
                                     <span style="font-size: 14px; color: #111827; font-weight: 600; line-height: 1.5; cursor: pointer;">
-                                        Concordo com o contato da equipe da EME conforme os <a href="javascript:void(0);" id="eme-open-modal-home-btn" style="color: #C17B4A; font-weight: 700; text-decoration: underline;" onclick="event.stopPropagation(); event.preventDefault();">Termos de Privacidade e LGPD</a>. *
+                                        Concordo com o contato da equipe da EME conforme os <a href="javascript:void(0);" class="eme-link-modal-btn eme-open-lgpd-modal" id="eme-open-modal-home-btn" role="button">Termos de Privacidade e LGPD</a>. *
                                     </span>
                                 </label>
                             </div>
@@ -314,60 +314,10 @@ function eme_shortcode_home($atts) {
         </section>
     </div>
 
-    <!-- Pop-up Modal LGPD na Home -->
-    <div id="eme-modal-lgpd-home" class="eme-modal-overlay">
-        <div class="eme-modal-content">
-            <button type="button" id="eme-close-modal-home-btn" class="eme-modal-close" aria-label="Fechar">&times;</button>
-            <div class="eme-modal-header">
-                <h3>Termos de Privacidade e Proteção de Dados (LGPD)</h3>
-                <span class="eme-modal-sub">Escola de Música Esperança (EME / NAME)</span>
-            </div>
-            <div class="eme-modal-body">
-                <p><strong>1. Coleta e Finalidade dos Dados:</strong> Os dados pessoais fornecidos neste formulário (nome completo, e-mail, telefone/WhatsApp e curso de interesse) são coletados única e exclusivamente para possibilitar o agendamento de sua visita presencial, atendimento pedagógico da EME e esclarecimento de dúvidas.</p>
-                <p><strong>2. Uso Exclusivo e Não Compartilhamento:</strong> A EME compromete-se a não vender, alugar ou compartilhar suas informações com terceiros para fins publicitários não solicitados (spam).</p>
-                <p><strong>3. Armazenamento Seguro:</strong> Todas as informações fornecidas são tratadas com sigilo e armazenadas em ambiente seguro, em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD).</p>
-                <p><strong>4. Direitos do Titular:</strong> Você tem o direito de solicitar a atualização, correção ou exclusão definitiva dos seus dados de nossos cadastros a qualquer momento pelo e-mail <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a>.</p>
-            </div>
-            <div class="eme-modal-footer">
-                <button type="button" id="eme-accept-modal-home-btn" class="eme-btn-primary" style="padding: 10px 24px; font-size: 13px;">Compreendi e Aceito</button>
-            </div>
-        </div>
-    </div>
-
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const homeForm = document.getElementById('eme-home-contact-form');
-        const modalHome = document.getElementById('eme-modal-lgpd-home');
-        const openBtnHome = document.getElementById('eme-open-modal-home-btn');
-        const closeBtnHome = document.getElementById('eme-close-modal-home-btn');
-        const acceptBtnHome = document.getElementById('eme-accept-modal-home-btn');
-        const checkboxHome = document.getElementById('eme-lgpd-check-home');
 
-        if (openBtnHome && modalHome) {
-            openBtnHome.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                modalHome.classList.add('active');
-            });
-        }
-        if (closeBtnHome && modalHome) {
-            closeBtnHome.addEventListener('click', function() {
-                modalHome.classList.remove('active');
-            });
-        }
-        if (acceptBtnHome && modalHome) {
-            acceptBtnHome.addEventListener('click', function() {
-                modalHome.classList.remove('active');
-                if (checkboxHome) checkboxHome.checked = true;
-            });
-        }
-        if (modalHome) {
-            modalHome.addEventListener('click', function(e) {
-                if (e.target === modalHome) {
-                    modalHome.classList.remove('active');
-                }
-            });
-        }
 
         if (homeForm) {
             homeForm.addEventListener('submit', function(e) {

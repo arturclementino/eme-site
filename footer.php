@@ -57,7 +57,7 @@ if (!defined('ABSPATH')) {
                     </a>
                 </div>
                 <div class="eme-footer-legal">
-                    <a href="<?php echo esc_url(home_url('/contato')); ?>" class="eme-footer-policy-link">
+                    <a href="javascript:void(0);" class="eme-footer-policy-link eme-open-lgpd-modal" id="eme-footer-lgpd-btn" role="button">
                         Termos de Privacidade & Proteção de Dados (LGPD)
                     </a>
                 </div>
@@ -72,6 +72,29 @@ if (!defined('ABSPATH')) {
         </div>
     </div>
 </footer>
+
+<!-- Pop-up Modal Global de Termos de Privacidade e Proteção de Dados (LGPD) -->
+<div id="eme-modal-lgpd-global" class="eme-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="eme-modal-content">
+        <button type="button" class="eme-modal-close eme-modal-close-btn" aria-label="Fechar">&times;</button>
+        <div class="eme-modal-header">
+            <h3>Termos de Privacidade e Proteção de Dados (LGPD)</h3>
+            <span class="eme-modal-sub">Escola de Música Esperança (EME / NAME)</span>
+        </div>
+        <div class="eme-modal-body">
+            <p><strong>1. Coleta e Finalidade dos Dados:</strong> Os dados pessoais fornecidos neste portal (nome completo, e-mail, telefone/WhatsApp, assunto e curso de interesse) são coletados única e exclusivamente para possibilitar o atendimento da secretaria pedagógica da EME, agendamento de visitas presenciais, envio de orientações sobre turmas e esclarecimento de dúvidas.</p>
+            
+            <p><strong>2. Uso Exclusivo e Não Compartilhamento:</strong> A EME compromete-se a não vender, alugar ou compartilhar suas informações com terceiros ou parceiros comerciais para fins de publicidade não solicitada (spam).</p>
+            
+            <p><strong>3. Armazenamento Seguro:</strong> Todas as informações fornecidas são tratadas com sigilo e armazenadas em ambiente seguro, em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD).</p>
+            
+            <p><strong>4. Direitos do Titular:</strong> Você tem o direito de solicitar a atualização, confirmação, correção ou exclusão definitiva dos seus dados de nossos cadastros a qualquer momento pelo e-mail oficial <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a>.</p>
+        </div>
+        <div class="eme-modal-footer">
+            <button type="button" class="eme-btn-primary eme-modal-accept-btn" style="padding: 10px 26px; font-size: 13.5px;">Compreendi e Aceito</button>
+        </div>
+    </div>
+</div>
 
 <!-- Botão Flutuante de WhatsApp -->
 <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20EME." 

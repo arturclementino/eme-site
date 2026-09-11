@@ -86,7 +86,7 @@ function eme_shortcode_contato($atts) {
                                 <label class="eme-checkbox-label" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; margin: 0; padding: 4px 0; width: 100%;">
                                     <input type="checkbox" id="eme-lgpd-check" name="lgpd_agree" required style="width: 22px; height: 22px; min-width: 22px; min-height: 22px; accent-color: #C17B4A; cursor: pointer; flex-shrink: 0; margin-top: 2px; opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; display: inline-block !important; -webkit-appearance: checkbox !important; appearance: checkbox !important; z-index: 10 !important;" />
                                     <span style="font-size: 14px; color: #111827; font-weight: 600; line-height: 1.5; cursor: pointer;">
-                                        Concordo com os <a href="javascript:void(0);" id="eme-open-modal-btn" class="eme-link-modal-btn" style="color: #C17B4A; font-weight: 700; text-decoration: underline;" onclick="event.stopPropagation(); event.preventDefault();">Termos de Privacidade e LGPD</a> para atendimento da EME. *
+                                        Concordo com os <a href="javascript:void(0);" id="eme-open-modal-btn" class="eme-link-modal-btn eme-open-lgpd-modal" role="button">Termos de Privacidade e LGPD</a> para atendimento da EME. *
                                     </span>
                                 </label>
                             </div>
@@ -190,151 +190,12 @@ function eme_shortcode_contato($atts) {
         </section>
     </div>
 
-    <!-- Pop-up Modal de Termos de Privacidade e Proteção de Dados (LGPD) -->
-    <div id="eme-modal-lgpd" class="eme-modal-overlay">
-        <div class="eme-modal-content">
-            <button type="button" id="eme-close-modal-btn" class="eme-modal-close" aria-label="Fechar">&times;</button>
-            <div class="eme-modal-header">
-                <h3>Termos de Privacidade e Proteção de Dados (LGPD)</h3>
-                <span class="eme-modal-sub">Escola de Música Esperança (EME / NAME)</span>
-            </div>
-            <div class="eme-modal-body">
-                <p><strong>1. Coleta e Finalidade dos Dados:</strong> Os dados pessoais fornecidos neste formulário (nome completo, e-mail, telefone/WhatsApp, assunto e curso de interesse) são coletados única e exclusivamente para possibilitar o atendimento da secretaria pedagógica da EME, agendamento de visitas presenciais, envio de informações sobre turmas e esclarecimento de dúvidas.</p>
-                
-                <p><strong>2. Uso Exclusivo e Não Compartilhamento:</strong> A EME compromete-se a não vender, alugar ou compartilhar suas informações com terceiros ou parceiros comerciais para fins de publicidade não solicitada (spam).</p>
-                
-                <p><strong>3. Armazenamento Seguro:</strong> Todas as informações fornecidas são tratadas com sigilo e armazenadas em ambiente seguro, em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD).</p>
-                
-                <p><strong>4. Direitos do Titular:</strong> Você tem o direito de solicitar a atualização, correção ou exclusão definitiva dos seus dados de nossos cadastros a qualquer momento, bastando enviar um e-mail para <a href="mailto:coordenacao@escolaeme.com">coordenacao@escolaeme.com</a>.</p>
-            </div>
-            <div class="eme-modal-footer">
-                <button type="button" id="eme-accept-modal-btn" class="eme-btn-primary" style="padding: 10px 24px; font-size: 13px;">Compreendi e Aceito</button>
-            </div>
-        </div>
     </div>
-
-    <style>
-    .eme-link-modal-btn {
-        background: none;
-        border: none;
-        color: var(--terracota);
-        font-weight: 700;
-        text-decoration: underline;
-        cursor: pointer;
-        padding: 0;
-        font-size: 13px;
-        font-family: inherit;
-    }
-    .eme-link-modal-btn:hover {
-        color: var(--terracota-escuro);
-    }
-    .eme-modal-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(15, 46, 35, 0.7);
-        backdrop-filter: blur(6px);
-        display: none;
-        align-items: center;
-        justify-content: center;
-        z-index: 99999;
-        padding: 20px;
-    }
-    .eme-modal-overlay.active {
-        display: flex;
-    }
-    .eme-modal-content {
-        background: #FFFFFF;
-        border-radius: 16px;
-        max-width: 620px;
-        width: 100%;
-        padding: 30px;
-        position: relative;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-        border: 2px solid var(--terracota);
-        max-height: 90vh;
-        overflow-y: auto;
-    }
-    .eme-modal-close {
-        position: absolute;
-        top: 16px;
-        right: 20px;
-        background: none;
-        border: none;
-        font-size: 28px;
-        color: var(--cinza-suave);
-        cursor: pointer;
-        line-height: 1;
-    }
-    .eme-modal-close:hover {
-        color: var(--terracota);
-    }
-    .eme-modal-header h3 {
-        margin: 0 0 4px;
-        color: var(--verde-escuro);
-        font-size: 20px;
-    }
-    .eme-modal-sub {
-        font-size: 12px;
-        color: var(--terracota);
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    .eme-modal-body {
-        margin: 20px 0;
-        font-size: 14px;
-        color: #444;
-        line-height: 1.7;
-    }
-    .eme-modal-body p {
-        margin-bottom: 14px;
-    }
-    .eme-modal-footer {
-        text-align: right;
-        padding-top: 14px;
-        border-top: 1px solid var(--cinza-borda);
-    }
-    </style>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const modal = document.getElementById('eme-modal-lgpd');
-        const openBtn = document.getElementById('eme-open-modal-btn');
-        const closeBtn = document.getElementById('eme-close-modal-btn');
-        const acceptBtn = document.getElementById('eme-accept-modal-btn');
-        const checkbox = document.getElementById('eme-lgpd-check');
         const form = document.getElementById('eme-main-contact-form');
 
-        if (openBtn && modal) {
-            openBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                modal.classList.add('active');
-            });
-        }
-
-        if (closeBtn && modal) {
-            closeBtn.addEventListener('click', function() {
-                modal.classList.remove('active');
-            });
-        }
-
-        if (acceptBtn && modal) {
-            acceptBtn.addEventListener('click', function() {
-                modal.classList.remove('active');
-                if (checkbox) checkbox.checked = true;
-            });
-        }
-
-        if (modal) {
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    modal.classList.remove('active');
-                }
-            });
-        }
 
         if (form) {
             form.addEventListener('submit', function(e) {
