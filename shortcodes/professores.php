@@ -22,7 +22,7 @@ function eme_shortcode_professores($atts) {
             'instr' => 'Musicalização Infantil, Piano e Flauta Doce',
             'form' => 'Formação em Música (UEMG), Musicoterapia (Censupeg) e Psicologia (UNA).',
             'bio' => 'Educadora musical, musicoterapeuta e psicóloga com mais de 12 anos de experiência. Atua com musicalização infantil, piano e flauta doce, oferecendo um aprendizado humanizado e integrado ao desenvolvimento pessoal.',
-            'foto' => ''
+            'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Andrea-branding28-scaled.jpg'
         ],
         [
             'nome' => 'Artley Fernandes',
@@ -36,7 +36,7 @@ function eme_shortcode_professores($atts) {
             'instr' => 'Piano Erudito e Popular',
             'form' => 'Bacharelado em Música com habilitação em Piano pela UEMG.',
             'bio' => 'Pianista com premiações no Concurso Nacional de Piano do Conservatório Souza Lima e 2º lugar no concurso Segunda Musical (ALMG 2024). Professora qualificada para o ensino de piano em todas as idades.',
-            'foto' => ''
+            'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Bruna-1-scaled.jpg'
         ],
         [
             'nome' => 'Cleberson Pereira',
