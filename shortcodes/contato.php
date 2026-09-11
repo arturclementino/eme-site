@@ -83,10 +83,10 @@ function eme_shortcode_contato($atts) {
                                 <textarea id="eme-mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar você?" required></textarea>
                             </div>
                             <div class="eme-form-group" style="margin-bottom: 24px;">
-                                <div class="eme-checkbox-wrapper" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
-                                    <input type="checkbox" id="eme-lgpd-check" name="lgpd_agree" required style="width: 22px; height: 22px; accent-color: var(--terracota); cursor: pointer; flex-shrink: 0; margin-top: 2px;" />
-                                    <label for="eme-lgpd-check" style="font-size: 14px; color: var(--grafite); line-height: 1.5; cursor: pointer; user-select: none;">
-                                        Concordo com o tratamento dos meus dados conforme os <a href="javascript:void(0);" id="eme-open-modal-btn" class="eme-link-modal-btn">Termos de Privacidade e LGPD</a> para atendimento da EME. *
+                                <div class="eme-lgpd-box" style="display: flex; align-items: center; gap: 12px; cursor: pointer; padding: 6px 0;">
+                                    <input type="checkbox" id="eme-lgpd-check" name="lgpd_agree" required style="width: 22px; height: 22px; min-width: 22px; min-height: 22px; cursor: pointer; accent-color: var(--terracota); margin: 0; pointer-events: auto !important;" />
+                                    <label for="eme-lgpd-check" style="font-size: 14px; color: var(--grafite); line-height: 1.5; cursor: pointer; user-select: none; margin: 0;">
+                                        Concordo com os <span id="eme-open-modal-btn" class="eme-link-modal-btn">Termos de Privacidade e LGPD</span> para atendimento da EME. *
                                     </label>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ function eme_shortcode_contato($atts) {
                                 <h4 style="color: #128C7E;">Atendimento via WhatsApp</h4>
                                 <p style="margin-bottom: 12px;">Fale diretamente com nossa secretaria pedagógica em tempo real:</p>
                                 <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20EME." target="_blank" class="eme-btn-primary" style="padding: 10px 20px; font-size: 13px; background: #25D366; border-color: #25D366;">
-                                    💬 (31) 98420-1358
+                                    (31) 98420-1358
                                 </a>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ function eme_shortcode_contato($atts) {
                                     <em>(Núcleo de Arte e Música Esperança — NAME)</em>
                                 </p>
                                 <a href="https://maps.google.com/?q=Rua+Bonaparte,+86,+Padre+Eust%C3%A1quio,+Belo+Horizonte+-+MG" target="_blank" class="eme-btn-outline" style="padding: 8px 16px; font-size: 12px;">
-                                    🗺️ Abrir no Google Maps / Waze
+                                    Abrir no Google Maps / Waze
                                 </a>
                             </div>
                         </div>
@@ -147,12 +147,15 @@ function eme_shortcode_contato($atts) {
 
                         <!-- Card Instagram Profissional -->
                         <div class="eme-info-card" style="background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); color: #fff; border: none; padding: 24px; box-shadow: 0 10px 30px rgba(253, 29, 29, 0.25);">
-                            <div class="eme-info-icon" style="font-size: 36px; color: #fff;">📸</div>
+                            <div class="eme-info-icon" style="display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </div>
                             <div class="eme-info-text">
                                 <h4 style="color: #ffffff !important; font-size: 18px; margin-bottom: 6px;">Siga a EME no Instagram</h4>
                                 <p style="color: rgba(255,255,255,0.92) !important; font-size: 13px; margin-bottom: 14px; line-height: 1.5;">Acompanhe bastidores de aulas, vídeos de alunos e novidades em nosso perfil oficial:</p>
-                                <a href="https://instagram.com/escolaeme" target="_blank" class="eme-btn-primary" style="background: #ffffff; color: #833ab4 !important; font-weight: 700; border: none; padding: 10px 22px; font-size: 13px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-                                    @escolaeme no Instagram &rarr;
+                                <a href="https://instagram.com/escolaeme" target="_blank" class="eme-btn-primary" style="background: #ffffff; color: #833ab4 !important; font-weight: 700; border: none; padding: 10px 22px; font-size: 13px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); display: inline-flex; align-items: center; gap: 8px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#833ab4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    <span>@escolaeme no Instagram</span>
                                 </a>
                             </div>
                         </div>
@@ -307,6 +310,7 @@ function eme_shortcode_contato($atts) {
         if (openBtn && modal) {
             openBtn.addEventListener('click', function(e) {
                 e.preventDefault();
+                e.stopPropagation();
                 modal.classList.add('active');
             });
         }

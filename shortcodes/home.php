@@ -29,25 +29,25 @@ function eme_shortcode_home($atts) {
             </div>
         </section>
 
-        <!-- Métricas & Indicadores de Impacto -->
+        <!-- Pilares de Excelência EME -->
         <section class="eme-stats-bar">
             <div class="eme-container">
                 <div class="eme-stats-grid">
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number">+70,9%</span>
-                        <span class="eme-stat-label">Crescimento no 1º Ano</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">🎵 27 Modalidades</span>
+                        <span class="eme-stat-label">Erudito & Popular</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number">94</span>
-                        <span class="eme-stat-label">Matrículas Ativas</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">🎓 Corpo Docente</span>
+                        <span class="eme-stat-label">Professores Graduados & Mestres</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number">27</span>
-                        <span class="eme-stat-label">Modalidades Musicais</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">🏡 Estrutura Completa</span>
+                        <span class="eme-stat-label">Salas Climatizadas & Equipadas</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number">18</span>
-                        <span class="eme-stat-label">Professores Qualificados</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">🤝 Formação Humana</span>
+                        <span class="eme-stat-label">Ensino com Propósito & Excelência</span>
                     </div>
                 </div>
             </div>
@@ -62,10 +62,10 @@ function eme_shortcode_home($atts) {
                         <h2 class="eme-section-title text-left">Integrando Fé, Cultura e Ensino de Alta Qualidade</h2>
                         <div class="eme-divider divider-left"></div>
                         <p>
-                            Fundada em <strong>5 de maio de 2026</strong>, a <strong>Escola de Música Esperança (EME)</strong> é um projeto do <strong>Núcleo de Arte e Música Esperança (NAME)</strong>, braço cultural e educacional vinculado à <strong>Igreja Esperança</strong>, em Belo Horizonte (região Padre Eustáquio / Vila São Vicente).
+                            A <strong>Escola de Música Esperança (EME)</strong> é um projeto do <strong>Núcleo de Arte e Música Esperança (NAME)</strong>, braço cultural e educacional vinculado à <strong>Igreja Esperança</strong>, em Belo Horizonte (região Padre Eustáquio / Vila São Vicente).
                         </p>
                         <p>
-                            Em seu primeiro ano de atividades, a EME expandiu de forma expressiva, alcançando <strong>94 alunos ativos</strong> distribuídos em <strong>27 modalidades musicais</strong> e um corpo docente composto por <strong>18 professores experientes</strong> (bacharéis, licenciados e mestres).
+                            Oferecemos uma ampla grade didática distribuída em <strong>27 modalidades musicais</strong> com acompanhamento individualizado e um corpo docente experiente composto por músicos graduados, licenciados e mestres.
                         </p>
                         <p>
                             Mais do que ensinar técnicas instrumentais ou vocais, a EME forma pessoas por meio da arte, promovendo o desenvolvimento técnico, pessoal e comunitário.

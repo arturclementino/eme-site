@@ -10,43 +10,21 @@ if (!defined('ABSPATH')) {
 <!-- Footer Completo EME -->
 <footer class="eme-main-footer">
     <div class="eme-container">
-        <div class="eme-footer-grid">
+        <div class="eme-footer-grid" style="display: grid; grid-template-columns: 2fr 1.5fr 1fr; gap: 40px;">
             <!-- Coluna 1: Marca & Apresentação -->
             <div class="eme-footer-col">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="eme-brand eme-footer-brand">
                     <img src="https://escolaeme.com/wp-content/uploads/2026/08/eme-horizontal-verde-renovo-scaled-e1787075643364.png" alt="Escola de Música Esperança" class="eme-footer-logo" style="filter: brightness(0) invert(1) !important;" />
                 </a>
-                <p class="eme-footer-about">
+                <p class="eme-footer-about" style="line-height: 1.7; opacity: 0.9;">
                     Projeto do Núcleo de Arte e Música Esperança (NAME), braço cultural e educacional da Igreja Esperança. Integrando fé, cultura e excelência no ensino musical em Belo Horizonte.
                 </p>
-                <!-- Newsletter -->
-                <div class="eme-footer-newsletter">
-                    <h5>Receba novidades da EME</h5>
-                    <form onsubmit="event.preventDefault(); alert('Obrigado por assinar nossa newsletter!');" class="eme-newsletter-form">
-                        <input type="email" placeholder="Seu e-mail..." required />
-                        <button type="submit" aria-label="Assinar">OK</button>
-                    </form>
-                </div>
             </div>
 
-            <!-- Coluna 2: Links Rápidos -->
-            <div class="eme-footer-col">
-                <h4>Navegação</h4>
-                <ul class="eme-footer-links">
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>">Início</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/quem-somos')); ?>">Quem Somos</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/aulas')); ?>">Aulas</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/professores')); ?>">Professores</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/eventos')); ?>">Eventos</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/projetos')); ?>">Projetos</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/contato')); ?>">Contato</a></li>
-                </ul>
-            </div>
-
-            <!-- Coluna 3: Contato & Atendimento -->
+            <!-- Coluna 2: Contato & Atendimento -->
             <div class="eme-footer-col">
                 <h4>Contato & Atendimento</h4>
-                <ul class="eme-footer-contact">
+                <ul class="eme-footer-contact" style="list-style: none; padding: 0; margin: 0; line-height: 2;">
                     <li>📍 Rua Bonaparte, 86 — Padre Eustáquio, Belo Horizonte / MG</li>
                     <li>📱 WhatsApp: <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20EME." target="_blank">(31) 98420-1358</a></li>
                     <li>✉️ <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a></li>
@@ -54,16 +32,17 @@ if (!defined('ABSPATH')) {
                 </ul>
             </div>
 
-            <!-- Coluna 4: Redes & LGPD -->
+            <!-- Coluna 3: Redes & LGPD -->
             <div class="eme-footer-col">
                 <h4>Rede Social Oficial</h4>
                 <div class="eme-footer-social">
-                    <a href="https://instagram.com/escolaeme" target="_blank" class="eme-social-pill" style="font-weight: 700;">
-                        📸 Instagram @escolaeme
+                    <a href="https://instagram.com/escolaeme" target="_blank" class="eme-social-pill" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: rgba(255,255,255,0.12); color: #fff; padding: 10px 18px; border-radius: 30px; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <span>Instagram @escolaeme</span>
                     </a>
                 </div>
                 <div style="margin-top: 25px;">
-                    <a href="<?php echo esc_url(home_url('/contato')); ?>" class="eme-footer-policy-link">Termos de Privacidade & Proteção de Dados (LGPD)</a>
+                    <a href="<?php echo esc_url(home_url('/contato')); ?>" class="eme-footer-policy-link" style="color: rgba(255,255,255,0.8); font-size: 13px;">Termos de Privacidade & Proteção de Dados (LGPD)</a>
                 </div>
             </div>
         </div>

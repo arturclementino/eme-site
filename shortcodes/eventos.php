@@ -18,7 +18,7 @@ function eme_shortcode_eventos($atts) {
             'categoria' => 'Pocket Show & Convivência',
             'publico' => 'Comunidade (Entrada Aberta)',
             'desc' => 'Pocket show intimista com música ao vivo, gastronomia e apresentação de alunos e professores da EME. Um momento de celebração e integração comunitária.',
-            'img' => 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=80',
+            'img' => 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=75',
             'sympla_url' => 'https://www.sympla.com.br/evento/i-casa-aberta/3542927',
             'status' => 'disponivel'
         ],
@@ -30,7 +30,7 @@ function eme_shortcode_eventos($atts) {
             'categoria' => 'Curso Complementar',
             'publico' => 'Instrumentistas Intermediários e Avançados',
             'desc' => 'Ministrado pelo Prof. João Camilo. Aprofundamento em rearmonização, modulação, campo harmônico menor e substitutos harmônicos com prática aplicada.',
-            'img' => 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80',
+            'img' => 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=75',
             'sympla_url' => 'https://www.sympla.com.br/evento/2o-modulo-de-harmonia-funcional/3558329',
             'status' => 'disponivel'
         ],
@@ -42,7 +42,7 @@ function eme_shortcode_eventos($atts) {
             'categoria' => 'Workshop Técnico',
             'publico' => 'Bateristas, Percussionistas e Estudantes',
             'desc' => 'Ministrado pelo Prof. Rodrigo Leles. Afinação de peles, dinâmicas de estúdio, regulagem de hardware e mecânica da bateria para gravações e palco.',
-            'img' => 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=600&q=80',
+            'img' => 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=600&q=75',
             'sympla_url' => 'https://www.sympla.com.br/evento/workshop-pratico-de-bateria/3551649',
             'status' => 'disponivel'
         ],
@@ -54,7 +54,7 @@ function eme_shortcode_eventos($atts) {
             'categoria' => 'Recital Semestral',
             'publico' => 'Alunos, Familiares e Comunidade',
             'desc' => 'Grande audição semestral com apresentações solo e turmas de conjunto dos alunos da EME. Ingressos disponíveis no Sympla em breve.',
-            'img' => 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80',
+            'img' => 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=75',
             'sympla_url' => 'https://www.sympla.com.br/produtor/escolaeme',
             'status' => 'em_breve'
         ]
@@ -62,16 +62,16 @@ function eme_shortcode_eventos($atts) {
 
     $eventos_anteriores = [
         [
-            'titulo' => 'Recitais de 10 e 11 de Junho de 2026',
-            'data' => '10 e 11 de Junho, 2026',
-            'fotos' => '326 ingressos retirados',
-            'desc' => 'Primeira grande audição do ano reunindo mais de 60 alunos em apresentações solo e conjuntos no auditório da Igreja Esperança.'
+            'titulo' => 'Recitais do 1º Semestre',
+            'data' => 'Junho de 2026',
+            'badge' => 'Apresentação Semestral',
+            'desc' => 'Primeira grande audição do ano reunindo alunos em apresentações solo e conjuntos no auditório da Igreja Esperança.'
         ],
         [
             'titulo' => 'Harmonia Funcional — Módulo I',
-            'data' => '1º Semestre, 2026',
-            'fotos' => '17 alunos inscritos',
-            'desc' => 'Lançamento bem-sucedido da linha de cursos complementares da EME ministrado pelo Prof. João Camilo.'
+            'data' => '1º Semestre de 2026',
+            'badge' => 'Curso Complementar',
+            'desc' => 'Lançamento da linha de cursos complementares da EME ministrado pelo Prof. João Camilo.'
         ]
     ];
 
@@ -89,18 +89,18 @@ function eme_shortcode_eventos($atts) {
         </section>
 
         <!-- Sympla Integration Banner (Visual Identity EME) -->
-        <section class="eme-sympla-banner-section" style="background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde) 100%); color: #fff; padding: 40px 0; margin-bottom: 30px; border-bottom: 3px solid var(--terracota);">
+        <section class="eme-sympla-banner-section" style="background: linear-gradient(135deg, #0F2E23 0%, #1B4332 100%); color: #FFFFFF; padding: 40px 0; margin-bottom: 30px; border-bottom: 3px solid #C17B4A;">
             <div class="eme-container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
                 <div style="max-width: 650px;">
-                    <span style="background: rgba(193, 123, 74, 0.25); color: var(--ambar-ouro); border: 1px solid rgba(229, 169, 60, 0.4); padding: 5px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">🎟️ Bilheteria Oficial Sympla</span>
-                    <h2 style="font-size: 1.8rem; font-weight: 700; margin: 12px 0 8px; color: #ffffff;">Bilheteria & Inscrições EME no Sympla</h2>
-                    <p style="font-size: 0.95rem; opacity: 0.92; margin: 0; line-height: 1.6; color: #fdfbf7;">
+                    <span style="background: rgba(193, 123, 74, 0.25); color: #E5A93C; border: 1px solid rgba(229, 169, 60, 0.4); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: inline-block;">Bilheteria Oficial Sympla</span>
+                    <h2 style="font-size: 1.8rem; font-weight: 700; margin: 14px 0 8px; color: #FFFFFF !important;">Bilheteria & Inscrições EME no Sympla</h2>
+                    <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #FDFBF7 !important; opacity: 0.95;">
                         Garanta sua presença em nossos workshops, cursos complementares e recitais através do perfil produtor oficial da EME.
                     </p>
                 </div>
                 <div>
                     <a href="https://www.sympla.com.br/produtor/escolaeme" target="_blank" rel="noopener noreferrer" class="eme-btn-primary">
-                        Perfil Oficial EME no Sympla 🎟️
+                        Perfil Oficial EME no Sympla
                     </a>
                 </div>
             </div>
@@ -120,26 +120,26 @@ function eme_shortcode_eventos($atts) {
                     ?>
                         <div class="eme-event-card">
                             <div class="eme-event-img">
-                                <img src="<?php echo esc_url($evt['img']); ?>" alt="<?php echo esc_attr($evt['titulo']); ?>" />
+                                <img src="<?php echo esc_url($evt['img']); ?>" alt="<?php echo esc_attr($evt['titulo']); ?>" decoding="async" loading="lazy" />
                                 <span class="eme-event-tag"><?php echo esc_html($evt['categoria']); ?></span>
                             </div>
                             <div class="eme-event-content">
-                                <div class="eme-event-meta">
-                                    <span>📅 <?php echo esc_html($evt['data']); ?></span>
-                                    <span>⏰ <?php echo esc_html($evt['horario']); ?></span>
-                                    <span>📍 <?php echo esc_html($evt['local']); ?></span>
+                                <div class="eme-event-meta" style="color: #1B4332; font-weight: 600;">
+                                    <span>Data: <?php echo esc_html($evt['data']); ?></span>
+                                    <span>Horário: <?php echo esc_html($evt['horario']); ?></span>
+                                    <span>Local: <?php echo esc_html($evt['local']); ?></span>
                                 </div>
-                                <h3><?php echo esc_html($evt['titulo']); ?></h3>
-                                <p><?php echo esc_html($evt['desc']); ?></p>
+                                <h3 style="color: #0F2E23 !important; font-size: 22px; margin: 12px 0 8px;"><?php echo esc_html($evt['titulo']); ?></h3>
+                                <p style="color: #444444 !important; font-size: 15px; line-height: 1.6; margin-bottom: 16px;"><?php echo esc_html($evt['desc']); ?></p>
                                 <div class="eme-event-footer">
-                                    <span class="eme-event-target">👥 Público: <?php echo esc_html($evt['publico']); ?></span>
+                                    <span class="eme-event-target" style="color: #6B7280; font-size: 13px; font-weight: 600;">Público: <?php echo esc_html($evt['publico']); ?></span>
                                     <?php if ($is_em_breve): ?>
-                                        <a href="<?php echo esc_url($sympla_link); ?>" target="_blank" rel="noopener noreferrer" class="eme-btn-outline" style="opacity: 0.9; cursor: pointer;">
-                                            Em Breve no Sympla ⏳
+                                        <a href="<?php echo esc_url($sympla_link); ?>" target="_blank" rel="noopener noreferrer" class="eme-btn-outline">
+                                            Em Breve no Sympla
                                         </a>
                                     <?php else: ?>
                                         <a href="<?php echo esc_url($sympla_link); ?>" target="_blank" rel="noopener noreferrer" class="eme-btn-primary">
-                                            Garantir Vaga no Sympla 🎟️
+                                            Garantir Vaga no Sympla
                                         </a>
                                     <?php endif; ?>
                                 </div>
@@ -157,12 +157,11 @@ function eme_shortcode_eventos($atts) {
                 <div class="eme-divider"></div>
                 <div class="eme-grid-2">
                     <?php foreach ($eventos_anteriores as $prev): ?>
-                        <div class="eme-prev-event-card">
-                            <div class="eme-prev-event-icon">📸</div>
-                            <span class="eme-prev-date"><?php echo esc_html($prev['data']); ?></span>
-                            <h4><?php echo esc_html($prev['titulo']); ?></h4>
-                            <p><?php echo esc_html($prev['desc']); ?></p>
-                            <span class="eme-prev-badge"><?php echo esc_html($prev['fotos']); ?></span>
+                        <div class="eme-prev-event-card" style="padding: 28px; background: #FFFFFF; border-radius: 14px; border: 1px solid #E2DACD;">
+                            <span class="eme-prev-date" style="color: #C17B4A; font-weight: 700; font-size: 13px; display: block; margin-bottom: 6px;"><?php echo esc_html($prev['data']); ?></span>
+                            <h4 style="color: #0F2E23; font-size: 18px; margin: 0 0 10px;"><?php echo esc_html($prev['titulo']); ?></h4>
+                            <p style="color: #555555; font-size: 14px; margin: 0 0 12px; line-height: 1.6;"><?php echo esc_html($prev['desc']); ?></p>
+                            <span class="eme-prev-badge" style="background: rgba(45,106,79,0.1); color: #2D6A4F; font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 20px; display: inline-block;"><?php echo esc_html($prev['badge']); ?></span>
                         </div>
                     <?php endforeach; ?>
                 </div>

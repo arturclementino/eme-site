@@ -88,4 +88,15 @@ function eme_handle_contact_submission() {
     wp_send_json_success(array('message' => 'Obrigado! Sua mensagem foi recebida e enviada para nossa equipe com sucesso.'));
 }
 
+// 6. Otimizar e simplificar o título das páginas (evitar títulos redundantes e gigantes)
+add_filter('document_title_parts', function($title) {
+    if (isset($title['site'])) {
+        $title['site'] = 'EME';
+    }
+    if (isset($title['tagline'])) {
+        unset($title['tagline']);
+    }
+    return $title;
+}, 999);
+
 

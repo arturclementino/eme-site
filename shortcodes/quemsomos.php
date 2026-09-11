@@ -32,10 +32,10 @@ function eme_shortcode_quemsomos($atts) {
                         <h2 class="eme-section-title text-left">Nossa História</h2>
                         <div class="eme-divider divider-left"></div>
                         <p>
-                            A <strong>Escola de Música Esperança (EME)</strong> nasceu do desejo de democratizar o acesso ao ensino musical de qualidade em Belo Horizonte. Vinculada ao <strong>Núcleo de Arte e Música Esperança (NAME)</strong> e à <strong>Igreja Esperança</strong>, a EME foi fundada em <strong>5 de maio de 2026</strong> com o propósito de integrar fé e cultura por meio da música.
+                            A <strong>Escola de Música Esperança (EME)</strong> nasceu do desejo de democratizar o acesso ao ensino musical de qualidade em Belo Horizonte. Vinculada ao <strong>Núcleo de Arte e Música Esperança (NAME)</strong> e à <strong>Igreja Esperança</strong>, a EME integra fé e cultura por meio do ensino musical estruturado.
                         </p>
                         <p>
-                            Em seu primeiro semestre de atividades, a escola já contava com 55 matrículas. Ao final do primeiro ano, esse número saltou para <strong>94 matrículas ativas</strong> — um crescimento expressivo de <strong>70,9%</strong> que reflete o compromisso pedagógico e a credibilidade conquistada junto à comunidade local.
+                            Desde a sua fundação, a escola expandiu continuamente sua grade didática, oferecendo cursos do iniciante ao avançado em <strong>27 modalidades musicais</strong> com acompanhamento pedagógico contínuo.
                         </p>
                         <p>
                             A EME acredita que a música é um instrumento potente de transformação social, cultural e espiritual, capaz de formar cidadãos e desenvolver talentos em todas as idades.

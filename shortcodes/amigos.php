@@ -25,23 +25,23 @@ function eme_shortcode_amigos($atts) {
 
         <section class="eme-section">
             <div class="eme-container">
-                <!-- Destaques & Números de Impacto -->
+                <!-- Destaques & Pilares do Programa -->
                 <div class="eme-stats-grid" style="margin-bottom: 50px;">
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number">85%</span>
-                        <span class="eme-stat-label">Desconto em Bolsas de Estudo</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">🎓 Inclusão Social</span>
+                        <span class="eme-stat-label">Bolsas Parciais & Integrais</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number">4</span>
-                        <span class="eme-stat-label">Alunos Bolsistas Ativos</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">🎵 Formação Musical</span>
+                        <span class="eme-stat-label">Desenvolvimento de Novos Talentos</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number">100%</span>
-                        <span class="eme-stat-label">Acompanhamento Pedagógico</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">📚 Metodologia EME</span>
+                        <span class="eme-stat-label">Acompanhamento Pedagógico Contínuo</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number">20</span>
-                        <span class="eme-stat-label">Professores Engajados</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">🤝 Parceria Comunitária</span>
+                        <span class="eme-stat-label">Apoio de Padrinhos & Empresas</span>
                     </div>
                 </div>
 
