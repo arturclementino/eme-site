@@ -23,7 +23,7 @@ if (!defined('ABSPATH')) {
     <div class="eme-container eme-header-container">
         <!-- Marca / Logo -->
         <a href="<?php echo esc_url(home_url('/')); ?>" class="eme-brand" title="Escola de Música Esperança">
-            <img src="https://escolaeme.com/wp-content/uploads/2026/08/Circular-verde-renovo-1.png" 
+            <img src="https://escolaeme.com/wp-content/uploads/2026/08/eme-horizontal-verde-renovo-scaled-e1787075643364.png" 
                  alt="Escola de Música Esperança" 
                  class="eme-header-logo"
                  decoding="async"
