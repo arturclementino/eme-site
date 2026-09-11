@@ -3,8 +3,6 @@
    Versão: 1.1.0 | Revisão Mobile & Design
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
-
 /* ─── Tokens de Design ──────────────────────────────────────────────────── */
 :root {
     --verde-escuro:    #0F2E23;
@@ -115,7 +113,15 @@ img {
     flex-shrink: 0 !important;
 }
 
-/* Forçar remoção de qualquer elemento residual de texto ou ícone ao lado da logo */
+/* Forçar remoção de qualquer elemento residual de texto, título nativo do WordPress ou cabeçalho pai */
+#site-header,
+.site-header,
+.site-branding,
+.site-title,
+.site-description,
+.hello-header,
+.elementor-site-title,
+header:not(.eme-main-header),
 .eme-brand-text,
 .eme-brand-title,
 .eme-brand-sub,
@@ -126,6 +132,9 @@ img {
     width: 0 !important;
     height: 0 !important;
     overflow: hidden !important;
+    pointer-events: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .eme-header-logo {
