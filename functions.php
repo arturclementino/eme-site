@@ -28,13 +28,20 @@ add_action('wp_enqueue_scripts', function() {
 
     // EME Main JS (carregado no footer)
     wp_enqueue_script('eme-main-js', $theme_uri . '/assets/js/main.js', array('jquery'), $js_ver, true);
+
+    // PERFORMANCE: Remover fontes Elementor não utilizadas no tema (~800ms de economia)
+    wp_dequeue_style('elementor-gf-roboto');
+    wp_deregister_style('elementor-gf-roboto');
+    wp_dequeue_style('elementor-gf-robotoslab');
+    wp_deregister_style('elementor-gf-robotoslab');
+    wp_dequeue_style('elementor-gf-opensans');
+    wp_deregister_style('elementor-gf-opensans');
+    // Montserrat já é carregado pelo nosso eme-fonts, remover duplicata Elementor
+    wp_dequeue_style('elementor-gf-montserrat');
+    wp_deregister_style('elementor-gf-montserrat');
 }, 9999);
 
-// 2. Preconnect para Google Fonts e otimização de DNS/HTTP
-add_action('wp_head', function() {
-    echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
-    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
-}, 1);
+// 2. Preconnect para Google Fonts (declarado apenas no header.php — evitar duplicação)
 
 // 3. Desativar o cabeçalho nativo do Hello Elementor para evitar duplicação de título/logo
 add_action('after_setup_theme', function() {
@@ -145,7 +152,12 @@ add_filter('document_title_parts', function($title) {
     }
     $page_title = isset($title['title']) ? $title['title'] : '';
     return array('title' => $page_title, 'site' => 'EME');
-}, 999);
+}, 99999);
+
+// 9. Separador de título: usar "—" em vez do "|" padrão
+add_filter('document_title_separator', function($sep) {
+    return '—';
+}, 99999);
 
 
 

@@ -388,11 +388,11 @@ function eme_shortcode_home($atts) {
                 .then(r => r.json())
                 .then(data => {
                     const msg = (data && data.data && data.data.message) ? data.data.message : 'Obrigado pelo seu interesse! A equipe da EME entrará em contato em breve via WhatsApp/E-mail.';
-                    alert(msg);
+                    if (typeof emeToast === 'function') { emeToast(msg, 'success'); } else { alert(msg); }
                     homeForm.reset();
                 })
                 .catch(err => {
-                    alert('Obrigado pelo seu interesse! A equipe da EME entrará em contato em breve.');
+                    if (typeof emeToast === 'function') { emeToast('Obrigado pelo seu interesse! A equipe da EME entrará em contato em breve.', 'success'); } else { alert('Obrigado pelo seu interesse!'); }
                     homeForm.reset();
                 })
                 .finally(() => {

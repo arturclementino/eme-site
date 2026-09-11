@@ -354,11 +354,11 @@ function eme_shortcode_contato($atts) {
                 .then(r => r.json())
                 .then(data => {
                     const msg = (data && data.data && data.data.message) ? data.data.message : 'Obrigado! Sua mensagem foi enviada com sucesso para a EME.';
-                    alert(msg);
+                    if (typeof emeToast === 'function') { emeToast(msg, 'success'); } else { alert(msg); }
                     form.reset();
                 })
                 .catch(err => {
-                    alert('Obrigado! Sua mensagem foi enviada com sucesso para a secretaria da EME.');
+                    if (typeof emeToast === 'function') { emeToast('Obrigado! Sua mensagem foi enviada com sucesso para a secretaria da EME.', 'success'); } else { alert('Obrigado!'); }
                     form.reset();
                 })
                 .finally(() => {

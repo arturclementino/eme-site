@@ -151,4 +151,73 @@ jQuery(document).ready(function($) {
         }
     });
 
+    // ─── 9. Scroll Reveal (IntersectionObserver) ─────────────────────────────
+    if ('IntersectionObserver' in window) {
+        var revealElements = document.querySelectorAll('.eme-section, .eme-hero-sub, .eme-diff-card, .eme-card-item, .eme-pillar-card, .eme-method-card, .eme-facility-card, .eme-gallery-card, .eme-event-card, .eme-testimonial-card, .eme-aula-card, .eme-prof-card, .eme-partner-card, .eme-faq-item, .eme-info-card, .eme-event-mini-card, .eme-prev-event-card, .eme-faq-help-box, .eme-home-about-text, .eme-home-about-img, .eme-pedagogia-box');
+
+        revealElements.forEach(function(el) {
+            el.classList.add('eme-reveal');
+        });
+
+        var revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('eme-revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.08,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(function(el) {
+            revealObserver.observe(el);
+        });
+    }
+
+    // ─── 10. Back-to-Top Button ──────────────────────────────────────────────
+    var $backToTop = $('#eme-back-to-top');
+    
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 500) {
+            $backToTop.addClass('visible');
+        } else {
+            $backToTop.removeClass('visible');
+        }
+    });
+
+    $backToTop.on('click', function() {
+        $('html, body').animate({ scrollTop: 0 }, 600, 'swing');
+    });
+
 });
+
+// ─── 11. Toast Notification System ───────────────────────────────────────────
+window.emeToast = function(message, type) {
+    type = type || 'success';
+    var existing = document.querySelector('.eme-toast');
+    if (existing) existing.remove();
+
+    var toast = document.createElement('div');
+    toast.className = 'eme-toast eme-toast-' + type;
+    
+    var icon = type === 'success' ? '✓' : type === 'error' ? '✕' : 'ℹ';
+    toast.innerHTML = '<span class="eme-toast-icon">' + icon + '</span><span class="eme-toast-msg">' + message + '</span>';
+    
+    document.body.appendChild(toast);
+    
+    // Trigger animation
+    requestAnimationFrame(function() {
+        toast.classList.add('eme-toast-visible');
+    });
+    
+    // Auto-dismiss after 5s
+    setTimeout(function() {
+        toast.classList.remove('eme-toast-visible');
+        toast.classList.add('eme-toast-hiding');
+        setTimeout(function() {
+            if (toast.parentNode) toast.remove();
+        }, 400);
+    }, 5000);
+};
