@@ -60,10 +60,9 @@ function eme_shortcode_amigos($atts) {
                     </div>
                     <div style="background: var(--branco-puro); padding: 35px; border-radius: 16px; box-shadow: var(--sombra-card); border-left: 5px solid var(--terracota);">
                         <h3 style="color: var(--verde-escuro); margin-top: 0; font-size: 22px;">🎯 Como Funciona o Apoio</h3>
-                        <ul style="list-style: none; padding: 0; margin: 20px 0 0; line-height: 2;">
+                        <ul style="list-style: none; padding: 0; margin: 20px 0 0; line-height: 2.2;">
                             <li>✅ <strong>Apadrinhamento Individual:</strong> Apoie a mensalidade parcial ou integral de um estudante.</li>
                             <li>✅ <strong>Empresas Parceiras:</strong> Apoio institucional com incentivo à formação artística local.</li>
-                            <li>✅ <strong>Doação de Instrumentos:</strong> Instrumentos novos ou usados em bom estado para uso dos alunos em aula.</li>
                         </ul>
                     </div>
                 </div>
@@ -75,7 +74,7 @@ function eme_shortcode_amigos($atts) {
                     <div class="eme-divider"></div>
                 </div>
 
-                <div class="eme-grid-3">
+                <div class="eme-grid-2" style="max-width: 900px; margin: 0 auto;">
                     <div class="eme-partner-card">
                         <div class="eme-partner-logo">🤝</div>
                         <h3>Apadrinhar um Aluno</h3>
@@ -84,17 +83,6 @@ function eme_shortcode_amigos($atts) {
                         </p>
                         <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20apadrinhar%20um%20aluno%20bolsista%20no%20projeto%20Amigos%20da%20EME." target="_blank" class="eme-btn-outline eme-btn-block">
                             Seja um Padrinho
-                        </a>
-                    </div>
-
-                    <div class="eme-partner-card">
-                        <div class="eme-partner-logo">🎷</div>
-                        <h3>Doar Instrumentos</h3>
-                        <p style="font-size: 14px; color: var(--cinza-suave); margin-bottom: 20px;">
-                            Possui um violão, teclado, violino ou outro instrumento parado? Doe para o acervo de alunos da EME!
-                        </p>
-                        <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Tenho%20um%20instrumento%20para%20doar%20ao%20projeto%20Amigos%20da%20EME." target="_blank" class="eme-btn-outline eme-btn-block">
-                            Doar Instrumento
                         </a>
                     </div>
 

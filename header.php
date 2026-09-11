@@ -51,6 +51,7 @@ if (!defined('ABSPATH')) {
                     </a>
                     <ul class="eme-dropdown-menu">
                         <li><a href="<?php echo esc_url(home_url('/amigos-da-eme')); ?>">Amigos da EME (Bolsas & Apoio)</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/estudio')); ?>">Estúdio & Gravações</a></li>
                     </ul>
                 </li>
                 <li><a href="<?php echo esc_url(home_url('/galeria')); ?>">Galeria</a></li>

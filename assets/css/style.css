@@ -1670,6 +1670,54 @@ header:not(.eme-main-header),
     align-items: start;
 }
 
+/* Styling Coluna Direita Contato */
+.eme-contato-info-box {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+}
+
+.eme-info-card {
+    background: var(--branco-puro) !important;
+    padding: 24px 28px !important;
+    border-radius: 14px !important;
+    border: 1px solid var(--cinza-borda) !important;
+    box-shadow: var(--sombra-card) !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+    transition: var(--transicao) !important;
+}
+
+.eme-info-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: var(--sombra-hover) !important;
+}
+
+.eme-info-icon {
+    font-size: 32px !important;
+    line-height: 1 !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+}
+
+.eme-info-text {
+    flex: 1 !important;
+}
+
+.eme-info-text h4 {
+    margin: 0 0 6px !important;
+    font-size: 17px !important;
+    color: var(--verde-escuro) !important;
+}
+
+.eme-info-text p {
+    margin: 0 !important;
+    font-size: 14px !important;
+    color: #444 !important;
+    line-height: 1.6 !important;
+}
+
 /* ─── Print ──────────────────────────────────────────────────────────────── */
 @media print {
     .eme-main-header,
