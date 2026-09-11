@@ -59,13 +59,18 @@ function eme_handle_contact_submission() {
     $curso    = isset($_POST['curso']) ? sanitize_text_field($_POST['curso']) : '';
     $mensagem = isset($_POST['mensagem']) ? sanitize_textarea_field($_POST['mensagem']) : '';
 
-    if (empty($nome) || empty($email) || empty($mensagem)) {
-        wp_send_json_error(array('message' => 'Por favor, preencha todos os campos obrigatórios.'));
+    // Validação de campos obrigatórios essenciais
+    if (empty($nome) || empty($email)) {
+        wp_send_json_error(array('message' => 'Por favor, preencha seu nome e e-mail de contato.'));
+    }
+
+    if (empty($mensagem)) {
+        $mensagem = "Solicitação de agendamento de visita presencial / contato enviado através da Página Inicial da EME.";
     }
 
     $to = array('contato@escolaeme.com', 'coordenacao@escolaeme.com');
     $subject = 'Nova Mensagem do Site EME: ' . $assunto;
-    $body  = "Nova mensagem recebida através do site da EME:\n\n";
+    $body  = "Nova mensagem recebida através do site da EME (escolaeme.com):\n\n";
     $body .= "Nome: " . $nome . "\n";
     $body .= "E-mail: " . $email . "\n";
     $body .= "Telefone/WhatsApp: " . $telefone . "\n";
@@ -79,24 +84,68 @@ function eme_handle_contact_submission() {
 
     $headers = array(
         'Content-Type: text/plain; charset=UTF-8',
-        'From: EME Site <contato@escolaeme.com>',
+        'From: Escola de Música Esperança <contato@escolaeme.com>',
         'Reply-To: ' . $nome . ' <' . $email . '>'
     );
 
     $sent = @wp_mail($to, $subject, $body, $headers);
 
-    wp_send_json_success(array('message' => 'Obrigado! Sua mensagem foi recebida e enviada para nossa equipe com sucesso.'));
+    wp_send_json_success(array('message' => 'Obrigado! Sua mensagem foi recebida e enviada com sucesso para nossa equipe pedagógica (contato@escolaeme.com).'));
 }
 
-// 6. Otimizar e simplificar o título das páginas (evitar títulos redundantes e gigantes)
-add_filter('document_title_parts', function($title) {
-    if (isset($title['site'])) {
-        $title['site'] = 'EME';
+// Forçar e-mail remetente oficial contato@escolaeme.com para todas as mensagens de sistema
+add_filter('wp_mail_from', function($original_email) {
+    return 'contato@escolaeme.com';
+});
+add_filter('wp_mail_from_name', function($original_name) {
+    return 'Escola de Música Esperança — EME';
+});
+
+// 6. SEO & Google Search: Schema.org Structured Data + OpenGraph Meta Tags
+add_action('wp_head', function() {
+    ?>
+    <meta property="og:site_name" content="Escola de Música Esperança — EME" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Escola de Música Esperança — EME | Arte, Fé e Excelência" />
+    <meta property="og:description" content="Escola de Música Esperança (EME). Formação musical completa com 27 modalidades, corpo docente qualificado e estrutura de ponta em Belo Horizonte (Padre Eustáquio)." />
+    <meta property="og:url" content="https://escolaeme.com/" />
+    <meta name="description" content="Escola de Música Esperança (EME / NAME) — Projeto da Igreja Esperança. Cursos didáticos de música, instrumentos e canto com foco em excelência e propósito comunitário em Belo Horizonte." />
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Escola de Música Esperança",
+      "alternateName": ["EME", "Escola EME", "EME Música Esperança"],
+      "url": "https://escolaeme.com/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Escola de Música Esperança — EME",
+        "logo": "https://escolaeme.com/wp-content/uploads/2026/08/eme-horizontal-verde-renovo-scaled-e1787075643364.png"
+      }
     }
+    </script>
+    <?php
+}, 5);
+
+// 7. Configuração dinâmica das opções de título e tagline no banco do WordPress
+add_action('init', function() {
+    if (get_option('blogname') !== 'Escola de Música Esperança — EME') {
+        update_option('blogname', 'Escola de Música Esperança — EME');
+    }
+    if (get_option('blogdescription') !== 'Arte, Fé e Excelência no Ensino Musical em Belo Horizonte') {
+        update_option('blogdescription', 'Arte, Fé e Excelência no Ensino Musical em Belo Horizonte');
+    }
+});
+
+// 8. Otimizar e simplificar o título da aba no navegador
+add_filter('document_title_parts', function($title) {
+    $title['site'] = 'Escola de Música Esperança — EME';
     if (isset($title['tagline'])) {
         unset($title['tagline']);
     }
     return $title;
 }, 999);
+
 
 

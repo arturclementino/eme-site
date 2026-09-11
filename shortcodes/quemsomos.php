@@ -32,13 +32,13 @@ function eme_shortcode_quemsomos($atts) {
                         <h2 class="eme-section-title text-left">Nossa História</h2>
                         <div class="eme-divider divider-left"></div>
                         <p>
-                            A <strong>Escola de Música Esperança (EME)</strong> nasceu do desejo de democratizar o acesso ao ensino musical de qualidade em Belo Horizonte. Vinculada ao <strong>Núcleo de Arte e Música Esperança (NAME)</strong> e à <strong>Igreja Esperança</strong>, a EME integra fé e cultura por meio do ensino musical estruturado.
+                            A <strong>Escola de Música Esperança (EME)</strong> nasceu como extensão da <strong>Igreja Esperança</strong> na cidade de Belo Horizonte — um projeto vinculado ao <strong>Núcleo de Arte e Música Esperança (NAME)</strong> que une formação musical séria com propósito comunitário.
                         </p>
                         <p>
-                            Desde a sua fundação, a escola expandiu continuamente sua grade didática, oferecendo cursos do iniciante ao avançado em <strong>27 modalidades musicais</strong> com acompanhamento pedagógico contínuo.
+                            Nossa identidade é pautada por um duplo compromisso fundamental: <strong>técnica e acolhimento, excelência e acessibilidade</strong>. Comunicamos seriedade para pais, alunos e parceiros sem abrir mão da proximidade e do ambiente transformador.
                         </p>
                         <p>
-                            A EME acredita que a música é um instrumento potente de transformação social, cultural e espiritual, capaz de formar cidadãos e desenvolver talentos em todas as idades.
+                            Com uma grade didática abrangente composta por <strong>27 modalidades musicais</strong>, a EME forma o aluno de maneira integral — unindo prática instrumental, percepção teórica e vivência comunitária em palcos e recitais.
                         </p>
                     </div>
                     <div class="eme-about-image-box">

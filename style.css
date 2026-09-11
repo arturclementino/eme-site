@@ -641,12 +641,16 @@ header:not(.eme-main-header),
     overflow: hidden !important;
 }
 
-.eme-lead-info h2 {
+.eme-cta-lead-section h2,
+.eme-lead-info h2,
+#agendar-visita h2,
+#agendar-visita .eme-lead-info h2 {
     color: #FFFFFF !important;
     font-size: 38px !important;
     font-weight: 800 !important;
     margin-bottom: 18px !important;
     line-height: 1.2 !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
 }
 
 .eme-lead-info p {

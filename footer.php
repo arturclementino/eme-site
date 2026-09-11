@@ -8,47 +8,74 @@ if (!defined('ABSPATH')) {
 ?>
 
 <!-- Footer Completo EME -->
-<footer class="eme-main-footer">
+<footer class="eme-main-footer" style="background: linear-gradient(180deg, #0F2E23 0%, #091F17 100%) !important; color: #FFFFFF !important; padding: 70px 0 0 !important; border-top: 4px solid #C17B4A !important; position: relative !important; font-family: 'Source Sans 3', sans-serif !important;">
     <div class="eme-container">
-        <div class="eme-footer-grid" style="display: grid; grid-template-columns: 2fr 1.5fr 1fr; gap: 40px;">
-            <!-- Coluna 1: Marca & Apresentação -->
+        <div class="eme-footer-grid" style="display: grid; grid-template-columns: 1.8fr 1.4fr 1.2fr; gap: 48px; padding-bottom: 50px; border-bottom: 1px solid rgba(255, 255, 255, 0.12);">
+            <!-- Coluna 1: Marca & Identidade -->
             <div class="eme-footer-col">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="eme-brand eme-footer-brand">
-                    <img src="https://escolaeme.com/wp-content/uploads/2026/08/eme-horizontal-verde-renovo-scaled-e1787075643364.png" alt="Escola de Música Esperança" class="eme-footer-logo" style="filter: brightness(0) invert(1) !important;" />
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="eme-brand eme-footer-brand" style="display: inline-block; margin-bottom: 18px;">
+                    <img src="https://escolaeme.com/wp-content/uploads/2026/08/eme-horizontal-verde-renovo-scaled-e1787075643364.png" alt="Escola de Música Esperança — EME" class="eme-footer-logo" style="height: 48px; width: auto; filter: brightness(0) invert(1) !important; opacity: 0.98;" />
                 </a>
-                <p class="eme-footer-about" style="line-height: 1.7; opacity: 0.9;">
-                    Projeto do Núcleo de Arte e Música Esperança (NAME), braço cultural e educacional da Igreja Esperança. Integrando fé, cultura e excelência no ensino musical em Belo Horizonte.
+                <p class="eme-footer-about" style="line-height: 1.7; color: rgba(255, 255, 255, 0.88); font-size: 14.5px; margin-bottom: 20px;">
+                    Projeto do <strong>Núcleo de Arte e Música Esperança (NAME)</strong>, braço cultural e educacional da Igreja Esperança. Unindo técnica e acolhimento, excelência e acessibilidade para servir Belo Horizonte através do ensino musical com propósito.
                 </p>
+                <div style="display: flex; gap: 12px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #E5A93C;">
+                    <span>🎵 Arte</span> • <span>✝️ Fé</span> • <span>🎓 Excelência</span>
+                </div>
             </div>
 
-            <!-- Coluna 2: Contato & Atendimento -->
+            <!-- Coluna 2: Atendimento & Sede -->
             <div class="eme-footer-col">
-                <h4>Contato & Atendimento</h4>
-                <ul class="eme-footer-contact" style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                    <li>📍 Rua Bonaparte, 86 — Padre Eustáquio, Belo Horizonte / MG</li>
-                    <li>📱 WhatsApp: <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20EME." target="_blank">(31) 98420-1358</a></li>
-                    <li>✉️ <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a></li>
-                    <li>⏰ Segunda a sexta, 8h às 22h</li>
+                <h4 style="font-family: 'Cinzel', serif !important; color: #FFFFFF !important; font-size: 18px; font-weight: 700; margin-bottom: 20px; letter-spacing: 0.5px; border-bottom: 2px solid #C17B4A; padding-bottom: 8px; display: inline-block;">
+                    Atendimento & Sede
+                </h4>
+                <ul class="eme-footer-contact" style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 14px; color: rgba(255, 255, 255, 0.9);">
+                    <li style="display: flex; align-items: flex-start; gap: 10px;">
+                        <span style="color: #C17B4A; font-size: 16px;">📍</span>
+                        <span>Rua Bonaparte, 86 — Padre Eustáquio<br><small style="color: rgba(255,255,255,0.7);">Belo Horizonte / MG — CEP: 30720-070</small></span>
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+                        <span style="color: #25D366; font-size: 16px;">📱</span>
+                        <span>WhatsApp: <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20EME." target="_blank" style="color: #FFFFFF; font-weight: 700; text-decoration: underline;">(31) 98420-1358</a></span>
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 10px;">
+                        <span style="color: #E5A93C; font-size: 16px;">✉️</span>
+                        <span>E-mail: <a href="mailto:contato@escolaeme.com" style="color: #FFFFFF; font-weight: 700;">contato@escolaeme.com</a></span>
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 10px;">
+                        <span style="color: rgba(255,255,255,0.7); font-size: 16px;">⏰</span>
+                        <span>Segunda a sexta-feira, das 8h às 22h</span>
+                    </li>
                 </ul>
             </div>
 
-            <!-- Coluna 3: Redes & LGPD -->
+            <!-- Coluna 3: Rede Social Oficial & LGPD -->
             <div class="eme-footer-col">
-                <h4>Rede Social Oficial</h4>
-                <div class="eme-footer-social">
-                    <a href="https://instagram.com/escolaeme" target="_blank" class="eme-social-pill" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: rgba(255,255,255,0.12); color: #fff; padding: 10px 18px; border-radius: 30px; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        <span>Instagram @escolaeme</span>
+                <h4 style="font-family: 'Cinzel', serif !important; color: #FFFFFF !important; font-size: 18px; font-weight: 700; margin-bottom: 20px; letter-spacing: 0.5px; border-bottom: 2px solid #C17B4A; padding-bottom: 8px; display: inline-block;">
+                    Canal Oficial
+                </h4>
+                <div class="eme-footer-social" style="margin-bottom: 22px;">
+                    <a href="https://www.instagram.com/eme.esperanca/" target="_blank" rel="noopener noreferrer" class="eme-social-pill" style="display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 13.5px; background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); color: #FFFFFF !important; padding: 12px 22px; border-radius: 30px; text-decoration: none; box-shadow: 0 6px 20px rgba(253, 29, 29, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <span>@eme.esperanca</span>
                     </a>
                 </div>
-                <div style="margin-top: 25px;">
-                    <a href="<?php echo esc_url(home_url('/contato')); ?>" class="eme-footer-policy-link" style="color: rgba(255,255,255,0.8); font-size: 13px;">Termos de Privacidade & Proteção de Dados (LGPD)</a>
+                <div>
+                    <a href="<?php echo esc_url(home_url('/contato')); ?>" class="eme-footer-policy-link" style="color: rgba(255, 255, 255, 0.85); font-size: 13px; text-decoration: underline; display: block; margin-bottom: 8px;">
+                        Termos de Privacidade & Proteção de Dados (LGPD)
+                    </a>
+                    <span style="font-size: 12px; color: rgba(255,255,255,0.6); display: block;">
+                        Coordenação: <a href="mailto:coordenacao@escolaeme.com" style="color: rgba(255,255,255,0.8);">coordenacao@escolaeme.com</a>
+                    </span>
                 </div>
             </div>
         </div>
 
-        <div class="eme-footer-bottom">
-            <p>&copy; <?php echo date('Y'); ?> EME — Escola de Música Esperança / Núcleo de Arte e Música Esperança (NAME). Todos os direitos reservados.</p>
+        <!-- Rodapé Inferior (Copyright) -->
+        <div class="eme-footer-bottom" style="padding: 24px 0; text-align: center; font-size: 13px; color: rgba(255, 255, 255, 0.75);">
+            <p style="margin: 0; line-height: 1.6;">
+                &copy; <?php echo date('Y'); ?> <strong>Escola de Música Esperança (EME)</strong> — Núcleo de Arte e Música Esperança (NAME) / Igreja Esperança. Todos os direitos reservados.
+            </p>
         </div>
     </div>
 </footer>

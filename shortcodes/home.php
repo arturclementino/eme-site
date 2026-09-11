@@ -258,12 +258,13 @@ function eme_shortcode_home($atts) {
             <div class="eme-container">
                 <div class="eme-grid-2 eme-align-center">
                     <div class="eme-lead-info">
-                        <h2>Venha conhecer a EME de perto</h2>
-                        <p>Agende uma visita presencial para conhecer nossas instalações, conversar com nossa coordenação e encontrar o curso perfeito para você ou sua família.</p>
+                        <span class="eme-badge-tag" style="background: rgba(255,255,255,0.18) !important; color: #F59E0B !important; border: 1px solid rgba(245,158,11,0.5) !important; font-weight: 700; padding: 6px 16px; border-radius: 30px; display: inline-block; margin-bottom: 14px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Técnica & Acolhimento</span>
+                        <h2 style="color: #FFFFFF !important; font-size: 38px !important; font-weight: 800 !important; text-shadow: 0 2px 10px rgba(0,0,0,0.35) !important; margin-bottom: 18px !important; line-height: 1.2 !important;">Venha conhecer a EME de perto</h2>
+                        <p style="color: rgba(255, 255, 255, 0.94) !important; font-size: 18px !important; line-height: 1.65 !important; margin-bottom: 28px !important;">Agende uma visita presencial para conhecer nossas instalações, conversar com nossa coordenação didática e encontrar a modalidade perfeita para o seu desenvolvimento musical.</p>
                         <ul class="eme-lead-check-list">
-                            <li>✓ Tour guiado pelas salas de aula e acervo instrumental</li>
-                            <li>✓ Orientação para escolha de instrumento e professor</li>
-                            <li>✓ Atendimento acolhedor de segunda a sexta, das 8h às 22h</li>
+                            <li style="color: #FFFFFF !important;">✓ Tour guiado pelas salas climatizadas e equipadas</li>
+                            <li style="color: #FFFFFF !important;">✓ Orientação pedagógica para escolha de instrumento e docente</li>
+                            <li style="color: #FFFFFF !important;">✓ Atendimento acolhedor de segunda a sexta, das 8h às 22h</li>
                         </ul>
                     </div>
                     <div class="eme-lead-form-box">
