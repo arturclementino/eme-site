@@ -8,5 +8,5 @@ if (!defined('ABSPATH')) {
 }
 
 get_header();
-echo do_shortcode('[eme_amigos]');
+echo do_shortcode('[eme_projetos]');
 get_footer();

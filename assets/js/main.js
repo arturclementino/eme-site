@@ -9,11 +9,20 @@ jQuery(document).ready(function($) {
         $(this).attr('aria-label', expanded ? 'Fechar Menu' : 'Abrir Menu');
     });
 
-    // Fechar menu ao clicar em qualquer link de navegação
-    $('.eme-main-nav a').on('click', function() {
+    // Fechar menu ao clicar em links normais (exceto toggle de dropdown)
+    $('.eme-main-nav a:not(.eme-dropdown-toggle)').on('click', function() {
         $('.eme-main-nav').removeClass('active');
         $('.eme-mobile-toggle').removeClass('open')
             .attr('aria-label', 'Abrir Menu');
+        $('.eme-nav-dropdown').removeClass('open');
+    });
+
+    // Alternar submenu de Projetos no clique/touch
+    $('.eme-dropdown-toggle').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $dropdown = $(this).closest('.eme-nav-dropdown');
+        $dropdown.toggleClass('open');
     });
 
     // Fechar menu ao clicar fora dele
@@ -22,6 +31,7 @@ jQuery(document).ready(function($) {
             $('.eme-main-nav').removeClass('active');
             $('.eme-mobile-toggle').removeClass('open')
                 .attr('aria-label', 'Abrir Menu');
+            $('.eme-nav-dropdown').removeClass('open');
         }
     });
 
