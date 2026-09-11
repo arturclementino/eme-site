@@ -68,7 +68,7 @@ function eme_handle_contact_submission() {
         $mensagem = "Solicitação de agendamento de visita presencial / contato enviado através da Página Inicial da EME.";
     }
 
-    $to = array('contato@escolaeme.com', 'coordenacao@escolaeme.com');
+    $to = array('contato@escolaeme.com');
     $subject = 'Nova Mensagem do Site EME: ' . $assunto;
     $body  = "Nova mensagem recebida através do site da EME (escolaeme.com):\n\n";
     $body .= "Nome: " . $nome . "\n";
@@ -90,7 +90,7 @@ function eme_handle_contact_submission() {
 
     $sent = @wp_mail($to, $subject, $body, $headers);
 
-    wp_send_json_success(array('message' => 'Obrigado! Sua mensagem foi recebida e enviada com sucesso para nossa equipe pedagógica (contato@escolaeme.com).'));
+    wp_send_json_success(array('message' => 'Obrigado! Sua mensagem foi recebida e enviada com sucesso para nossa equipe (contato@escolaeme.com).'));
 }
 
 // Forçar e-mail remetente oficial contato@escolaeme.com para todas as mensagens de sistema
@@ -138,14 +138,15 @@ add_action('init', function() {
     }
 });
 
-// 8. Otimizar e simplificar o título da aba no navegador
+// 8. Título super limpo, curto e elegante nas guias dos navegadores ("Página — EME")
 add_filter('document_title_parts', function($title) {
-    $title['site'] = 'Escola de Música Esperança — EME';
-    if (isset($title['tagline'])) {
-        unset($title['tagline']);
+    if (is_front_page() || is_home()) {
+        return array('title' => 'EME — Escola de Música Esperança');
     }
-    return $title;
+    $page_title = isset($title['title']) ? $title['title'] : '';
+    return array('title' => $page_title, 'site' => 'EME');
 }, 999);
+
 
 
 

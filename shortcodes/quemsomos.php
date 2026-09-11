@@ -87,10 +87,10 @@ function eme_shortcode_quemsomos($atts) {
 
                 <div class="eme-grid-2 eme-align-center" style="margin-top: 30px;">
                     <div class="eme-pedagogia-box">
-                        <div class="eme-pedagogia-badge">25 Horas Semanais de Coordenação</div>
-                        <h3>Acompanhamento Pedagógico Dedicado</h3>
+                        <div class="eme-pedagogia-badge">Acompanhamento Didático</div>
+                        <h3>Supervisão Pedagógica Contínua</h3>
                         <p>
-                            A coordenação pedagógica da EME dedica <strong>25 horas semanais</strong> ao acompanhamento direto dos professores e ao desenvolvimento contínuo dos alunos. Esse cuidado garante a padronização da qualidade didática, a evolução técnica individual e a continuidade do aprendizado ao longo dos módulos.
+                            A coordenação pedagógica da EME atua no acompanhamento próximo dos professores e no desenvolvimento individual de cada estudante. Esse cuidado garante a qualidade didática, a evolução técnica constante e a continuidade do aprendizado ao longo de todos os módulos.
                         </p>
                     </div>
                     <div class="eme-grid-2">

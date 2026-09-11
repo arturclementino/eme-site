@@ -38,7 +38,7 @@ function eme_shortcode_estudio($atts) {
                             <ul style="list-style: none; padding: 0; margin: 20px 0; line-height: 2; font-size: 14px; color: #333;">
                                 <li>✅ <strong>Bateria completa de estúdio</strong> (pratos, ferragens e caixas)</li>
                                 <li>✅ <strong>Amplificadores profissionais</strong> de guitarra e contrabaixo</li>
-                                <li>✅ <strong>Sistema de PA & Microfones</strong> para voz e acompanhamento</li>
+                                <li>✅ <strong>Sistema de Monitoramento 100% In-Ear (Fones)</strong> individualizado</li>
                                 <li>✅ <strong>Ambiente climatizado</strong> e isolamento de ruído externo</li>
                             </ul>
                         </div>
@@ -82,8 +82,8 @@ function eme_shortcode_estudio($atts) {
                 <div class="eme-grid-3">
                     <div class="eme-diff-card">
                         <div class="eme-diff-icon">🎙️</div>
-                        <h3>Microfonação & PA</h3>
-                        <p>Microfones condensadores de grande diafragma para voz e instrumentos acústicos, microfones dinâmicos de alta pressão e sistema de monitoramento.</p>
+                        <h3>Microfonação & Retorno In-Ear</h3>
+                        <p>Microfones condensadores de grande diafragma para voz e instrumentos acústicos, microfones dinâmicos de alta precisão e sistema de retorno 100% in-ear (fones).</p>
                     </div>
 
                     <div class="eme-diff-card">

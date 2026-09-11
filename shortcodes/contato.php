@@ -146,16 +146,16 @@ function eme_shortcode_contato($atts) {
                         </div>
 
                         <!-- Card Instagram Profissional -->
-                        <div class="eme-info-card" style="background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); color: #fff; border: none; padding: 24px; box-shadow: 0 10px 30px rgba(253, 29, 29, 0.25);">
-                            <div class="eme-info-icon" style="display: flex; align-items: center;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <div class="eme-info-card eme-instagram-card" style="background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%) !important; color: #FFFFFF !important; border: none !important; padding: 28px !important; border-radius: 16px !important; box-shadow: 0 10px 30px rgba(253, 29, 29, 0.25) !important;">
+                            <div class="eme-info-icon" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 32px !important; height: 32px !important;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                             </div>
                             <div class="eme-info-text">
-                                <h4 style="color: #ffffff !important; font-size: 18px; margin-bottom: 6px;">Siga a EME no Instagram</h4>
-                                <p style="color: rgba(255,255,255,0.92) !important; font-size: 13px; margin-bottom: 14px; line-height: 1.5;">Acompanhe bastidores de aulas, vídeos de alunos e novidades em nosso perfil oficial:</p>
-                                <a href="https://www.instagram.com/eme.esperanca/" target="_blank" rel="noopener noreferrer" class="eme-btn-primary" style="background: #ffffff; color: #833ab4 !important; font-weight: 700; border: none; padding: 10px 22px; font-size: 13px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); display: inline-flex; align-items: center; gap: 8px;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#833ab4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                                    <span>@eme.esperanca no Instagram</span>
+                                <h4 style="color: #FFFFFF !important; font-size: 18px !important; margin-bottom: 6px !important; font-weight: 700 !important;">Siga a EME no Instagram</h4>
+                                <p style="color: #FFFFFF !important; font-size: 14px !important; margin-bottom: 16px !important; line-height: 1.5 !important; opacity: 0.96 !important;">Acompanhe bastidores de aulas, vídeos de alunos e novidades em nosso perfil oficial:</p>
+                                <a href="https://www.instagram.com/eme.esperanca/" target="_blank" rel="noopener noreferrer" class="eme-btn-primary" style="background: #FFFFFF !important; color: #833ab4 !important; font-weight: 700 !important; border: none !important; padding: 10px 22px !important; font-size: 13px !important; box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important; display: inline-flex !important; align-items: center !important; gap: 8px !important;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#833ab4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px !important; height: 16px !important;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    <span style="color: #833ab4 !important; font-weight: 700 !important;">@eme.esperanca no Instagram</span>
                                 </a>
                             </div>
                         </div>

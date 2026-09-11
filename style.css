@@ -851,4 +851,37 @@ header:not(.eme-main-header),
     cursor: pointer !important;
 }
 
+/* Stats Bar Labels - Forced Pure White */
+.eme-stats-bar .eme-stat-label,
+.eme-stat-item .eme-stat-label,
+.eme-stat-label {
+    color: #FFFFFF !important;
+    opacity: 0.95 !important;
+    font-weight: 600 !important;
+}
+
+/* Instagram Card High Contrast Override */
+.eme-instagram-card,
+.eme-info-card.eme-instagram-card {
+    background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 16px !important;
+    padding: 28px !important;
+    box-shadow: 0 10px 30px rgba(253, 29, 29, 0.25) !important;
+}
+
+.eme-instagram-card h4,
+.eme-instagram-card p,
+.eme-instagram-card span {
+    color: #FFFFFF !important;
+}
+
+.eme-instagram-card a {
+    background: #FFFFFF !important;
+    color: #833ab4 !important;
+    font-weight: 700 !important;
+}
+
+
 

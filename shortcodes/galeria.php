@@ -11,39 +11,39 @@ if (!defined('ABSPATH')) {
 function eme_shortcode_galeria($atts) {
     $midias = [
         [
-            'titulo' => 'Sala Sebastian Bach (Pianos e Erudito)',
+            'titulo' => 'Sala Sebastian Bach',
             'categoria' => 'espaco',
             'cat_label' => 'Espaço Físico',
             'tipo' => 'foto',
             'url' => 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=800&q=80',
-            'legenda' => 'Salas climatizadas com isolamento acústico e iluminação adequada para aulas de piano.'
+            'legenda' => 'Salas climatizadas com isolamento acústico e iluminação adequada para aulas e práticas.'
         ],
         [
-            'titulo' => 'Sala Keith Green (Guitarras e Baixo)',
+            'titulo' => 'Sala Keith Green',
             'categoria' => 'espaco',
             'cat_label' => 'Espaço Físico',
             'tipo' => 'foto',
             'url' => 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80',
-            'legenda' => 'Equipada com amplificadores, violões e instrumentos elétricos para o treino diário.'
+            'legenda' => 'Equipada com estrutura completa e recursos de áudio para o estudo diário.'
         ],
         [
-            'titulo' => 'Sala Multiuso & Bateria',
+            'titulo' => 'Sala Didática Multiuso',
             'categoria' => 'espaco',
             'cat_label' => 'Espaço Físico',
             'tipo' => 'foto',
             'url' => 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80',
-            'legenda' => 'Estrutura reforçada para aulas de bateria, percussão e conjuntos rítmicos.'
+            'legenda' => 'Estrutura preparada para aulas práticas, percepção teórica e conjuntos.'
         ],
         [
-            'titulo' => 'Aula Prática de Violino Individual',
+            'titulo' => 'Aula Prática Individual',
             'categoria' => 'aulas',
             'cat_label' => 'Aulas em Andamento',
             'tipo' => 'foto',
             'url' => 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80',
-            'legenda' => 'Desenvolvimento da postura, técnica de arco e afinação com orientação individualizada.'
+            'legenda' => 'Desenvolvimento da postura, técnica e afinação com orientação pedagógica individualizada.'
         ],
         [
-            'titulo' => 'Ensaio de Prática de Conjunto e Banda',
+            'titulo' => 'Ensaio de Prática de Conjunto',
             'categoria' => 'aulas',
             'cat_label' => 'Aulas em Andamento',
             'tipo' => 'foto',
@@ -51,15 +51,15 @@ function eme_shortcode_galeria($atts) {
             'legenda' => 'Alunos aprendendo a tocar em grupo com ritmo, dinamismo e escuta coletiva.'
         ],
         [
-            'titulo' => 'Recitais de 10 e 11 de Junho de 2026',
+            'titulo' => 'Recitais EME',
             'categoria' => 'recitais',
-            'cat_label' => 'Recitais de Junho',
+            'cat_label' => 'Recitais & Audiações',
             'tipo' => 'foto',
             'url' => 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80',
-            'legenda' => 'Momento marcante do 1º semestre reunindo mais de 300 espectadores no auditório.'
+            'legenda' => 'Momento marcante reunindo alunos, famílias e comunidade em apresentações públicas.'
         ],
         [
-            'titulo' => 'Projeto Casa Aberta (Pocket Show ao Vivo)',
+            'titulo' => 'Projeto Casa Aberta',
             'categoria' => 'casa-aberta',
             'cat_label' => 'Projeto Casa Aberta',
             'tipo' => 'foto',
@@ -77,23 +77,15 @@ function eme_shortcode_galeria($atts) {
         ]
     ];
 
-    $instrumentos_doados = [
-        ['nome' => 'Teclado Korg X', 'desc' => 'Utilizado nas salas de prática e aulas de harmonia.'],
-        ['nome' => 'Violão Eagle CH800B', 'desc' => 'Utilizado no acompanhamento de aulas de violão popular.'],
-        ['nome' => 'Violino Blaver', 'desc' => 'Instrumento integrante do acervo de cordas da escola.'],
-        ['nome' => 'Amplificador Staner Bold 60', 'desc' => 'Utilizado nas aulas de guitarra e ensaios de banda.'],
-        ['nome' => 'Caixa Acústica WLS 8W', 'desc' => 'Sistema de sonorização para audições e Projeto Casa Aberta.']
-    ];
-
     ob_start();
     ?>
     <div class="eme-galeria-wrapper">
         <section class="eme-hero-sub">
             <div class="eme-container">
                 <span class="eme-badge-tag">Galeria Institucional</span>
-                <h1 class="eme-hero-title">Fotos, Vídeos & Acervo EME</h1>
+                <h1 class="eme-hero-title">Fotos, Vídeos & Estrutura EME</h1>
                 <p class="eme-hero-subtitle">
-                    Confira registros dos nossos espaços, audições, aulas e acervo de instrumentos doados pela comunidade.
+                    Confira registros dos nossos espaços, audições, aulas e vivência comunitária.
                 </p>
             </div>
         </section>
@@ -105,7 +97,7 @@ function eme_shortcode_galeria($atts) {
                     <button class="eme-filter-btn active" data-gallery-filter="all">Todos os Registros</button>
                     <button class="eme-filter-btn" data-gallery-filter="espaco">Espaço Físico</button>
                     <button class="eme-filter-btn" data-gallery-filter="aulas">Aulas em Andamento</button>
-                    <button class="eme-filter-btn" data-gallery-filter="recitais">Recitais de Junho</button>
+                    <button class="eme-filter-btn" data-gallery-filter="recitais">Recitais</button>
                     <button class="eme-filter-btn" data-gallery-filter="casa-aberta">Projeto Casa Aberta</button>
                     <button class="eme-filter-btn" data-gallery-filter="videos">Vídeos</button>
                 </div>
@@ -127,24 +119,6 @@ function eme_shortcode_galeria($atts) {
                             </div>
                         </div>
                     <?php endforeach; ?>
-                </div>
-
-                <!-- Destaque: Instrumentos Doados pela Comunidade -->
-                <div class="eme-doacoes-box" style="margin-top: 60px;">
-                    <h3 class="eme-section-title text-left">Instrumentos Doados pela Comunidade</h3>
-                    <div class="eme-divider divider-left"></div>
-                    <p style="margin-bottom: 25px; color: #555;">
-                        Agradecemos aos parceiros e membros da comunidade que contribuíram para o fortalecimento do nosso acervo. Estes instrumentos estão à disposição dos alunos para estudo e ensaios:
-                    </p>
-                    <div class="eme-grid-3">
-                        <?php foreach ($instrumentos_doados as $inst): ?>
-                            <div class="eme-doacao-card">
-                                <div class="eme-doacao-icon">🎁</div>
-                                <h4><?php echo esc_html($inst['nome']); ?></h4>
-                                <p><?php echo esc_html($inst['desc']); ?></p>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
                 </div>
             </div>
         </section>
