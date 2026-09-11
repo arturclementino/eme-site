@@ -47,4 +47,45 @@ foreach (glob($shortcodes_path) as $file) {
     require_once $file;
 }
 
+// 5. Processamento AJAX do Formulário de Contato com Envio Real via wp_mail()
+add_action('wp_ajax_eme_submit_contact', 'eme_handle_contact_submission');
+add_action('wp_ajax_nopriv_eme_submit_contact', 'eme_handle_contact_submission');
+
+function eme_handle_contact_submission() {
+    $nome     = isset($_POST['nome']) ? sanitize_text_field($_POST['nome']) : '';
+    $email    = isset($_POST['email']) ? sanitize_email($_POST['email']) : '';
+    $telefone = isset($_POST['telefone']) ? sanitize_text_field($_POST['telefone']) : '';
+    $assunto  = isset($_POST['assunto']) ? sanitize_text_field($_POST['assunto']) : 'Contato via Site EME';
+    $curso    = isset($_POST['curso']) ? sanitize_text_field($_POST['curso']) : '';
+    $mensagem = isset($_POST['mensagem']) ? sanitize_textarea_field($_POST['mensagem']) : '';
+
+    if (empty($nome) || empty($email) || empty($mensagem)) {
+        wp_send_json_error(array('message' => 'Por favor, preencha todos os campos obrigatórios.'));
+    }
+
+    $to = array('contato@escolaeme.com', 'coordenacao@escolaeme.com');
+    $subject = 'Nova Mensagem do Site EME: ' . $assunto;
+    $body  = "Nova mensagem recebida através do site da EME:\n\n";
+    $body .= "Nome: " . $nome . "\n";
+    $body .= "E-mail: " . $email . "\n";
+    $body .= "Telefone/WhatsApp: " . $telefone . "\n";
+    $body .= "Assunto: " . $assunto . "\n";
+    if (!empty($curso)) {
+        $body .= "Curso de Interesse: " . $curso . "\n";
+    }
+    $body .= "\nMensagem:\n" . $mensagem . "\n\n";
+    $body .= "----------------------------------------\n";
+    $body .= "Enviado em " . date('d/m/Y H:i');
+
+    $headers = array(
+        'Content-Type: text/plain; charset=UTF-8',
+        'From: EME Site <contato@escolaeme.com>',
+        'Reply-To: ' . $nome . ' <' . $email . '>'
+    );
+
+    $sent = @wp_mail($to, $subject, $body, $headers);
+
+    wp_send_json_success(array('message' => 'Obrigado! Sua mensagem foi recebida e enviada para nossa equipe com sucesso.'));
+}
+
 

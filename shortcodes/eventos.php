@@ -19,7 +19,8 @@ function eme_shortcode_eventos($atts) {
             'publico' => 'Comunidade (Entrada Aberta)',
             'desc' => 'Pocket show intimista com música ao vivo, gastronomia e apresentação de alunos e professores da EME. Um momento de celebração e integração comunitária.',
             'img' => 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=80',
-            'sympla_url' => 'https://www.sympla.com.br/evento/i-casa-aberta/3542927'
+            'sympla_url' => 'https://www.sympla.com.br/evento/i-casa-aberta/3542927',
+            'status' => 'disponivel'
         ],
         [
             'titulo' => '2º Módulo de Harmonia Funcional',
@@ -30,7 +31,8 @@ function eme_shortcode_eventos($atts) {
             'publico' => 'Instrumentistas Intermediários e Avançados',
             'desc' => 'Ministrado pelo Prof. João Camilo. Aprofundamento em rearmonização, modulação, campo harmônico menor e substitutos harmônicos com prática aplicada.',
             'img' => 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80',
-            'sympla_url' => 'https://www.sympla.com.br/evento/2o-modulo-de-harmonia-funcional/3558329'
+            'sympla_url' => 'https://www.sympla.com.br/evento/2o-modulo-de-harmonia-funcional/3558329',
+            'status' => 'disponivel'
         ],
         [
             'titulo' => 'Workshop Prático de Bateria',
@@ -41,29 +43,20 @@ function eme_shortcode_eventos($atts) {
             'publico' => 'Bateristas, Percussionistas e Estudantes',
             'desc' => 'Ministrado pelo Prof. Rodrigo Leles. Afinação de peles, dinâmicas de estúdio, regulagem de hardware e mecânica da bateria para gravações e palco.',
             'img' => 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=600&q=80',
-            'sympla_url' => 'https://www.sympla.com.br/evento/workshop-pratico-de-bateria/3551649'
+            'sympla_url' => 'https://www.sympla.com.br/evento/workshop-pratico-de-bateria/3551649',
+            'status' => 'disponivel'
         ],
         [
-            'titulo' => 'Recitais do 2º Semestre EME 2026',
-            'data' => '10 e 11 de Novembro, 2026',
+            'titulo' => 'Recitais do 2º Semestre EME',
+            'data' => '10 e 11 de Novembro',
             'horario' => '19:00 - 21:30',
             'local' => 'Igreja Esperança campus Castelo',
             'categoria' => 'Recital Semestral',
-            'publico' => 'Alunos, Familiares e Comunidade (Meta: 450 espectadores)',
-            'desc' => 'Os recitais são o principal momento de apresentação dos alunos da EME. Promovemos a integração de turmas solo e conjuntos em uma noite inesquecível.',
+            'publico' => 'Alunos, Familiares e Comunidade',
+            'desc' => 'Grande audição semestral com apresentações solo e turmas de conjunto dos alunos da EME. Ingressos disponíveis no Sympla em breve.',
             'img' => 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80',
-            'sympla_url' => 'https://www.sympla.com.br/produtor/escolaeme'
-        ],
-        [
-            'titulo' => 'Workshop: Desvendando o Timbre da Guitarra',
-            'data' => 'Programação 2º Semestre 2026',
-            'horario' => 'Duração: 2 horas',
-            'local' => 'Sede EME',
-            'categoria' => 'Workshop Prático',
-            'publico' => 'Guitarristas e Músicos de Igrejas/Bandas',
-            'desc' => 'Demonstrações práticas de programação de pedaleiras digitais e pedais analógicos para palcos e igrejas.',
-            'img' => 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80',
-            'sympla_url' => 'https://www.sympla.com.br/produtor/escolaeme'
+            'sympla_url' => 'https://www.sympla.com.br/produtor/escolaeme',
+            'status' => 'em_breve'
         ]
     ];
 
@@ -90,24 +83,24 @@ function eme_shortcode_eventos($atts) {
                 <span class="eme-badge-tag">Programação Cultural & Workshops</span>
                 <h1 class="eme-hero-title">Eventos e Recitais EME</h1>
                 <p class="eme-hero-subtitle">
-                    Acompanhe nossa agenda de apresentações públicas, oficinas técnicas e cursos. Garanta sua vaga com segurança pelo Sympla!
+                    Acompanhe nossa agenda de apresentações públicas, oficinas técnicas e cursos. Inscrições e ingressos oficiais pelo Sympla.
                 </p>
             </div>
         </section>
 
-        <!-- Sympla Integration Banner -->
-        <section class="eme-sympla-banner-section" style="background: linear-gradient(135deg, #00d26a 0%, #00994d 100%); color: #fff; padding: 45px 0; margin-bottom: 20px;">
+        <!-- Sympla Integration Banner (Visual Identity EME) -->
+        <section class="eme-sympla-banner-section" style="background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde) 100%); color: #fff; padding: 40px 0; margin-bottom: 30px; border-bottom: 3px solid var(--terracota);">
             <div class="eme-container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
                 <div style="max-width: 650px;">
-                    <span style="background: rgba(255,255,255,0.2); padding: 5px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">🎟️ Bilheteria Oficial Sympla</span>
-                    <h2 style="font-size: 1.8rem; font-weight: 700; margin: 12px 0 8px; color: #ffffff;">Inscrições & Ingressos Abertos no Sympla</h2>
-                    <p style="font-size: 1rem; opacity: 0.95; margin: 0; line-height: 1.5;">
-                        Todos os ingressos para recitais, vagas para workshops e inscrições em cursos complementares da EME são disponibilizados oficialmente em nossa plataforma Sympla.
+                    <span style="background: rgba(193, 123, 74, 0.25); color: var(--ambar-ouro); border: 1px solid rgba(229, 169, 60, 0.4); padding: 5px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">🎟️ Bilheteria Oficial Sympla</span>
+                    <h2 style="font-size: 1.8rem; font-weight: 700; margin: 12px 0 8px; color: #ffffff;">Bilheteria & Inscrições EME no Sympla</h2>
+                    <p style="font-size: 0.95rem; opacity: 0.92; margin: 0; line-height: 1.6; color: #fdfbf7;">
+                        Garanta sua presença em nossos workshops, cursos complementares e recitais através do perfil produtor oficial da EME.
                     </p>
                 </div>
                 <div>
-                    <a href="https://www.sympla.com.br/produtor/escolaeme" target="_blank" rel="noopener noreferrer" class="eme-btn-primary" style="background: #ffffff; color: #008040; border: none; font-weight: 700; font-size: 1rem; padding: 14px 28px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-                        Ver Perfil Oficial EME no Sympla 🎟️
+                    <a href="https://www.sympla.com.br/produtor/escolaeme" target="_blank" rel="noopener noreferrer" class="eme-btn-primary">
+                        Perfil Oficial EME no Sympla 🎟️
                     </a>
                 </div>
             </div>
@@ -116,13 +109,14 @@ function eme_shortcode_eventos($atts) {
         <!-- Próximos Eventos -->
         <section class="eme-section">
             <div class="eme-container">
-                <h2 class="eme-section-title">Próximos Eventos & Inscrições Abertas</h2>
+                <h2 class="eme-section-title">Agenda de Eventos</h2>
                 <div class="eme-divider"></div>
-                <p class="eme-section-desc">Clique para garantir seu ingresso ou realizar sua inscrição diretamente no Sympla.</p>
+                <p class="eme-section-desc">Confira os eventos com inscrições abertas ou programação confirmada.</p>
 
                 <div class="eme-events-list">
                     <?php foreach ($proximos_eventos as $evt): 
                         $sympla_link = isset($evt['sympla_url']) ? $evt['sympla_url'] : 'https://www.sympla.com.br/produtor/escolaeme';
+                        $is_em_breve = (isset($evt['status']) && $evt['status'] === 'em_breve');
                     ?>
                         <div class="eme-event-card">
                             <div class="eme-event-img">
@@ -139,9 +133,15 @@ function eme_shortcode_eventos($atts) {
                                 <p><?php echo esc_html($evt['desc']); ?></p>
                                 <div class="eme-event-footer">
                                     <span class="eme-event-target">👥 Público: <?php echo esc_html($evt['publico']); ?></span>
-                                    <a href="<?php echo esc_url($sympla_link); ?>" target="_blank" rel="noopener noreferrer" class="eme-btn-primary" style="background: #ff5a00; border-color: #ff5a00;">
-                                        Inscrever-se no Sympla 🎟️
-                                    </a>
+                                    <?php if ($is_em_breve): ?>
+                                        <a href="<?php echo esc_url($sympla_link); ?>" target="_blank" rel="noopener noreferrer" class="eme-btn-outline" style="opacity: 0.9; cursor: pointer;">
+                                            Em Breve no Sympla ⏳
+                                        </a>
+                                    <?php else: ?>
+                                        <a href="<?php echo esc_url($sympla_link); ?>" target="_blank" rel="noopener noreferrer" class="eme-btn-primary">
+                                            Garantir Vaga no Sympla 🎟️
+                                        </a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>

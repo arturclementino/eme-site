@@ -35,13 +35,11 @@ if (!defined('ABSPATH')) {
                 <ul class="eme-footer-links">
                     <li><a href="<?php echo esc_url(home_url('/')); ?>">Início</a></li>
                     <li><a href="<?php echo esc_url(home_url('/quem-somos')); ?>">Quem Somos</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/aulas')); ?>">Aulas & Cursos</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/aulas')); ?>">Aulas</a></li>
                     <li><a href="<?php echo esc_url(home_url('/professores')); ?>">Professores</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/eventos')); ?>">Eventos & Recitais</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/amigos-da-eme')); ?>">Amigos da EME</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/estudio')); ?>">Estúdio & Gravações</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/galeria')); ?>">Galeria de Fotos & Vídeos</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/contato')); ?>">Fale Conosco</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/eventos')); ?>">Eventos</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/projetos')); ?>">Projetos</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/contato')); ?>">Contato</a></li>
                 </ul>
             </div>
 
@@ -52,8 +50,6 @@ if (!defined('ABSPATH')) {
                     <li>📍 Rua Bonaparte, 86 — Padre Eustáquio, Belo Horizonte / MG</li>
                     <li>📱 WhatsApp: <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20EME." target="_blank">(31) 98420-1358</a></li>
                     <li>✉️ <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a></li>
-                    <li>✉️ <a href="mailto:coordenacao@escolaeme.com">coordenacao@escolaeme.com</a></li>
-                    <li>✉️ <a href="mailto:financeiro@escolaeme.com">financeiro@escolaeme.com</a></li>
                     <li>⏰ Segunda a sexta, 8h às 22h</li>
                 </ul>
             </div>

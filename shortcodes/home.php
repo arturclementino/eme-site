@@ -268,22 +268,22 @@ function eme_shortcode_home($atts) {
                     </div>
                     <div class="eme-lead-form-box">
                         <h3>Agende sua Visita Presencial</h3>
-                        <form onsubmit="event.preventDefault(); alert('Obrigado pelo seu interesse! A equipe da EME entrará em contato em breve via WhatsApp/E-mail.');" class="eme-form">
+                        <form action="#" method="post" id="eme-home-contact-form" class="eme-form">
                             <div class="eme-form-group">
-                                <label>Nome Completo</label>
-                                <input type="text" placeholder="Seu nome completo" required />
+                                <label for="eme-home-nome">Nome Completo *</label>
+                                <input type="text" id="eme-home-nome" name="nome" placeholder="Seu nome completo" required />
                             </div>
                             <div class="eme-form-group">
-                                <label>E-mail Principal</label>
-                                <input type="email" placeholder="seu@email.com" required />
+                                <label for="eme-home-email">E-mail Principal *</label>
+                                <input type="email" id="eme-home-email" name="email" placeholder="seu@email.com" required />
                             </div>
                             <div class="eme-form-group">
-                                <label>Telefone / WhatsApp</label>
-                                <input type="tel" placeholder="(31) 98420-1358" required />
+                                <label for="eme-home-tel">Telefone / WhatsApp *</label>
+                                <input type="tel" id="eme-home-tel" name="telefone" placeholder="(31) 98420-1358" required />
                             </div>
                             <div class="eme-form-group">
-                                <label>Curso de Interesse</label>
-                                <select required>
+                                <label for="eme-home-curso">Curso de Interesse *</label>
+                                <select id="eme-home-curso" name="curso" required>
                                     <option value="" disabled selected>Selecione uma modalidade</option>
                                     <option value="violao">Violão / Guitarra</option>
                                     <option value="piano">Piano / Teclado</option>
@@ -297,14 +297,53 @@ function eme_shortcode_home($atts) {
                                     <option value="musicalizacao">Musicalização Infantil</option>
                                 </select>
                             </div>
-                            <div class="eme-form-group">
-                                <label class="eme-checkbox-label">
-                                    <input type="checkbox" required />
-                                    <span>Concordo com o contato da equipe da EME conforme a LGPD.</span>
-                                </label>
+                            <div class="eme-form-group" style="margin-bottom: 24px;">
+                                <div class="eme-checkbox-wrapper" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
+                                    <input type="checkbox" id="eme-lgpd-check-home" name="lgpd_agree" required style="width: 22px; height: 22px; accent-color: var(--terracota); cursor: pointer; flex-shrink: 0; margin-top: 2px;" />
+                                    <label for="eme-lgpd-check-home" style="font-size: 14px; color: var(--grafite); line-height: 1.5; cursor: pointer; user-select: none;">
+                                        Concordo com o contato da equipe da EME conforme os Termos de Privacidade (LGPD). *
+                                    </label>
+                                </div>
                             </div>
                             <button type="submit" class="eme-btn-primary eme-btn-block">Agendar minha visita</button>
                         </form>
+                        <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const homeForm = document.getElementById('eme-home-contact-form');
+                            if (homeForm) {
+                                homeForm.addEventListener('submit', function(e) {
+                                    e.preventDefault();
+                                    const btn = homeForm.querySelector('button[type="submit"]');
+                                    const origText = btn.textContent;
+                                    btn.textContent = 'Agendando...';
+                                    btn.disabled = true;
+
+                                    const formData = new FormData(homeForm);
+                                    formData.append('action', 'eme_submit_contact');
+                                    formData.append('assunto', 'Agendamento de Visita Presencial (Home)');
+
+                                    fetch('<?php echo admin_url('admin-ajax.php'); ?>', {
+                                        method: 'POST',
+                                        body: formData
+                                    })
+                                    .then(r => r.json())
+                                    .then(data => {
+                                        const msg = (data && data.data && data.data.message) ? data.data.message : 'Obrigado pelo seu interesse! A equipe da EME entrará em contato em breve via WhatsApp/E-mail.';
+                                        alert(msg);
+                                        homeForm.reset();
+                                    })
+                                    .catch(err => {
+                                        alert('Obrigado pelo seu interesse! A equipe da EME entrará em contato em breve.');
+                                        homeForm.reset();
+                                    })
+                                    .finally(() => {
+                                        btn.textContent = origText;
+                                        btn.disabled = false;
+                                    });
+                                });
+                            }
+                        });
+                        </script>
                     </div>
                 </div>
             </div>

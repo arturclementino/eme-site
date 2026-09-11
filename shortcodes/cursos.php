@@ -118,7 +118,7 @@ function eme_shortcode_cursos($atts) {
                         $wa_msg = urlencode("Olá! Gostaria de mais informações sobre as aulas de " . $c['titulo'] . " na EME.");
                         $wa_link = "https://wa.me/5531984201358?text=" . $wa_msg;
                     ?>
-                        <div class="eme-aula-card" data-cat="<?php echo esc_attr($c['cat']); ?>">
+                        <div class="eme-aula-card" data-cat="<?php echo esc_attr($c['cat']); ?>" data-category="<?php echo esc_attr($c['cat']); ?>">
                             <div class="eme-aula-header">
                                 <span class="eme-aula-icon"><?php echo esc_html($c['icon']); ?></span>
                                 <span class="eme-aula-cat-badge"><?php echo esc_html(strtoupper($c['cat'])); ?></span>

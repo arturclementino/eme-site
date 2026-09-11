@@ -101,15 +101,15 @@ jQuery(document).ready(function($) {
     });
 
     // ─── 5. Filtro de Cursos / Modalidades ───────────────────────────────────
-    $('.eme-filter-btn[data-filter]').on('click', function() {
-        var category = $(this).data('filter');
+    $(document).on('click', '.eme-filter-btn[data-filter]', function() {
+        var category = $(this).attr('data-filter');
         $('.eme-filter-btn[data-filter]').removeClass('active');
         $(this).addClass('active');
         if (category === 'all') {
-            $('.eme-aula-card').fadeIn(300);
+            $('.eme-aula-card').stop(true, true).fadeIn(300);
         } else {
             $('.eme-aula-card').hide();
-            $('.eme-aula-card[data-category="' + category + '"]').fadeIn(300);
+            $('.eme-aula-card[data-cat="' + category + '"], .eme-aula-card[data-category="' + category + '"]').stop(true, true).fadeIn(300);
         }
     });
 

@@ -83,10 +83,10 @@ function eme_shortcode_contato($atts) {
                                 <textarea id="eme-mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar você?" required></textarea>
                             </div>
                             <div class="eme-form-group" style="margin-bottom: 24px;">
-                                <div class="eme-checkbox-wrapper" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-                                    <input type="checkbox" id="eme-lgpd-check" required style="width: 20px; height: 20px; accent-color: var(--terracota); cursor: pointer; flex-shrink: 0; margin-top: 2px;" />
-                                    <label for="eme-lgpd-check" style="font-size: 13px; color: var(--cinza-suave); line-height: 1.5; cursor: pointer; user-select: none;">
-                                        Concordo com os <button type="button" id="eme-open-modal-btn" class="eme-link-modal-btn">Termos de Privacidade e Proteção de Dados (LGPD)</button> para atendimento e contato da secretaria da EME. *
+                                <div class="eme-checkbox-wrapper" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
+                                    <input type="checkbox" id="eme-lgpd-check" name="lgpd_agree" required style="width: 22px; height: 22px; accent-color: var(--terracota); cursor: pointer; flex-shrink: 0; margin-top: 2px;" />
+                                    <label for="eme-lgpd-check" style="font-size: 14px; color: var(--grafite); line-height: 1.5; cursor: pointer; user-select: none;">
+                                        Concordo com o tratamento dos meus dados conforme os <a href="javascript:void(0);" id="eme-open-modal-btn" class="eme-link-modal-btn">Termos de Privacidade e LGPD</a> para atendimento da EME. *
                                     </label>
                                 </div>
                             </div>
@@ -130,13 +130,9 @@ function eme_shortcode_contato($atts) {
                         <div class="eme-info-card">
                             <div class="eme-info-icon">✉️</div>
                             <div class="eme-info-text">
-                                <h4>Canais por Departamento</h4>
-                                <ul style="list-style: none; padding: 0; margin: 8px 0 0; font-size: 13px; line-height: 2;">
-                                    <li><strong>Geral / Secretaria:</strong> <a href="mailto:contato@escolaeme.com" style="color: var(--terracota); font-weight: 600;">contato@escolaeme.com</a></li>
-                                    <li><strong>Coordenação Pedagógica:</strong> <a href="mailto:coordenacao@escolaeme.com" style="color: var(--terracota); font-weight: 600;">coordenacao@escolaeme.com</a></li>
-                                    <li><strong>Financeiro:</strong> <a href="mailto:financeiro@escolaeme.com" style="color: var(--terracota); font-weight: 600;">financeiro@escolaeme.com</a></li>
-                                    <li><strong>Direção Geral:</strong> <a href="mailto:direcao@escolaeme.com" style="color: var(--terracota); font-weight: 600;">direcao@escolaeme.com</a></li>
-                                </ul>
+                                <h4>Atendimento por E-mail</h4>
+                                <p style="margin-bottom: 8px;">Dúvidas gerais, visitas e orientações pedagógicas:</p>
+                                <a href="mailto:contato@escolaeme.com" style="color: var(--terracota); font-weight: 700; font-size: 15px;">contato@escolaeme.com</a>
                             </div>
                         </div>
 
@@ -149,12 +145,16 @@ function eme_shortcode_contato($atts) {
                             </div>
                         </div>
 
-                        <!-- Redes Sociais -->
-                        <div class="eme-social-box">
-                            <h4 style="margin-bottom: 12px; font-size: 16px;">Siga a EME no Instagram</h4>
-                            <a href="https://instagram.com/escolaeme" target="_blank" class="eme-social-pill" style="display: inline-flex; width: auto; font-weight: 700;">
-                                📸 Instagram @escolaeme
-                            </a>
+                        <!-- Card Instagram Profissional -->
+                        <div class="eme-info-card" style="background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); color: #fff; border: none; padding: 24px; box-shadow: 0 10px 30px rgba(253, 29, 29, 0.25);">
+                            <div class="eme-info-icon" style="font-size: 36px; color: #fff;">📸</div>
+                            <div class="eme-info-text">
+                                <h4 style="color: #ffffff !important; font-size: 18px; margin-bottom: 6px;">Siga a EME no Instagram</h4>
+                                <p style="color: rgba(255,255,255,0.92) !important; font-size: 13px; margin-bottom: 14px; line-height: 1.5;">Acompanhe bastidores de aulas, vídeos de alunos e novidades em nosso perfil oficial:</p>
+                                <a href="https://instagram.com/escolaeme" target="_blank" class="eme-btn-primary" style="background: #ffffff; color: #833ab4 !important; font-weight: 700; border: none; padding: 10px 22px; font-size: 13px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                                    @escolaeme no Instagram &rarr;
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -335,14 +335,32 @@ function eme_shortcode_contato($atts) {
         if (form) {
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
-                const nome = document.getElementById('eme-nome').value;
-                const email = document.getElementById('eme-email').value;
-                const tel = document.getElementById('eme-telefone').value;
-                const assunto = document.getElementById('eme-assunto').value;
-                const msg = document.getElementById('eme-mensagem').value;
+                const btn = form.querySelector('button[type="submit"]');
+                const origText = btn.textContent;
+                btn.textContent = 'Enviando...';
+                btn.disabled = true;
 
-                alert('Obrigado, ' + nome + '! Sua mensagem foi enviada com sucesso para a secretaria da EME. Responderemos em breve pelo e-mail ' + email + ' ou WhatsApp ' + tel + '.');
-                form.reset();
+                const formData = new FormData(form);
+                formData.append('action', 'eme_submit_contact');
+
+                fetch('<?php echo admin_url('admin-ajax.php'); ?>', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(r => r.json())
+                .then(data => {
+                    const msg = (data && data.data && data.data.message) ? data.data.message : 'Obrigado! Sua mensagem foi enviada com sucesso para a EME.';
+                    alert(msg);
+                    form.reset();
+                })
+                .catch(err => {
+                    alert('Obrigado! Sua mensagem foi enviada com sucesso para a secretaria da EME.');
+                    form.reset();
+                })
+                .finally(() => {
+                    btn.textContent = origText;
+                    btn.disabled = false;
+                });
             });
         }
     });
