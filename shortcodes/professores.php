@@ -38,6 +38,15 @@ function eme_shortcode_professores($atts) {
             'foto_style' => 'object-fit: cover !important; object-position: center 15% !important;'
         ],
         [
+            'nome' => 'Ayelén Pacheco',
+            'instr' => 'Canto Lírico, Canto Popular & Expressão Cênica / Teatro',
+            'form' => 'Bacharelado em Canto Lírico (ESMU-UEMG - 7º Período) e Canto Erudito (CEFART - Palácio das Artes).',
+            'bio' => 'Soprano argentina residente no Brasil desde 2011. Corista do naipe de Sopranos 1 do Coral Ars Nova da UFMG desde 2023, atuou em óperas renomadas no Palácio das Artes (Suor Angélica, Dido e Aeneas) e como solista convidada no CIAAR/FAB. Professora de canto e teatro desde 2019, desenvolve pesquisa acadêmica em "Artes Cênicas para Músicos", unindo expressão vocal e presença de palco.',
+            'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/ayelen.png',
+            'foto_class' => 'eme-img-ayelen',
+            'foto_style' => 'object-fit: cover !important; object-position: center 15% !important;'
+        ],
+        [
             'nome' => 'Bruna Garcia',
             'instr' => 'Piano Erudito e Popular',
             'form' => 'Bacharelado em Música com habilitação em Piano pela UEMG.',
@@ -128,6 +137,15 @@ function eme_shortcode_professores($atts) {
             'foto_style' => 'object-fit: cover !important; object-position: center 20% !important;'
         ],
         [
+            'nome' => 'Roberta Fernandes',
+            'instr' => 'Canto & Pedagogia Vocal',
+            'form' => 'Licenciatura em Música (Canto - UFOP) e Pós-Graduada em Canto e Pedagogia Vocal (Instituto JK).',
+            'bio' => 'Cantora e educadora vocal com atuação docente desde 2024. Graduada pela UFOP e pós-graduada em Pedagogia Vocal, leciona para alunos iniciantes a avançados (dos 13 aos 80 anos) em gêneros como gospel, pop, rock e erudito. Atuou em projetos operísticos como Don Giovanni, La Clemenza di Tito e Le Nozze di Figaro no Teatro da Ópera de Ouro Preto.',
+            'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/roberta-fernandes.jpeg',
+            'foto_class' => 'eme-img-roberta',
+            'foto_style' => 'object-fit: cover !important; object-position: center 15% !important;'
+        ],
+        [
             'nome' => 'Rodrigo Leles',
             'instr' => 'Bateria & Percussão',
             'form' => 'Baterista há 25 anos, professor há 18 anos. Prêmio BDMG Jovem Instrumentista (2015).',
@@ -180,7 +198,7 @@ function eme_shortcode_professores($atts) {
         <!-- Hero Sub-header -->
         <section class="eme-hero-sub">
             <div class="eme-container">
-                <span class="eme-badge-tag">Corpo Docente EME (18 Professores)</span>
+                <span class="eme-badge-tag">Corpo Docente EME (20 Professores)</span>
                 <h1 class="eme-hero-title">Nossos Professores</h1>
                 <p class="eme-hero-subtitle">
                     Músicos e educadores altamente capacitados, apaixonados pela arte de ensinar e transformar vidas através da música.
@@ -193,7 +211,7 @@ function eme_shortcode_professores($atts) {
                 <!-- Introdução Institucional -->
                 <div class="eme-prof-intro-box">
                     <p class="eme-prof-intro-text">
-                        O corpo docente da Escola de Música Esperança é composto por <strong>18 professores qualificados</strong> com formação acadêmica (bacharéis, licenciados e mestres) e vasta vivência de palco, orquestras e estúdios. Conheça a trajetória de quem faz a música acontecer na EME:
+                        O corpo docente da Escola de Música Esperança é composto por <strong>20 professores qualificados</strong> com formação acadêmica (bacharéis, licenciados e mestres) e vasta vivência de palco, orquestras e estúdios. Conheça a trajetória de quem faz a música acontecer na EME:
                     </p>
                 </div>
 

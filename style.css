@@ -214,6 +214,62 @@ header:not(.eme-main-header),
     transform-origin: left !important;
 }
 
+/* Dropdown Menu "Projetos" */
+.eme-nav-dropdown {
+    position: relative !important;
+}
+
+.eme-dropdown-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+.eme-dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background: #FFFFFF !important;
+    border: 1px solid var(--cinza-borda) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 30px rgba(15, 46, 35, 0.15) !important;
+    padding: 8px 0 !important;
+    min-width: 240px !important;
+    list-style: none !important;
+    display: none !important;
+    z-index: 1010 !important;
+    margin-top: 4px !important;
+}
+
+.eme-nav-dropdown:hover .eme-dropdown-menu,
+.eme-nav-dropdown:focus-within .eme-dropdown-menu {
+    display: block !important;
+}
+
+.eme-dropdown-menu li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.eme-dropdown-menu a {
+    display: block !important;
+    padding: 10px 18px !important;
+    color: var(--verde-escuro) !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    transition: background 0.2s ease, color 0.2s ease !important;
+}
+
+.eme-dropdown-menu a:hover {
+    background: var(--off-white-escuro) !important;
+    color: var(--terracota) !important;
+}
+
+.eme-dropdown-menu a::after {
+    display: none !important;
+}
+
 .eme-header-btn {
     padding: 11px 24px !important;
     font-size: 13px !important;
@@ -442,4 +498,6 @@ header:not(.eme-main-header),
 .eme-img-samuel { object-position: center 2% !important; }
 .eme-img-sandra { object-position: center 2% !important; }
 .eme-img-talita { object-position: center 15% !important; }
+.eme-img-ayelen { object-position: center 15% !important; }
+.eme-img-roberta { object-position: center 15% !important; }
 
