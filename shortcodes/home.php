@@ -298,12 +298,12 @@ function eme_shortcode_home($atts) {
                                 </select>
                             </div>
                             <div class="eme-form-group" style="margin-bottom: 24px;">
-                                <div class="eme-checkbox-wrapper" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
-                                    <input type="checkbox" id="eme-lgpd-check-home" name="lgpd_agree" required style="width: 22px; height: 22px; accent-color: var(--terracota); cursor: pointer; flex-shrink: 0; margin-top: 2px;" />
-                                    <label for="eme-lgpd-check-home" style="font-size: 14px; color: var(--grafite); line-height: 1.5; cursor: pointer; user-select: none;">
-                                        Concordo com o contato da equipe da EME conforme os Termos de Privacidade (LGPD). *
-                                    </label>
-                                </div>
+                                <label class="eme-checkbox-label" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; margin: 0; padding: 4px 0; width: 100%;">
+                                    <input type="checkbox" id="eme-lgpd-check-home" name="lgpd_agree" required style="width: 22px; height: 22px; min-width: 22px; min-height: 22px; accent-color: #C17B4A; cursor: pointer; flex-shrink: 0; margin-top: 2px; opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; display: inline-block !important; -webkit-appearance: checkbox !important; appearance: checkbox !important; z-index: 10 !important;" />
+                                    <span style="font-size: 14px; color: #111827; font-weight: 600; line-height: 1.5; cursor: pointer;">
+                                        Concordo com o contato da equipe da EME conforme os <a href="<?php echo esc_url(home_url('/contato')); ?>" target="_blank" style="color: #C17B4A; font-weight: 700; text-decoration: underline;" onclick="event.stopPropagation();">Termos de Privacidade (LGPD)</a>. *
+                                    </span>
+                                </label>
                             </div>
                             <button type="submit" class="eme-btn-primary eme-btn-block">Agendar minha visita</button>
                         </form>

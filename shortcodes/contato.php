@@ -83,12 +83,12 @@ function eme_shortcode_contato($atts) {
                                 <textarea id="eme-mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar você?" required></textarea>
                             </div>
                             <div class="eme-form-group" style="margin-bottom: 24px;">
-                                <div class="eme-lgpd-box" style="display: flex; align-items: center; gap: 12px; cursor: pointer; padding: 6px 0;">
-                                    <input type="checkbox" id="eme-lgpd-check" name="lgpd_agree" required style="width: 22px; height: 22px; min-width: 22px; min-height: 22px; cursor: pointer; accent-color: var(--terracota); margin: 0; pointer-events: auto !important;" />
-                                    <label for="eme-lgpd-check" style="font-size: 14px; color: var(--grafite); line-height: 1.5; cursor: pointer; user-select: none; margin: 0;">
-                                        Concordo com os <span id="eme-open-modal-btn" class="eme-link-modal-btn">Termos de Privacidade e LGPD</span> para atendimento da EME. *
-                                    </label>
-                                </div>
+                                <label class="eme-checkbox-label" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; margin: 0; padding: 4px 0; width: 100%;">
+                                    <input type="checkbox" id="eme-lgpd-check" name="lgpd_agree" required style="width: 22px; height: 22px; min-width: 22px; min-height: 22px; accent-color: #C17B4A; cursor: pointer; flex-shrink: 0; margin-top: 2px; opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; display: inline-block !important; -webkit-appearance: checkbox !important; appearance: checkbox !important; z-index: 10 !important;" />
+                                    <span style="font-size: 14px; color: #111827; font-weight: 600; line-height: 1.5; cursor: pointer;">
+                                        Concordo com os <a href="javascript:void(0);" id="eme-open-modal-btn" class="eme-link-modal-btn" style="color: #C17B4A; font-weight: 700; text-decoration: underline;" onclick="event.stopPropagation(); event.preventDefault();">Termos de Privacidade e LGPD</a> para atendimento da EME. *
+                                    </span>
+                                </label>
                             </div>
                             <button type="submit" class="eme-btn-primary eme-btn-block">Enviar Mensagem</button>
                         </form>
