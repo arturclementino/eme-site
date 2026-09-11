@@ -40,7 +40,6 @@ if (!defined('ABSPATH')) {
                     <li><a href="<?php echo esc_url(home_url('/eventos')); ?>">Eventos & Recitais</a></li>
                     <li><a href="<?php echo esc_url(home_url('/amigos-da-eme')); ?>">Projeto Amigos da EME</a></li>
                     <li><a href="<?php echo esc_url(home_url('/galeria')); ?>">Galeria de Fotos & Vídeos</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/blog')); ?>">Blog & Notícias</a></li>
                     <li><a href="<?php echo esc_url(home_url('/faq')); ?>">Perguntas Frequentes (FAQ)</a></li>
                     <li><a href="<?php echo esc_url(home_url('/contato')); ?>">Fale Conosco</a></li>
                 </ul>

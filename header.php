@@ -47,7 +47,6 @@ if (!defined('ABSPATH')) {
                 <li><a href="<?php echo esc_url(home_url('/eventos')); ?>">Eventos</a></li>
                 <li><a href="<?php echo esc_url(home_url('/amigos-da-eme')); ?>">Amigos da EME</a></li>
                 <li><a href="<?php echo esc_url(home_url('/galeria')); ?>">Galeria</a></li>
-                <li><a href="<?php echo esc_url(home_url('/blog')); ?>">Blog</a></li>
                 <li><a href="<?php echo esc_url(home_url('/faq')); ?>">FAQ</a></li>
                 <li><a href="<?php echo esc_url(home_url('/contato')); ?>">Contato</a></li>
             </ul>

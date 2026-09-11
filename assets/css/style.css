@@ -527,6 +527,53 @@ header:not(.eme-main-header),
     color: var(--verde-escuro) !important;
 }
 
+/* ─── Barra de Estatísticas ──────────────────────────────────────────────── */
+.eme-stats-bar {
+    background: var(--verde-escuro);
+    color: #fff;
+    padding: 32px 0;
+    border-bottom: 3px solid var(--terracota);
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.eme-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.eme-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eme-stat-number {
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--ambar-ouro);
+    line-height: 1.1;
+    margin-bottom: 4px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.eme-stat-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .eme-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
 /* ─── Hero Subpáginas ───────────────────────────────────────────────────── */
 .eme-hero-sub {
     background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde) 100%);

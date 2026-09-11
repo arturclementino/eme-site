@@ -205,8 +205,8 @@ function eme_shortcode_professores($atts) {
                     <div class="eme-recruitment-icon">💼</div>
                     <h3>Quer fazer parte do nosso time?</h3>
                     <p>Estamos sempre em busca de educadores e instrumentistas apaixonados pelo ensino da música com excelência e acolhimento.</p>
-                    <a href="mailto:contato@escolaeme.com?subject=Curr%C3%ADculo%20-%20Corpo%20Docente%20EME" class="eme-btn-primary">
-                        Envie seu currículo para contato@escolaeme.com
+                    <a href="mailto:coordenacao@escolaeme.com?subject=Curr%C3%ADculo%20-%20Corpo%20Docente%20EME" class="eme-btn-primary">
+                        Envie seu currículo para coordenacao@escolaeme.com
                     </a>
                 </div>
             </div>
