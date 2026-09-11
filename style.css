@@ -414,3 +414,32 @@ header:not(.eme-main-header),
         grid-template-columns: 1fr;
     }
 }
+
+/* Enquadramento das fotos dos Professores */
+.eme-prof-avatar {
+    width: 74px !important;
+    height: 74px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+}
+
+.eme-prof-img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 20%;
+    display: block !important;
+    border-radius: 50% !important;
+}
+
+.eme-img-bruna { object-position: center 2% !important; }
+.eme-img-glenio { object-position: center 10% !important; }
+.eme-img-joao-pedro { object-position: center 15% !important; }
+.eme-img-rodrigo { object-position: center 15% !important; }
+.eme-img-samuel { object-position: center 2% !important; }
+.eme-img-sandra { object-position: center 2% !important; }
+.eme-img-talita { object-position: center 15% !important; }
+

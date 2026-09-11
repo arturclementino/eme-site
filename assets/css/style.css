@@ -976,13 +976,25 @@ header:not(.eme-main-header),
 }
 
 .eme-prof-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
     object-position: center 20%;
-    display: block;
+    display: block !important;
+    border-radius: 50% !important;
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* Enquadramentos Específicos do Corpo Docente */
+.eme-img-bruna { object-position: center 2% !important; }
+.eme-img-glenio { object-position: center 10% !important; }
+.eme-img-joao-pedro { object-position: center 15% !important; }
+.eme-img-rodrigo { object-position: center 15% !important; }
+.eme-img-samuel { object-position: center 2% !important; }
+.eme-img-sandra { object-position: center 2% !important; }
+.eme-img-talita { object-position: center 15% !important; }
 
 .eme-prof-card:hover .eme-prof-img {
     transform: scale(1.08);
