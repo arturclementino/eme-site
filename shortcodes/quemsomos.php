@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 /**
  * Shortcode Quem Somos: [eme_quemsomos]
- * EME - Escola de Música Esperança / NAME
+ * EME - Escola de MÃºsica EsperanÃ§a / NAME
  */
 
 if (!defined('ABSPATH')) {
@@ -18,101 +18,101 @@ function eme_shortcode_quemsomos($atts) {
                 <span class="eme-badge-tag">Sobre a EME & NAME</span>
                 <h1 class="eme-hero-title">Quem Somos</h1>
                 <p class="eme-hero-subtitle">
-                    Integrando fé, cultura e transformação social por meio da arte e do ensino musical de excelência.
+                    Integrando fÃ©, cultura e transformaÃ§Ã£o social por meio da arte e do ensino musical de excelÃªncia.
                 </p>
             </div>
         </section>
 
-        <!-- História da Escola -->
+        <!-- HistÃ³ria da Escola -->
         <section class="eme-section">
             <div class="eme-container">
                 <div class="eme-grid-2 eme-align-center">
                     <div class="eme-about-text">
-                        <span class="eme-badge-tag">Nossa Trajetória</span>
-                        <h2 class="eme-section-title text-left">Nossa História</h2>
+                        <span class="eme-badge-tag">Nossa TrajetÃ³ria</span>
+                        <h2 class="eme-section-title text-left">Nossa HistÃ³ria</h2>
                         <div class="eme-divider divider-left"></div>
                         <p>
-                            A <strong>Escola de Música Esperança (EME)</strong> nasceu como extensão da <strong>Igreja Esperança</strong> na cidade de Belo Horizonte — um projeto vinculado ao <strong>Núcleo de Arte e Música Esperança (NAME)</strong> que une formação musical séria com propósito comunitário.
+                            A Escola de MÃºsica EsperanÃ§a (EME) nasceu como extensÃ£o da Igreja EsperanÃ§a na cidade de Belo Horizonte â€” um projeto vinculado ao NÃºcleo de Arte e MÃºsica EsperanÃ§a (NAME) que une formaÃ§Ã£o musical sÃ©ria com propÃ³sito comunitÃ¡rio.
                         </p>
                         <p>
-                            Nossa identidade é pautada por um duplo compromisso fundamental: <strong>técnica e acolhimento, excelência e acessibilidade</strong>. Comunicamos seriedade para pais, alunos e parceiros sem abrir mão da proximidade e do ambiente transformador.
+                            Nossa identidade Ã© pautada por um duplo compromisso fundamental: tÃ©cnica e acolhimento, excelÃªncia e acessibilidade. Comunicamos seriedade para pais, alunos e parceiros sem abrir mÃ£o da proximidade e do ambiente transformador.
                         </p>
                         <p>
-                            Com uma grade didática abrangente composta por <strong>27 modalidades musicais</strong>, a EME forma o aluno de maneira integral — unindo prática instrumental, percepção teórica e vivência comunitária em palcos e recitais.
+                            Com uma grade didÃ¡tica abrangente composta por 27 modalidades musicais, a EME forma o aluno de maneira integral â€” unindo prÃ¡tica instrumental, percepÃ§Ã£o teÃ³rica e vivÃªncia comunitÃ¡ria em palcos e recitais.
                         </p>
                     </div>
                     <div class="eme-about-image-box">
                         <div class="eme-image-card">
                             <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Aluna tocando piano na EME" class="eme-img-fluid" />
-                            <div class="eme-card-caption">Aulas presenciais e acompanhamento pedagógico contínuo.</div>
+                            <div class="eme-card-caption">Aulas presenciais e acompanhamento pedagÃ³gico contÃ­nuo.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Missão, Visão e Valores -->
+        <!-- MissÃ£o, VisÃ£o e Valores -->
         <section class="eme-section eme-bg-light">
             <div class="eme-container">
-                <h2 class="eme-section-title">Missão, Visão & Valores</h2>
+                <h2 class="eme-section-title">MissÃ£o, VisÃ£o & Valores</h2>
                 <div class="eme-divider"></div>
                 <div class="eme-grid-3">
                     <div class="eme-pillar-card">
-                        <div class="eme-pillar-icon">🎯</div>
-                        <h3>Missão</h3>
-                        <p>Formar pessoas por meio da música, integrando fé, cultura e transformação social, com excelência pedagógica e acolhimento integral.</p>
+                        <div class="eme-pillar-icon">ðŸŽ¯</div>
+                        <h3>MissÃ£o</h3>
+                        <p>Formar pessoas por meio da mÃºsica, integrando fÃ©, cultura e transformaÃ§Ã£o social, com excelÃªncia pedagÃ³gica e acolhimento integral.</p>
                     </div>
                     <div class="eme-pillar-card">
-                        <div class="eme-pillar-icon">👁️</div>
-                        <h3>Visão</h3>
-                        <p>Ser referência em ensino musical na região de Belo Horizonte, reconhecida pela qualidade pedagógica, pelo impacto social e pelo ambiente acolhedor.</p>
+                        <div class="eme-pillar-icon">ðŸ‘ï¸</div>
+                        <h3>VisÃ£o</h3>
+                        <p>Ser referÃªncia em ensino musical na regiÃ£o de Belo Horizonte, reconhecida pela qualidade pedagÃ³gica, pelo impacto social e pelo ambiente acolhedor.</p>
                     </div>
                     <div class="eme-pillar-card">
-                        <div class="eme-pillar-icon">❤️</div>
+                        <div class="eme-pillar-icon">â¤ï¸</div>
                         <h3>Valores</h3>
-                        <p>Excelência pedagógica, acolhimento e respeito, integração entre fé e cultura, transformação social pela arte e compromisso com a comunidade.</p>
+                        <p>ExcelÃªncia pedagÃ³gica, acolhimento e respeito, integraÃ§Ã£o entre fÃ© e cultura, transformaÃ§Ã£o social pela arte e compromisso com a comunidade.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Proposta Pedagógica -->
+        <!-- Proposta PedagÃ³gica -->
         <section class="eme-section">
             <div class="eme-container">
-                <h2 class="eme-section-title">Proposta Pedagógica</h2>
+                <h2 class="eme-section-title">Proposta PedagÃ³gica</h2>
                 <div class="eme-divider"></div>
                 <p class="eme-section-desc">
-                    A EME adota uma metodologia que alinha técnica instrumental, formação musical completa (teoria, percepção, leitura) e prática colaborativa (conjuntos, coral, banda).
+                    A EME adota uma metodologia que alinha tÃ©cnica instrumental, formaÃ§Ã£o musical completa (teoria, percepÃ§Ã£o, leitura) e prÃ¡tica colaborativa (conjuntos, coral, banda).
                 </p>
 
                 <div class="eme-grid-2 eme-align-center" style="margin-top: 30px;">
                     <div class="eme-pedagogia-box">
-                        <div class="eme-pedagogia-badge">Acompanhamento Didático</div>
-                        <h3>Supervisão Pedagógica Contínua</h3>
+                        <div class="eme-pedagogia-badge">Acompanhamento DidÃ¡tico</div>
+                        <h3>SupervisÃ£o PedagÃ³gica ContÃ­nua</h3>
                         <p>
-                            A coordenação pedagógica da EME atua no acompanhamento próximo dos professores e no desenvolvimento individual de cada estudante. Esse cuidado garante a qualidade didática, a evolução técnica constante e a continuidade do aprendizado ao longo de todos os módulos.
+                            A coordenaÃ§Ã£o pedagÃ³gica da EME atua no acompanhamento prÃ³ximo dos professores e no desenvolvimento individual de cada estudante. Esse cuidado garante a qualidade didÃ¡tica, a evoluÃ§Ã£o tÃ©cnica constante e a continuidade do aprendizado ao longo de todos os mÃ³dulos.
                         </p>
                     </div>
                     <div class="eme-grid-2">
                         <div class="eme-method-card">
                             <span class="eme-method-step">01</span>
-                            <h4>Técnica Instrumental</h4>
-                            <p>Domínio do instrumento com ergonomia, afinação e execução apurada.</p>
+                            <h4>TÃ©cnica Instrumental</h4>
+                            <p>DomÃ­nio do instrumento com ergonomia, afinaÃ§Ã£o e execuÃ§Ã£o apurada.</p>
                         </div>
                         <div class="eme-method-card">
                             <span class="eme-method-step">02</span>
-                            <h4>Formação Musical</h4>
-                            <p>Leitura de partitura, solfejo e percepção auditiva estruturada.</p>
+                            <h4>FormaÃ§Ã£o Musical</h4>
+                            <p>Leitura de partitura, solfejo e percepÃ§Ã£o auditiva estruturada.</p>
                         </div>
                         <div class="eme-method-card">
                             <span class="eme-method-step">03</span>
-                            <h4>Prática Colaborativa</h4>
-                            <p>Ensaio em grupos, prática de banda, coral e conjuntos de câmara.</p>
+                            <h4>PrÃ¡tica Colaborativa</h4>
+                            <p>Ensaio em grupos, prÃ¡tica de banda, coral e conjuntos de cÃ¢mara.</p>
                         </div>
                         <div class="eme-method-card">
                             <span class="eme-method-step">04</span>
-                            <h4>Vivência de Palco</h4>
-                            <p>Recitais periódicos e audições públicas abertas à comunidade.</p>
+                            <h4>VivÃªncia de Palco</h4>
+                            <p>Recitais periÃ³dicos e audiÃ§Ãµes pÃºblicas abertas Ã  comunidade.</p>
                         </div>
                     </div>
                 </div>
@@ -125,44 +125,44 @@ function eme_shortcode_quemsomos($atts) {
                 <h2 class="eme-section-title">Nossa Infraestrutura</h2>
                 <div class="eme-divider"></div>
                 <p class="eme-section-desc">
-                    Salas nomeadas em homenagem a figuras influentes da música e da cultura. Instrumentos em boas condições, salas com boa iluminação, ventilação e acústica, sempre preparadas para o início das aulas.
+                    Salas nomeadas em homenagem a figuras influentes da mÃºsica e da cultura. Instrumentos em boas condiÃ§Ãµes, salas com boa iluminaÃ§Ã£o, ventilaÃ§Ã£o e acÃºstica, sempre preparadas para o inÃ­cio das aulas.
                 </p>
 
                 <div class="eme-grid-3">
                     <div class="eme-facility-card">
-                        <div class="eme-room-header">🎼 Sala Sebastian Bach</div>
+                        <div class="eme-room-header">ðŸŽ¼ Sala Sebastian Bach</div>
                         <div class="eme-facility-info">
-                            <p>Espaço dedicado ao ensino de piano, teclado, violino e música erudita com acústica equilibrada.</p>
+                            <p>EspaÃ§o dedicado ao ensino de piano, teclado, violino e mÃºsica erudita com acÃºstica equilibrada.</p>
                         </div>
                     </div>
                     <div class="eme-facility-card">
-                        <div class="eme-room-header">📚 Sala Hans Rookmaaker</div>
+                        <div class="eme-room-header">ðŸ“š Sala Hans Rookmaaker</div>
                         <div class="eme-facility-info">
-                            <p>Sala de teoria musical, percepção e encontros de formação estética e cultural.</p>
+                            <p>Sala de teoria musical, percepÃ§Ã£o e encontros de formaÃ§Ã£o estÃ©tica e cultural.</p>
                         </div>
                     </div>
                     <div class="eme-facility-card">
-                        <div class="eme-room-header">🎸 Sala Keith Green</div>
+                        <div class="eme-room-header">ðŸŽ¸ Sala Keith Green</div>
                         <div class="eme-facility-info">
-                            <p>Ambiente equipado com violões, guitarras, amplificadores e contrabaixo elétrico.</p>
+                            <p>Ambiente equipado com violÃµes, guitarras, amplificadores e contrabaixo elÃ©trico.</p>
                         </div>
                     </div>
                     <div class="eme-facility-card">
-                        <div class="eme-room-header">🏛️ Salão de Culto</div>
+                        <div class="eme-room-header">ðŸ›ï¸ SalÃ£o de Culto</div>
                         <div class="eme-facility-info">
-                            <p>Auditório amplo com sistema de som e iluminação para recitais de grande público e ensaios gerais.</p>
+                            <p>AuditÃ³rio amplo com sistema de som e iluminaÃ§Ã£o para recitais de grande pÃºblico e ensaios gerais.</p>
                         </div>
                     </div>
                     <div class="eme-facility-card">
-                        <div class="eme-room-header">🥁 Sala Multiuso</div>
+                        <div class="eme-room-header">ðŸ¥ Sala Multiuso</div>
                         <div class="eme-facility-info">
-                            <p>Equipada com bateria acústica, instrumentos de percussão e isolamento reforçado.</p>
+                            <p>Equipada com bateria acÃºstica, instrumentos de percussÃ£o e isolamento reforÃ§ado.</p>
                         </div>
                     </div>
                     <div class="eme-facility-card">
-                        <div class="eme-room-header">🎵 Sala Multiuso 1 (Sede)</div>
+                        <div class="eme-room-header">ðŸŽµ Sala Multiuso 1 (Sede)</div>
                         <div class="eme-facility-info">
-                            <p>Espaço versátil para turmas de musicalização infantil, coral e ensaios de conjunto.</p>
+                            <p>EspaÃ§o versÃ¡til para turmas de musicalizaÃ§Ã£o infantil, coral e ensaios de conjunto.</p>
                         </div>
                     </div>
                 </div>
@@ -176,19 +176,19 @@ function eme_shortcode_quemsomos($atts) {
                 <div class="eme-divider"></div>
                 <div class="eme-grid-3">
                     <div class="eme-partner-card">
-                        <div class="eme-partner-logo">📣</div>
-                        <h3>Agência Casus</h3>
-                        <p>Gestão de comunicação estratégica, presença digital e redes sociais institucionais da EME.</p>
+                        <div class="eme-partner-logo">ðŸ“£</div>
+                        <h3>AgÃªncia Casus</h3>
+                        <p>GestÃ£o de comunicaÃ§Ã£o estratÃ©gica, presenÃ§a digital e redes sociais institucionais da EME.</p>
                     </div>
                     <div class="eme-partner-card">
-                        <div class="eme-partner-logo">💡</div>
-                        <h3>Plataforma E-missão</h3>
-                        <p>Captação de recursos e viabilização de projetos culturais e sociais de inclusão através da música.</p>
+                        <div class="eme-partner-logo">ðŸ’¡</div>
+                        <h3>Plataforma E-missÃ£o</h3>
+                        <p>CaptaÃ§Ã£o de recursos e viabilizaÃ§Ã£o de projetos culturais e sociais de inclusÃ£o atravÃ©s da mÃºsica.</p>
                     </div>
                     <div class="eme-partner-card">
-                        <div class="eme-partner-logo">📱</div>
+                        <div class="eme-partner-logo">ðŸ“±</div>
                         <h3>Aplicativo Emusys</h3>
-                        <p>Plataforma de gestão acadêmica, controle de frequência e comunicação direta com alunos e responsáveis.</p>
+                        <p>Plataforma de gestÃ£o acadÃªmica, controle de frequÃªncia e comunicaÃ§Ã£o direta com alunos e responsÃ¡veis.</p>
                     </div>
                 </div>
             </div>
@@ -198,4 +198,5 @@ function eme_shortcode_quemsomos($atts) {
     return ob_get_clean();
 }
 add_shortcode('eme_quemsomos', 'eme_shortcode_quemsomos');
+
 

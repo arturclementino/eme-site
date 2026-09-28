@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 /**
  * Shortcode Contato: [eme_contato]
- * EME - Escola de Música Esperança
+ * EME - Escola de MÃºsica EsperanÃ§a
  */
 
 if (!defined('ABSPATH')) {
@@ -15,10 +15,10 @@ function eme_shortcode_contato($atts) {
         <!-- Hero Section -->
         <section class="eme-hero-sub">
             <div class="eme-container">
-                <span class="eme-badge-tag">Atendimento & Localização</span>
+                <span class="eme-badge-tag">Atendimento & LocalizaÃ§Ã£o</span>
                 <h1 class="eme-hero-title">Fale Conosco</h1>
                 <p class="eme-hero-subtitle">
-                    Estamos à disposição para agendar sua visita, tirar dúvidas e orientar sua jornada musical na EME.
+                    Estamos Ã  disposiÃ§Ã£o para agendar sua visita, tirar dÃºvidas e orientar sua jornada musical na EME.
                 </p>
             </div>
         </section>
@@ -26,11 +26,11 @@ function eme_shortcode_contato($atts) {
         <section class="eme-section">
             <div class="eme-container">
                 <div class="eme-grid-contato">
-                    <!-- Formulário de Contato Completo (Coluna Esquerda) -->
+                    <!-- FormulÃ¡rio de Contato Completo (Coluna Esquerda) -->
                     <div class="eme-contato-form-box">
                         <h3>Envie uma Mensagem</h3>
                         <p style="margin-bottom: 24px; color: #555; font-size: 15px; line-height: 1.6;">
-                            Preencha os campos abaixo e nossa secretaria pedagógica entrará em contato em breve.
+                            Preencha os campos abaixo e nossa secretaria pedagÃ³gica entrarÃ¡ em contato em breve.
                         </p>
 
                         <form action="#" method="post" class="eme-form" id="eme-main-contact-form">
@@ -54,10 +54,10 @@ function eme_shortcode_contato($atts) {
                                     <select id="eme-assunto" name="assunto" required>
                                         <option value="" disabled selected>Selecione o assunto</option>
                                         <option value="visita">Agendamento de Visita Presencial</option>
-                                        <option value="matricula">Matrícula & Inscrição de Cursos</option>
-                                        <option value="duvidas">Dúvidas sobre Aulas ou Horários</option>
+                                        <option value="matricula">MatrÃ­cula & InscriÃ§Ã£o de Cursos</option>
+                                        <option value="duvidas">DÃºvidas sobre Aulas ou HorÃ¡rios</option>
                                         <option value="amigos">Projeto Amigos da EME (Bolsas & Apoio)</option>
-                                        <option value="curriculo">Envio de Currículo / Trabalhe Conosco</option>
+                                        <option value="curriculo">Envio de CurrÃ­culo / Trabalhe Conosco</option>
                                         <option value="outro">Outro assunto</option>
                                     </select>
                                 </div>
@@ -65,22 +65,22 @@ function eme_shortcode_contato($atts) {
                                     <label for="eme-curso">Curso de Interesse</label>
                                     <select id="eme-curso" name="curso">
                                         <option value="" selected>Selecione a modalidade (opcional)</option>
-                                        <option value="violao">Violão / Guitarra</option>
+                                        <option value="violao">ViolÃ£o / Guitarra</option>
                                         <option value="piano">Piano / Teclado</option>
-                                        <option value="bateria">Bateria & Percussão</option>
+                                        <option value="bateria">Bateria & PercussÃ£o</option>
                                         <option value="violino">Violino / Violoncelo</option>
-                                        <option value="contrabaixo">Contrabaixo Elétrico e Acústico</option>
+                                        <option value="contrabaixo">Contrabaixo ElÃ©trico e AcÃºstico</option>
                                         <option value="canto">Canto & Fisiologia Vocal</option>
                                         <option value="flauta">Flauta Doce / Transversal</option>
                                         <option value="saxofone">Saxofone & Sopros</option>
                                         <option value="harmonia">Harmonia Funcional</option>
-                                        <option value="musicalizacao">Musicalização Infantil</option>
+                                        <option value="musicalizacao">MusicalizaÃ§Ã£o Infantil</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="eme-form-group">
                                 <label for="eme-mensagem">Mensagem *</label>
-                                <textarea id="eme-mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar você?" required></textarea>
+                                <textarea id="eme-mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar vocÃª?" required></textarea>
                             </div>
                             <div class="eme-form-group" style="margin-bottom: 24px;">
                                 <label class="eme-checkbox-label" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; margin: 0; padding: 4px 0; width: 100%;">
@@ -94,31 +94,31 @@ function eme_shortcode_contato($atts) {
                         </form>
                     </div>
 
-                    <!-- Informações de Atendimento & Canais (Coluna Direita Otimizada) -->
+                    <!-- InformaÃ§Ãµes de Atendimento & Canais (Coluna Direita Otimizada) -->
                     <div class="eme-contato-info-box">
-                        <!-- WhatsApp Rápido -->
+                        <!-- WhatsApp RÃ¡pido -->
                         <div class="eme-info-card" style="border-left: 5px solid #25D366;">
-                            <div class="eme-info-icon">📱</div>
+                            <div class="eme-info-icon">ðŸ“±</div>
                             <div class="eme-info-text">
                                 <h4 style="color: #128C7E;">Atendimento via WhatsApp</h4>
-                                <p style="margin-bottom: 12px;">Fale diretamente com nossa secretaria pedagógica em tempo real:</p>
+                                <p style="margin-bottom: 12px;">Fale diretamente com nossa secretaria pedagÃ³gica em tempo real:</p>
                                 <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20EME." target="_blank" class="eme-btn-primary" style="padding: 10px 20px; font-size: 13px; background: #25D366; border-color: #25D366;">
                                     (31) 98420-1358
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Endereço Exato & Localização -->
+                        <!-- EndereÃ§o Exato & LocalizaÃ§Ã£o -->
                         <div class="eme-info-card" style="border-left: 5px solid var(--terracota);">
-                            <div class="eme-info-icon">📍</div>
+                            <div class="eme-info-icon">ðŸ“</div>
                             <div class="eme-info-text">
-                                <h4>Endereço da Sede</h4>
+                                <h4>EndereÃ§o da Sede</h4>
                                 <p style="font-weight: 700; color: var(--verde-escuro); margin-bottom: 4px;">
-                                    Rua Bonaparte, 86 — Bairro Padre Eustáquio
+                                    Rua Bonaparte, 86 â€” Bairro Padre EustÃ¡quio
                                 </p>
                                 <p style="font-size: 13px; color: var(--cinza-suave); margin-bottom: 12px;">
-                                    Belo Horizonte / MG — CEP: 30720-070<br>
-                                    <em>(Núcleo de Arte e Música Esperança — NAME)</em>
+                                    Belo Horizonte / MG â€” CEP: 30720-070<br>
+                                    <em>(NÃºcleo de Arte e MÃºsica EsperanÃ§a â€” NAME)</em>
                                 </p>
                                 <a href="https://maps.google.com/?q=Rua+Bonaparte,+86,+Padre+Eust%C3%A1quio,+Belo+Horizonte+-+MG" target="_blank" class="eme-btn-outline" style="padding: 8px 16px; font-size: 12px;">
                                     Abrir no Google Maps / Waze
@@ -128,20 +128,20 @@ function eme_shortcode_contato($atts) {
 
                         <!-- E-mails Institucionais -->
                         <div class="eme-info-card">
-                            <div class="eme-info-icon">✉️</div>
+                            <div class="eme-info-icon">âœ‰ï¸</div>
                             <div class="eme-info-text">
                                 <h4>Atendimento por E-mail</h4>
-                                <p style="margin-bottom: 8px;">Dúvidas gerais, visitas e orientações pedagógicas:</p>
+                                <p style="margin-bottom: 8px;">DÃºvidas gerais, visitas e orientaÃ§Ãµes pedagÃ³gicas:</p>
                                 <a href="mailto:contato@escolaeme.com" style="color: var(--terracota); font-weight: 700; font-size: 15px;">contato@escolaeme.com</a>
                             </div>
                         </div>
 
-                        <!-- Horários de Funcionamento -->
+                        <!-- HorÃ¡rios de Funcionamento -->
                         <div class="eme-info-card">
-                            <div class="eme-info-icon">⏰</div>
+                            <div class="eme-info-icon">â°</div>
                             <div class="eme-info-text">
-                                <h4>Horário de Atendimento</h4>
-                                <p>Segunda a sexta-feira, das <strong>8h às 22h</strong></p>
+                                <h4>HorÃ¡rio de Atendimento</h4>
+                                <p>Segunda a sexta-feira, das 8h Ã s 22h</p>
                             </div>
                         </div>
 
@@ -152,7 +152,7 @@ function eme_shortcode_contato($atts) {
                             </div>
                             <div class="eme-info-text">
                                 <h4 style="color: #FFFFFF !important; font-size: 18px !important; margin-bottom: 6px !important; font-weight: 700 !important;">Siga a EME no Instagram</h4>
-                                <p style="color: #FFFFFF !important; font-size: 14px !important; margin-bottom: 16px !important; line-height: 1.5 !important; opacity: 0.96 !important;">Acompanhe bastidores de aulas, vídeos de alunos e novidades em nosso perfil oficial:</p>
+                                <p style="color: #FFFFFF !important; font-size: 14px !important; margin-bottom: 16px !important; line-height: 1.5 !important; opacity: 0.96 !important;">Acompanhe bastidores de aulas, vÃ­deos de alunos e novidades em nosso perfil oficial:</p>
                                 <a href="https://www.instagram.com/eme.esperanca/" target="_blank" rel="noopener noreferrer" class="eme-btn-primary" style="background: #FFFFFF !important; color: #833ab4 !important; font-weight: 700 !important; border: none !important; padding: 10px 22px !important; font-size: 13px !important; box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important; display: inline-flex !important; align-items: center !important; gap: 8px !important;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#833ab4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px !important; height: 16px !important;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                                     <span style="color: #833ab4 !important; font-weight: 700 !important;">@eme.esperanca no Instagram</span>
@@ -162,15 +162,15 @@ function eme_shortcode_contato($atts) {
                     </div>
                 </div>
 
-                <!-- Mapa Interativo do Google Maps (Pino Exato no Endereço: Rua Bonaparte, 86) -->
+                <!-- Mapa Interativo do Google Maps (Pino Exato no EndereÃ§o: Rua Bonaparte, 86) -->
                 <div class="eme-map-section" style="margin-top: 60px;">
                     <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; margin-bottom: 15px;">
                         <div>
-                            <h3 class="eme-section-title text-left" style="margin-bottom: 6px;">Como Chegar à EME</h3>
-                            <p style="color: var(--cinza-suave); font-size: 15px; margin: 0;">Rua Bonaparte, 86 — Bairro Padre Eustáquio, Belo Horizonte / MG</p>
+                            <h3 class="eme-section-title text-left" style="margin-bottom: 6px;">Como Chegar Ã  EME</h3>
+                            <p style="color: var(--cinza-suave); font-size: 15px; margin: 0;">Rua Bonaparte, 86 â€” Bairro Padre EustÃ¡quio, Belo Horizonte / MG</p>
                         </div>
                         <a href="https://maps.google.com/?q=Rua+Bonaparte,+86,+Padre+Eust%C3%A1quio,+Belo+Horizonte+-+MG" target="_blank" class="eme-btn-primary" style="padding: 10px 20px; font-size: 13px;">
-                            🚗 Traçar Rota no GPS
+                            ðŸš— TraÃ§ar Rota no GPS
                         </a>
                     </div>
                     <div class="eme-divider divider-left"></div>
@@ -234,3 +234,4 @@ function eme_shortcode_contato($atts) {
     return ob_get_clean();
 }
 add_shortcode('eme_contato', 'eme_shortcode_contato');
+

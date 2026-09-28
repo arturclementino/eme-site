@@ -70,7 +70,7 @@ function eme_shortcode_faq($atts) {
                 <div class="eme-faq-accordion-list" style="display: flex; flex-direction: column; gap: 16px;">
                     <?php foreach ($faqs as $index => $faq): ?>
                         <div class="eme-faq-item" style="background: #FFFFFF; border-radius: 12px; border: 1px solid #E2DACD; overflow: hidden; box-shadow: 0 4px 15px rgba(15, 46, 35, 0.04); transition: border-color 0.3s ease;">
-                            <button type="button" class="eme-faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: none; border: none; text-align: left; cursor: pointer; font-family: 'Cinzel', 'Montserrat', serif; font-size: 17px; font-weight: 700; color: #0F2E23; transition: color 0.2s ease;">
+                            <button type="button" class="eme-faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: none; border: none; text-align: left; cursor: pointer; font-family: 'Montserrat', 'Open Sans', sans-serif; font-size: 17px; font-weight: 700; color: #0F2E23; transition: color 0.2s ease;">
                                 <span style="display: flex; align-items: center; gap: 12px;">
                                     <span style="color: #C17B4A; font-size: 18px;">❓</span>
                                     <span><?php echo esc_html($faq['pergunta']); ?></span>

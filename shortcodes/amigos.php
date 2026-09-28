@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 /**
  * Shortcode Amigos da EME & Projetos: [eme_amigos], [eme_projetos]
- * EME - Escola de Música Esperança
+ * EME - Escola de MÃºsica EsperanÃ§a
  */
 
 if (!defined('ABSPATH')) {
@@ -15,10 +15,10 @@ function eme_shortcode_amigos($atts) {
         <!-- Hero Section -->
         <section class="eme-hero-sub">
             <div class="eme-container">
-                <span class="eme-badge-tag">Projetos Sociais & Ação Comunitária</span>
+                <span class="eme-badge-tag">Projetos Sociais & AÃ§Ã£o ComunitÃ¡ria</span>
                 <h1 class="eme-hero-title">Amigos da EME</h1>
                 <p class="eme-hero-subtitle">
-                    Transformando realidades e ampliando o acesso à educação musical de excelência através do nosso programa de bolsas de estudo.
+                    Transformando realidades e ampliando o acesso Ã  educaÃ§Ã£o musical de excelÃªncia atravÃ©s do nosso programa de bolsas de estudo.
                 </p>
             </div>
         </section>
@@ -28,19 +28,19 @@ function eme_shortcode_amigos($atts) {
                 <!-- Destaques & Pilares do Programa -->
                 <div class="eme-stats-grid" style="margin-bottom: 50px;">
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 26px;">🎓 Inclusão Social</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">ðŸŽ“ InclusÃ£o Social</span>
                         <span class="eme-stat-label">Bolsas Parciais & Integrais</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 26px;">🎵 Formação Musical</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">ðŸŽµ FormaÃ§Ã£o Musical</span>
                         <span class="eme-stat-label">Desenvolvimento de Novos Talentos</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 26px;">📚 Metodologia EME</span>
-                        <span class="eme-stat-label">Acompanhamento Pedagógico Contínuo</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">ðŸ“š Metodologia EME</span>
+                        <span class="eme-stat-label">Acompanhamento PedagÃ³gico ContÃ­nuo</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 26px;">🤝 Parceria Comunitária</span>
+                        <span class="eme-stat-number" style="font-size: 26px;">ðŸ¤ Parceria ComunitÃ¡ria</span>
                         <span class="eme-stat-label">Apoio de Padrinhos & Empresas</span>
                     </div>
                 </div>
@@ -48,26 +48,26 @@ function eme_shortcode_amigos($atts) {
                 <!-- Sobre o Projeto -->
                 <div class="eme-grid-2 eme-align-center" style="margin-bottom: 60px;">
                     <div>
-                        <span class="eme-badge-tag">Música para Todos</span>
-                        <h2 class="eme-section-title text-left" style="font-size: 32px;">A Música Como Agente de Transformação Social</h2>
+                        <span class="eme-badge-tag">MÃºsica para Todos</span>
+                        <h2 class="eme-section-title text-left" style="font-size: 32px;">A MÃºsica Como Agente de TransformaÃ§Ã£o Social</h2>
                         <div class="eme-divider divider-left"></div>
                         <p style="font-size: 16px; color: #444; line-height: 1.8;">
-                            O programa <strong>Amigos da EME</strong> foi criado com a convicção de que o talento musical e a paixão pela arte não devem ser limitados por barreiras financeiras.
+                            O programa Amigos da EME foi criado com a convicÃ§Ã£o de que o talento musical e a paixÃ£o pela arte nÃ£o devem ser limitados por barreiras financeiras.
                         </p>
                         <p style="font-size: 16px; color: #444; line-height: 1.8;">
-                            Através de parcerias com membros da comunidade, doadores e apoiadores institucionais, oferecemos <strong>bolsas de estudo de até 85%</strong> para crianças, jovens e adultos que desejam estudar música com propósito e rigor técnico.
+                            AtravÃ©s de parcerias com membros da comunidade, doadores e apoiadores institucionais, oferecemos bolsas de estudo de atÃ© 85% para crianÃ§as, jovens e adultos que desejam estudar mÃºsica com propÃ³sito e rigor tÃ©cnico.
                         </p>
                     </div>
                     <div style="background: var(--branco-puro); padding: 35px; border-radius: 16px; box-shadow: var(--sombra-card); border-left: 5px solid var(--terracota);">
-                        <h3 style="color: var(--verde-escuro); margin-top: 0; font-size: 22px;">🎯 Como Funciona o Apoio</h3>
+                        <h3 style="color: var(--verde-escuro); margin-top: 0; font-size: 22px;">ðŸŽ¯ Como Funciona o Apoio</h3>
                         <ul style="list-style: none; padding: 0; margin: 20px 0 0; line-height: 2.2;">
-                            <li>✅ <strong>Apadrinhamento Individual:</strong> Apoie a mensalidade parcial ou integral de um estudante.</li>
-                            <li>✅ <strong>Empresas Parceiras:</strong> Apoio institucional com incentivo à formação artística local.</li>
+                            <li>âœ… Apadrinhamento Individual: Apoie a mensalidade parcial ou integral de um estudante.</li>
+                            <li>âœ… Empresas Parceiras: Apoio institucional com incentivo Ã  formaÃ§Ã£o artÃ­stica local.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Opções de Contribuição & Apadrinhamento -->
+                <!-- OpÃ§Ãµes de ContribuiÃ§Ã£o & Apadrinhamento -->
                 <div style="text-align: center; margin-bottom: 40px;">
                     <h2 class="eme-section-title">Como Fazer Parte</h2>
                     <p class="eme-section-desc">Escolha a melhor maneira de contribuir para o crescimento deste projeto social</p>
@@ -76,10 +76,10 @@ function eme_shortcode_amigos($atts) {
 
                 <div class="eme-grid-2" style="max-width: 900px; margin: 0 auto;">
                     <div class="eme-partner-card">
-                        <div class="eme-partner-logo">🤝</div>
+                        <div class="eme-partner-logo">ðŸ¤</div>
                         <h3>Apadrinhar um Aluno</h3>
                         <p style="font-size: 14px; color: var(--cinza-suave); margin-bottom: 20px;">
-                            Faça uma contribuição mensal e ajude a cobrir a bolsa de estudos de um futuro instrumentista.
+                            FaÃ§a uma contribuiÃ§Ã£o mensal e ajude a cobrir a bolsa de estudos de um futuro instrumentista.
                         </p>
                         <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20apadrinhar%20um%20aluno%20bolsista%20no%20projeto%20Amigos%20da%20EME." target="_blank" class="eme-btn-outline eme-btn-block">
                             Seja um Padrinho
@@ -87,7 +87,7 @@ function eme_shortcode_amigos($atts) {
                     </div>
 
                     <div class="eme-partner-card">
-                        <div class="eme-partner-logo">🏛️</div>
+                        <div class="eme-partner-logo">ðŸ›ï¸</div>
                         <h3>Empresa Parceira</h3>
                         <p style="font-size: 14px; color: var(--cinza-suave); margin-bottom: 20px;">
                             Associe sua empresa a uma causa cultural e educacional transformadora em Belo Horizonte.
@@ -100,15 +100,15 @@ function eme_shortcode_amigos($atts) {
 
                 <!-- Call to Action Final -->
                 <div class="eme-recruitment-box" style="margin-top: 60px;">
-                    <div class="eme-recruitment-icon">❤️</div>
+                    <div class="eme-recruitment-icon">â¤ï¸</div>
                     <h3>Quer saber mais ou inscrever-se para o Programa de Bolsas?</h3>
-                    <p>Fale diretamente com nossa coordenação pedagógica para conhecer os critérios de seleção e vagas disponíveis.</p>
+                    <p>Fale diretamente com nossa coordenaÃ§Ã£o pedagÃ³gica para conhecer os critÃ©rios de seleÃ§Ã£o e vagas disponÃ­veis.</p>
                     <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
                         <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20bolsas%20de%20estudo%20Amigos%20da%20EME." target="_blank" class="eme-btn-primary">
                             Falar no WhatsApp (31) 98420-1358
                         </a>
                         <a href="mailto:coordenacao@escolaeme.com?subject=Informac%C3%B5es%20Bolsas%20Amigos%20da%20EME" class="eme-btn-outline">
-                            Enviar E-mail para a Coordenação
+                            Enviar E-mail para a CoordenaÃ§Ã£o
                         </a>
                     </div>
                 </div>
@@ -120,3 +120,4 @@ function eme_shortcode_amigos($atts) {
 }
 add_shortcode('eme_amigos', 'eme_shortcode_amigos');
 add_shortcode('eme_projetos', 'eme_shortcode_amigos');
+
