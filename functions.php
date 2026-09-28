@@ -25,6 +25,27 @@ add_action('send_headers', function() {
     }
 });
 
+// PÁGINA DE MANUTENÇÃO (Banner elegante para visitantes não autenticados)
+add_action('get_header', function() {
+    if (!is_user_logged_in() && !is_admin()) {
+        wp_die(
+            '<div style="font-family:\'Montserrat\',sans-serif; text-align:center; padding:60px 20px; background:#0D1117; color:#FFFFFF; min-height:80vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">' .
+            '<h1 style="font-family:\'Cinzel\',serif; color:#D4AF37; font-size:36px; margin-bottom:15px;">Escola de Música Esperança — EME</h1>' .
+            '<h2 style="font-size:24px; font-weight:600; margin-bottom:20px; color:#F0F6FC;">Site em Manutenção</h2>' .
+            '<p style="font-size:16px; color:#8B949E; max-width:600px; line-height:1.6; margin-bottom:30px;">Estamos realizando atualizações técnicas e melhorias em nossa plataforma. Em breve estaremos de volta com novidades!</p>' .
+            '<div style="background:#161B22; border:1px solid #30363D; border-radius:12px; padding:20px 30px; display:inline-block; text-align:left;">' .
+            '<p style="margin:5px 0; color:#C9D1D9;"><strong>Entre em contato:</strong></p>' .
+            '<p style="margin:5px 0; color:#8B949E;">📧 <a href="mailto:pastoral.liturgica@igrejaesperanca.org.br" style="color:#58A6FF; text-decoration:none;">pastoral.liturgica@igrejaesperanca.org.br</a></p>' .
+            '<p style="margin:5px 0; color:#8B949E;">📍 Belo Horizonte — MG</p>' .
+            '</div>' .
+            '</div>',
+            'Site em Manutenção — Escola de Música Esperança',
+            array('response' => 503)
+        );
+    }
+});
+
+
 
 // 1. Carregar estilos e scripts do tema com versionamento por modificação de arquivo (filemtime)
 add_action('wp_enqueue_scripts', function() {
