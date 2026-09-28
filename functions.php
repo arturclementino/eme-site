@@ -48,6 +48,29 @@ add_action('after_setup_theme', function() {
     remove_action('hello_elementor_header_display', 'hello_elementor_header_display');
 }, 100);
 
+// 3.1 Garantir que as páginas institucionais usem diretamente os templates do tema filho (evitando interceptação do Elementor)
+add_filter('template_include', function($template) {
+    if (is_front_page() || is_home()) {
+        $front = get_stylesheet_directory() . '/front-page.php';
+        if (file_exists($front)) {
+            return $front;
+        }
+    }
+    if (is_page()) {
+        $slug = get_post_field('post_name', get_the_ID());
+        $theme_dir = get_stylesheet_directory();
+        $custom_tpl = $theme_dir . '/page-' . $slug . '.php';
+        if (file_exists($custom_tpl)) {
+            return $custom_tpl;
+        }
+        $fallback = $theme_dir . '/page.php';
+        if (file_exists($fallback)) {
+            return $fallback;
+        }
+    }
+    return $template;
+}, 999999);
+
 // 4. Carregar automaticamente todos os arquivos de shortcode
 $shortcodes_path = get_stylesheet_directory() . '/shortcodes/*.php';
 foreach (glob($shortcodes_path) as $file) {
