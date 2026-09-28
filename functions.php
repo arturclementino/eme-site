@@ -98,13 +98,6 @@ add_filter('template_include', function($template) {
     return $template;
 }, 999999);
 
-add_action('wp_footer', function() {
-    global $template;
-    $post = get_queried_object();
-    $slug = ($post && isset($post->post_name)) ? $post->post_name : 'no_slug';
-    echo "\n<!-- DEBUG_EME_TEMPLATE: " . esc_html(basename($template)) . " | SLUG: " . esc_html($slug) . " -->\n";
-}, 999999);
-
 // 4. Carregar automaticamente todos os arquivos de shortcode
 $shortcodes_path = get_stylesheet_directory() . '/shortcodes/*.php';
 foreach (glob($shortcodes_path) as $file) {
