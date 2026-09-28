@@ -57,12 +57,39 @@ add_filter('template_include', function($template) {
         }
     }
     if (is_page()) {
-        $slug = get_post_field('post_name', get_the_ID());
+        $post = get_queried_object();
+        $slug = ($post && isset($post->post_name)) ? $post->post_name : '';
         $theme_dir = get_stylesheet_directory();
+
+        // Mapeamento específico de templates por slug
+        $slug_map = array(
+            'contato'          => '/page-contato.php',
+            'professores'      => '/page-professores.php',
+            'estudio'          => '/page-estudio.php',
+            'estudio-gravacoes'=> '/page-estudio.php',
+            'aulas'            => '/page-aulas.php',
+            'cursos'           => '/page-aulas.php',
+            'quem-somos'       => '/page-quem-somos.php',
+            'amigos-da-eme'    => '/page-amigos-da-eme.php',
+            'projetos'         => '/page-projetos.php',
+            'eventos'          => '/page-eventos.php',
+            'galeria'          => '/page-galeria.php',
+            'faq'              => '/page.php',
+            'politicas'        => '/page.php',
+        );
+
+        if (!empty($slug) && isset($slug_map[$slug])) {
+            $tpl = $theme_dir . $slug_map[$slug];
+            if (file_exists($tpl)) {
+                return $tpl;
+            }
+        }
+
         $custom_tpl = $theme_dir . '/page-' . $slug . '.php';
-        if (file_exists($custom_tpl)) {
+        if (!empty($slug) && file_exists($custom_tpl)) {
             return $custom_tpl;
         }
+
         $fallback = $theme_dir . '/page.php';
         if (file_exists($fallback)) {
             return $fallback;
