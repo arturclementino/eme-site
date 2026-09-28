@@ -26,8 +26,8 @@ add_action('send_headers', function() {
 });
 
 // PÁGINA DE MANUTENÇÃO (Banner elegante para visitantes não autenticados)
-add_action('template_redirect', function() {
-    if (!is_user_logged_in() && !is_admin()) {
+add_action('init', function() {
+    if (!is_user_logged_in() && !is_admin() && !in_array($GLOBALS['pagenow'] ?? '', array('wp-login.php', 'wp-register.php')) && strpos($_SERVER['REQUEST_URI'] ?? '', 'wp-json') === false) {
         wp_die(
             '<div style="font-family:\'Montserrat\',sans-serif; text-align:center; padding:60px 20px; background:#0D1117; color:#FFFFFF; min-height:80vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">' .
             '<h1 style="font-family:\'Cinzel\',serif; color:#D4AF37; font-size:36px; margin-bottom:15px;">Escola de Música Esperança — EME</h1>' .
@@ -43,7 +43,8 @@ add_action('template_redirect', function() {
             array('response' => 503)
         );
     }
-});
+}, 1);
+
 
 
 
