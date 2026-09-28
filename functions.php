@@ -7,6 +7,15 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+// DESATIVAR Simply Static — plugin estava servindo versao estatica antiga do site
+// Este filtro remove o Simply Static da lista de plugins ativos em tempo de execucao
+add_filter('option_active_plugins', function($plugins) {
+    $plugins = array_values(array_filter((array) $plugins, function($plugin) {
+        return strpos($plugin, 'simply-static') === false;
+    }));
+    return $plugins;
+}, 0);
+
 // 1. Carregar estilos e scripts do tema com versionamento por modificação de arquivo (filemtime)
 add_action('wp_enqueue_scripts', function() {
     $theme_dir = get_stylesheet_directory();
