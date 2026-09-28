@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Footer Template - Hello Elementor Child EME
  */
@@ -14,13 +14,13 @@ if (!defined('ABSPATH')) {
             <!-- Coluna 1: Marca & Identidade -->
             <div class="eme-footer-col">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="eme-brand eme-footer-brand">
-                    <img src="https://escolaeme.com/wp-content/uploads/2026/08/eme-horizontal-verde-renovo-scaled-e1787075643364.png" alt="Escola de MÃºsica EsperanÃ§a â€” EME" class="eme-footer-logo" />
+                    <img src="https://escolaeme.com/wp-content/uploads/2026/08/eme-horizontal-verde-renovo-scaled-e1787075643364.png" alt="Escola de Música Esperança — EME" class="eme-footer-logo" />
                 </a>
                 <p class="eme-footer-about">
-                    Projeto do NÃºcleo de Arte e MÃºsica EsperanÃ§a (NAME), braÃ§o cultural e educacional da Igreja EsperanÃ§a. Unindo tÃ©cnica e acolhimento, excelÃªncia e acessibilidade para servir Belo Horizonte atravÃ©s do ensino musical com propÃ³sito.
+                    Projeto do Núcleo de Arte e Música Esperança (NAME), braço cultural e educacional da Igreja Esperança. Unindo técnica e acolhimento, excelência e acessibilidade para servir Belo Horizonte através do ensino musical com propósito.
                 </p>
                 <div class="eme-footer-pillars">
-                    <span>ðŸŽµ Arte</span> â€¢ <span>âœï¸ FÃ©</span> â€¢ <span>ðŸŽ“ ExcelÃªncia</span>
+                    <span>🎵 Arte</span> • <span>✝️ Fé</span> • <span>🎓 Excelência</span>
                 </div>
             </div>
 
@@ -29,20 +29,20 @@ if (!defined('ABSPATH')) {
                 <h4 class="eme-footer-heading">Atendimento & Sede</h4>
                 <ul class="eme-footer-contact-list">
                     <li>
-                        <span class="eme-fc-icon">ðŸ“</span>
-                        <span>Rua Bonaparte, 86 â€” Padre EustÃ¡quio<br><small>Belo Horizonte / MG â€” CEP: 30720-070</small></span>
+                        <span class="eme-fc-icon">📍</span>
+                        <span>Rua Bonaparte, 86 — Padre Eustáquio<br><small>Belo Horizonte / MG — CEP: 30720-070</small></span>
                     </li>
                     <li>
-                        <span class="eme-fc-icon eme-fc-whatsapp">ðŸ“±</span>
+                        <span class="eme-fc-icon eme-fc-whatsapp">📱</span>
                         <span>WhatsApp: <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20EME." target="_blank">(31) 98420-1358</a></span>
                     </li>
                     <li>
-                        <span class="eme-fc-icon eme-fc-email">âœ‰ï¸</span>
+                        <span class="eme-fc-icon eme-fc-email">✉️</span>
                         <span>E-mail: <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a></span>
                     </li>
                     <li>
-                        <span class="eme-fc-icon eme-fc-clock">â°</span>
-                        <span>Segunda a sexta-feira, das 8h Ã s 22h</span>
+                        <span class="eme-fc-icon eme-fc-clock">⏰</span>
+                        <span>Segunda a sexta-feira, das 8h às 22h</span>
                     </li>
                 </ul>
             </div>
@@ -58,37 +58,37 @@ if (!defined('ABSPATH')) {
                 </div>
                 <div class="eme-footer-legal">
                     <a href="javascript:void(0);" class="eme-footer-policy-link eme-open-lgpd-modal" id="eme-footer-lgpd-btn" role="button">
-                        Termos de Privacidade & ProteÃ§Ã£o de Dados (LGPD)
+                        Termos de Privacidade & Proteção de Dados (LGPD)
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- RodapÃ© Inferior (Copyright) -->
+        <!-- Rodapé Inferior (Copyright) -->
         <div class="eme-footer-bottom">
             <p>
-                &copy; <?php echo date('Y'); ?> Escola de MÃºsica EsperanÃ§a (EME) â€” NÃºcleo de Arte e MÃºsica EsperanÃ§a (NAME) / Igreja EsperanÃ§a. Todos os direitos reservados.
+                &copy; <?php echo date('Y'); ?> Escola de Música Esperança (EME) — Núcleo de Arte e Música Esperança (NAME) / Igreja Esperança. Todos os direitos reservados.
             </p>
         </div>
     </div>
 </footer>
 
-<!-- Pop-up Modal Global de Termos de Privacidade e ProteÃ§Ã£o de Dados (LGPD) -->
+<!-- Pop-up Modal Global de Termos de Privacidade e Proteção de Dados (LGPD) -->
 <div id="eme-modal-lgpd-global" class="eme-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="eme-modal-content">
         <button type="button" class="eme-modal-close eme-modal-close-btn" aria-label="Fechar">&times;</button>
         <div class="eme-modal-header">
-            <h3>Termos de Privacidade e ProteÃ§Ã£o de Dados (LGPD)</h3>
-            <span class="eme-modal-sub">Escola de MÃºsica EsperanÃ§a (EME / NAME)</span>
+            <h3>Termos de Privacidade e Proteção de Dados (LGPD)</h3>
+            <span class="eme-modal-sub">Escola de Música Esperança (EME / NAME)</span>
         </div>
         <div class="eme-modal-body">
-            <p>1. Coleta e Finalidade dos Dados: Os dados pessoais fornecidos neste portal (nome completo, e-mail, telefone/WhatsApp, assunto e curso de interesse) sÃ£o coletados Ãºnica e exclusivamente para possibilitar o atendimento da secretaria pedagÃ³gica da EME, agendamento de visitas presenciais, envio de orientaÃ§Ãµes sobre turmas e esclarecimento de dÃºvidas.</p>
+            <p>1. Coleta e Finalidade dos Dados: Os dados pessoais fornecidos neste portal (nome completo, e-mail, telefone/WhatsApp, assunto e curso de interesse) são coletados única e exclusivamente para possibilitar o atendimento da secretaria pedagógica da EME, agendamento de visitas presenciais, envio de orientações sobre turmas e esclarecimento de dúvidas.</p>
             
-            <p>2. Uso Exclusivo e NÃ£o Compartilhamento: A EME compromete-se a nÃ£o vender, alugar ou compartilhar suas informaÃ§Ãµes com terceiros ou parceiros comerciais para fins de publicidade nÃ£o solicitada (spam).</p>
+            <p>2. Uso Exclusivo e Não Compartilhamento: A EME compromete-se a não vender, alugar ou compartilhar suas informações com terceiros ou parceiros comerciais para fins de publicidade não solicitada (spam).</p>
             
-            <p>3. Armazenamento Seguro: Todas as informaÃ§Ãµes fornecidas sÃ£o tratadas com sigilo e armazenadas em ambiente seguro, em conformidade com a Lei Geral de ProteÃ§Ã£o de Dados Pessoais (Lei nÂº 13.709/2018 - LGPD).</p>
+            <p>3. Armazenamento Seguro: Todas as informações fornecidas são tratadas com sigilo e armazenadas em ambiente seguro, em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD).</p>
             
-            <p>4. Direitos do Titular: VocÃª tem o direito de solicitar a atualizaÃ§Ã£o, confirmaÃ§Ã£o, correÃ§Ã£o ou exclusÃ£o definitiva dos seus dados de nossos cadastros a qualquer momento pelo e-mail oficial <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a>.</p>
+            <p>4. Direitos do Titular: Você tem o direito de solicitar a atualização, confirmação, correção ou exclusão definitiva dos seus dados de nossos cadastros a qualquer momento pelo e-mail oficial <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a>.</p>
         </div>
         <div class="eme-modal-footer">
             <button type="button" class="eme-btn-primary eme-modal-accept-btn" style="padding: 10px 26px; font-size: 13.5px;">Compreendi e Aceito</button>
@@ -96,7 +96,7 @@ if (!defined('ABSPATH')) {
     </div>
 </div>
 
-<!-- BotÃ£o Flutuante de WhatsApp -->
+<!-- Botão Flutuante de WhatsApp -->
 <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20EME." 
    target="_blank" 
    class="eme-whatsapp-float" 
@@ -108,7 +108,7 @@ if (!defined('ABSPATH')) {
     </svg>
 </a>
 
-<!-- BotÃ£o Back-to-Top -->
+<!-- Botão Back-to-Top -->
 <button class="eme-back-to-top" id="eme-back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
 </button>
@@ -116,4 +116,3 @@ if (!defined('ABSPATH')) {
 <?php wp_footer(); ?>
 </body>
 </html>
-

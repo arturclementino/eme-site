@@ -1,7 +1,7 @@
-﻿<?php
+<?php
 /**
  * Shortcode Cursos: [eme_cursos]
- * EME - Escola de MÃºsica EsperanÃ§a (27+ Modalidades & Cursos)
+ * EME - Escola de Música Esperança (27+ Modalidades & Cursos)
  */
 
 if (!defined('ABSPATH')) {
@@ -13,74 +13,74 @@ function eme_shortcode_cursos($atts) {
         [
             'cat' => 'teclas',
             'titulo' => 'Piano Erudito & Popular',
-            'icon' => 'ðŸŽ¹',
-            'desc' => 'Desenvolvimento tÃ©cnico, leitura de partitura, percepÃ§Ã£o harmÃ´nica e repertÃ³rio erudito ou popular.',
-            'publico' => 'CrianÃ§as, Jovens e Adultos (Iniciante ao AvanÃ§ado)',
+            'icon' => '🎹',
+            'desc' => 'Desenvolvimento técnico, leitura de partitura, percepção harmônica e repertório erudito ou popular.',
+            'publico' => 'Crianças, Jovens e Adultos (Iniciante ao Avançado)',
             'formato' => 'Aulas Individuais | Presencial'
         ],
         [
             'cat' => 'cordas',
-            'titulo' => 'ViolÃ£o & Guitarra',
-            'icon' => 'ðŸŽ¸',
-            'desc' => 'TÃ©cnica de digitaÃ§Ã£o, acordes, ritmos, harmonia funcional e improvisaÃ§Ã£o em diversos estilos musicais.',
+            'titulo' => 'Violão & Guitarra',
+            'icon' => '🎸',
+            'desc' => 'Técnica de digitação, acordes, ritmos, harmonia funcional e improvisação em diversos estilos musicais.',
             'publico' => 'A partir dos 7 anos',
             'formato' => 'Aulas Individuais ou em Dupla'
         ],
         [
             'cat' => 'voz',
-            'titulo' => 'Canto Popular & LÃ­rico',
-            'icon' => 'ðŸŽ¤',
-            'desc' => 'TÃ©cnica vocal, apoio diafragmÃ¡tico, afinaÃ§Ã£o, fisiologia vocal, interpretaÃ§Ã£o e expressÃ£o cÃªnica.',
+            'titulo' => 'Canto Popular & Lírico',
+            'icon' => '🎤',
+            'desc' => 'Técnica vocal, apoio diafragmático, afinação, fisiologia vocal, interpretação e expressão cênica.',
             'publico' => 'Jovens e Adultos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'ritmo',
-            'titulo' => 'Bateria & PercussÃ£o',
-            'icon' => 'ðŸ¥',
-            'desc' => 'IndependÃªncia dos membros, rudiemntos, grooves, coordenaÃ§Ã£o motora e leitura de partitura rÃ­tmica.',
+            'titulo' => 'Bateria & Percussão',
+            'icon' => '🥁',
+            'desc' => 'Independência dos membros, rudiemntos, grooves, coordenação motora e leitura de partitura rítmica.',
             'publico' => 'A partir dos 8 anos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'cordas',
             'titulo' => 'Violino, Viola & Violoncelo',
-            'icon' => 'ðŸŽ»',
-            'desc' => 'Postura, arco, afinaÃ§Ã£o, sonoridade orquestral e repertÃ³rio de cÃ¢mara e erudito com excelÃªncia.',
+            'icon' => '🎻',
+            'desc' => 'Postura, arco, afinação, sonoridade orquestral e repertório de câmara e erudito com excelência.',
             'publico' => 'Todas as idades',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'cordas',
-            'titulo' => 'Contrabaixo ElÃ©trico & AcÃºstico',
-            'icon' => 'ðŸŽ¸',
-            'desc' => 'ConduÃ§Ã£o harmÃ´nica, slaps, grooves, leitura em clave de fÃ¡ e integraÃ§Ã£o com a cozinha rÃ­tmica.',
+            'titulo' => 'Contrabaixo Elétrico & Acústico',
+            'icon' => '🎸',
+            'desc' => 'Condução harmônica, slaps, grooves, leitura em clave de fá e integração com a cozinha rítmica.',
             'publico' => 'Jovens e Adultos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'sopros',
             'titulo' => 'Flauta Transversal & Sopros',
-            'icon' => 'ðŸŽ·',
-            'desc' => 'Embocadura, controle de coluna de ar, afinaÃ§Ã£o, expressividade e leitura de partitura.',
+            'icon' => '🎷',
+            'desc' => 'Embocadura, controle de coluna de ar, afinação, expressividade e leitura de partitura.',
             'publico' => 'A partir dos 9 anos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'infantil',
-            'titulo' => 'MusicalizaÃ§Ã£o Infantil',
-            'icon' => 'ðŸŽ¨',
-            'desc' => 'Desenvolvimento de percepÃ§Ã£o auditiva, ritmo e sensibilidade atravÃ©s de jogos e vivÃªncias musicais.',
-            'publico' => 'CrianÃ§as de 3 a 6 anos',
+            'titulo' => 'Musicalização Infantil',
+            'icon' => '🎨',
+            'desc' => 'Desenvolvimento de percepção auditiva, ritmo e sensibilidade através de jogos e vivências musicais.',
+            'publico' => 'Crianças de 3 a 6 anos',
             'formato' => 'Turmas Reduzidas'
         ],
         [
             'cat' => 'teoria',
             'titulo' => 'Harmonia Funcional & Teoria',
-            'icon' => 'ðŸŽ¼',
-            'desc' => 'AnÃ¡lise harmÃ´nica, rearmonizaÃ§Ã£o, modulaÃ§Ã£o, percepÃ§Ã£o de intervalos e estruturaÃ§Ã£o musical.',
-            'publico' => 'MÃºsicos e Estudantes IntermediÃ¡rios/AvanÃ§ados',
-            'formato' => 'MÃ³dulos PrÃ¡ticos e Coletivos'
+            'icon' => '🎼',
+            'desc' => 'Análise harmônica, rearmonização, modulação, percepção de intervalos e estruturação musical.',
+            'publico' => 'Músicos e Estudantes Intermediários/Avançados',
+            'formato' => 'Módulos Práticos e Coletivos'
         ]
     ];
 
@@ -93,7 +93,7 @@ function eme_shortcode_cursos($atts) {
                 <span class="eme-badge-tag">Cursos & Modalidades EME</span>
                 <h1 class="eme-hero-title">Nossa Grade de Aulas</h1>
                 <p class="eme-hero-subtitle">
-                    Ensino musical de excelÃªncia, do iniciante ao avanÃ§ado, com metodologia humanizada e corpo docente altamente qualificado.
+                    Ensino musical de excelência, do iniciante ao avançado, com metodologia humanizada e corpo docente altamente qualificado.
                 </p>
             </div>
         </section>
@@ -106,7 +106,7 @@ function eme_shortcode_cursos($atts) {
                     <button class="eme-filter-btn" data-filter="teclas">Teclas & Piano</button>
                     <button class="eme-filter-btn" data-filter="cordas">Cordas</button>
                     <button class="eme-filter-btn" data-filter="voz">Voz & Canto</button>
-                    <button class="eme-filter-btn" data-filter="ritmo">Bateria & PercussÃ£o</button>
+                    <button class="eme-filter-btn" data-filter="ritmo">Bateria & Percussão</button>
                     <button class="eme-filter-btn" data-filter="sopros">Sopros</button>
                     <button class="eme-filter-btn" data-filter="infantil">Infantil</button>
                     <button class="eme-filter-btn" data-filter="teoria">Teoria & Harmonia</button>
@@ -115,7 +115,7 @@ function eme_shortcode_cursos($atts) {
                 <!-- Grid de Cursos -->
                 <div class="eme-grid-3 eme-cursos-grid">
                     <?php foreach ($cursos as $c): 
-                        $wa_msg = urlencode("OlÃ¡! Gostaria de mais informaÃ§Ãµes sobre as aulas de " . $c['titulo'] . " na EME.");
+                        $wa_msg = urlencode("Olá! Gostaria de mais informações sobre as aulas de " . $c['titulo'] . " na EME.");
                         $wa_link = "https://wa.me/5531984201358?text=" . $wa_msg;
                     ?>
                         <div class="eme-aula-card" data-cat="<?php echo esc_attr($c['cat']); ?>" data-category="<?php echo esc_attr($c['cat']); ?>">
@@ -126,12 +126,12 @@ function eme_shortcode_cursos($atts) {
                             <h3 class="eme-aula-title"><?php echo esc_html($c['titulo']); ?></h3>
                             <p class="eme-aula-desc"><?php echo esc_html($c['desc']); ?></p>
                             <div class="eme-aula-details">
-                                <div>ðŸŽ¯ PÃºblico: <?php echo esc_html($c['publico']); ?></div>
-                                <div>ðŸ“Œ Formato: <?php echo esc_html($c['formato']); ?></div>
+                                <div>🎯 Público: <?php echo esc_html($c['publico']); ?></div>
+                                <div>📌 Formato: <?php echo esc_html($c['formato']); ?></div>
                             </div>
                             <div style="margin-top: 18px;">
                                 <a href="<?php echo esc_url($wa_link); ?>" target="_blank" class="eme-btn-outline eme-btn-block" style="font-size: 12px; padding: 10px 14px;">
-                                    ðŸ’¬ Quero Agendar Aula Experimental
+                                    💬 Quero Agendar Aula Experimental
                                 </a>
                             </div>
                         </div>
@@ -140,9 +140,9 @@ function eme_shortcode_cursos($atts) {
 
                 <!-- Banner Agendamento -->
                 <div class="eme-recruitment-box" style="margin-top: 60px;">
-                    <div class="eme-recruitment-icon">ðŸŽ¶</div>
-                    <h3>NÃ£o encontrou a sua modalidade ou prefere atendimento personalizado?</h3>
-                    <p>Oferecemos mais de 27 opÃ§Ãµes de aulas prÃ¡ticas e teÃ³ricas. Fale com nossa secretaria e descubra o plano ideal para seu objetivo.</p>
+                    <div class="eme-recruitment-icon">🎶</div>
+                    <h3>Não encontrou a sua modalidade ou prefere atendimento personalizado?</h3>
+                    <p>Oferecemos mais de 27 opções de aulas práticas e teóricas. Fale com nossa secretaria e descubra o plano ideal para seu objetivo.</p>
                     <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20todas%20as%20modalidades%20dispon%C3%ADveis%20na%20EME." target="_blank" class="eme-btn-primary">
                         Falar com a Secretaria no WhatsApp
                     </a>
@@ -178,4 +178,3 @@ function eme_shortcode_cursos($atts) {
 }
 add_shortcode('eme_cursos', 'eme_shortcode_cursos');
 add_shortcode('eme_aulas', 'eme_shortcode_cursos');
-
