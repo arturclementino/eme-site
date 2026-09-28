@@ -98,11 +98,54 @@ add_filter('template_include', function($template) {
     return $template;
 }, 999999);
 
+add_action('wp_footer', function() {
+    global $template;
+    $post = get_queried_object();
+    $slug = ($post && isset($post->post_name)) ? $post->post_name : 'no_slug';
+    echo "\n<!-- DEBUG_EME_TEMPLATE: " . esc_html(basename($template)) . " | SLUG: " . esc_html($slug) . " -->\n";
+}, 999999);
+
 // 4. Carregar automaticamente todos os arquivos de shortcode
 $shortcodes_path = get_stylesheet_directory() . '/shortcodes/*.php';
 foreach (glob($shortcodes_path) as $file) {
     require_once $file;
 }
+
+// 4.1 Substituir dinamicamente o conteúdo da página pelos shortcodes correspondentes do tema EME (prioridade 999999 sobre Elementor)
+add_filter('the_content', function($content) {
+    if (is_page() && !is_admin()) {
+        $post = get_queried_object();
+        $slug = ($post && isset($post->post_name)) ? $post->post_name : '';
+        switch ($slug) {
+            case 'home':
+                return do_shortcode('[eme_home]');
+            case 'contato':
+                return do_shortcode('[eme_contato]');
+            case 'professores':
+                return do_shortcode('[eme_professores]');
+            case 'quem-somos':
+                return do_shortcode('[eme_quemsomos]');
+            case 'eventos':
+                return do_shortcode('[eme_eventos]');
+            case 'galeria':
+                return do_shortcode('[eme_galeria]');
+            case 'aulas':
+            case 'cursos':
+                return do_shortcode('[eme_cursos]');
+            case 'estudio':
+            case 'estudio-gravacoes':
+                return do_shortcode('[eme_estudio]');
+            case 'amigos-da-eme':
+            case 'projetos':
+                return do_shortcode('[eme_amigos]');
+            case 'faq':
+                return do_shortcode('[eme_faq]');
+            case 'politicas':
+                return do_shortcode('[eme_politicas]');
+        }
+    }
+    return $content;
+}, 999999);
 
 // 5. Processamento AJAX do Formulário de Contato com Envio Real via wp_mail()
 add_action('wp_ajax_eme_submit_contact', 'eme_handle_contact_submission');
