@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Shortcode Contato: [eme_contato]
  * EME - Escola de MÃºsica EsperanÃ§a
@@ -33,65 +33,9 @@ function eme_shortcode_contato($atts) {
                             Preencha os campos abaixo e nossa secretaria pedagÃ³gica entrarÃ¡ em contato em breve.
                         </p>
 
-                        <form action="#" method="post" class="eme-form" id="eme-main-contact-form">
-                            <div class="eme-form-group">
-                                <label for="eme-nome">Nome Completo *</label>
-                                <input type="text" id="eme-nome" name="nome" placeholder="Digite seu nome completo" required />
-                            </div>
-                            <div class="eme-form-row">
-                                <div class="eme-form-group">
-                                    <label for="eme-email">E-mail Principal *</label>
-                                    <input type="email" id="eme-email" name="email" placeholder="seu@email.com" required />
-                                </div>
-                                <div class="eme-form-group">
-                                    <label for="eme-telefone">Telefone / WhatsApp *</label>
-                                    <input type="tel" id="eme-telefone" name="telefone" placeholder="(31) 98420-1358" required />
-                                </div>
-                            </div>
-                            <div class="eme-form-row">
-                                <div class="eme-form-group">
-                                    <label for="eme-assunto">Assunto *</label>
-                                    <select id="eme-assunto" name="assunto" required>
-                                        <option value="" disabled selected>Selecione o assunto</option>
-                                        <option value="visita">Agendamento de Visita Presencial</option>
-                                        <option value="matricula">MatrÃ­cula & InscriÃ§Ã£o de Cursos</option>
-                                        <option value="duvidas">DÃºvidas sobre Aulas ou HorÃ¡rios</option>
-                                        <option value="amigos">Projeto Amigos da EME (Bolsas & Apoio)</option>
-                                        <option value="curriculo">Envio de CurrÃ­culo / Trabalhe Conosco</option>
-                                        <option value="outro">Outro assunto</option>
-                                    </select>
-                                </div>
-                                <div class="eme-form-group">
-                                    <label for="eme-curso">Curso de Interesse</label>
-                                    <select id="eme-curso" name="curso">
-                                        <option value="" selected>Selecione a modalidade (opcional)</option>
-                                        <option value="violao">ViolÃ£o / Guitarra</option>
-                                        <option value="piano">Piano / Teclado</option>
-                                        <option value="bateria">Bateria & PercussÃ£o</option>
-                                        <option value="violino">Violino / Violoncelo</option>
-                                        <option value="contrabaixo">Contrabaixo ElÃ©trico e AcÃºstico</option>
-                                        <option value="canto">Canto & Fisiologia Vocal</option>
-                                        <option value="flauta">Flauta Doce / Transversal</option>
-                                        <option value="saxofone">Saxofone & Sopros</option>
-                                        <option value="harmonia">Harmonia Funcional</option>
-                                        <option value="musicalizacao">MusicalizaÃ§Ã£o Infantil</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="eme-form-group">
-                                <label for="eme-mensagem">Mensagem *</label>
-                                <textarea id="eme-mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar vocÃª?" required></textarea>
-                            </div>
-                            <div class="eme-form-group" style="margin-bottom: 24px;">
-                                <label class="eme-checkbox-label" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; margin: 0; padding: 4px 0; width: 100%;">
-                                    <input type="checkbox" id="eme-lgpd-check" name="lgpd_agree" required style="width: 22px; height: 22px; min-width: 22px; min-height: 22px; accent-color: #C17B4A; cursor: pointer; flex-shrink: 0; margin-top: 2px; opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; display: inline-block !important; -webkit-appearance: checkbox !important; appearance: checkbox !important; z-index: 10 !important;" />
-                                    <span style="font-size: 14px; color: #111827; font-weight: 600; line-height: 1.5; cursor: pointer;">
-                                        Concordo com os <a href="javascript:void(0);" id="eme-open-modal-btn" class="eme-link-modal-btn eme-open-lgpd-modal" role="button">Termos de Privacidade e LGPD</a> para atendimento da EME. *
-                                    </span>
-                                </label>
-                            </div>
-                            <button type="submit" class="eme-btn-primary eme-btn-block">Enviar Mensagem</button>
-                        </form>
+                        <div style="width: 100%; min-height: 700px;">
+                            <iframe src="https://web.emusys.com.br/eme/Zm9ybV9sZWFkcy8x" width="100%" height="100%" style="min-height: 700px;" frameborder="0"></iframe>
+                        </div>
                     </div>
 
                     <!-- InformaÃ§Ãµes de Atendimento & Canais (Coluna Direita Otimizada) -->
@@ -193,42 +137,7 @@ function eme_shortcode_contato($atts) {
     </div>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const form = document.getElementById('eme-main-contact-form');
-
-
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const btn = form.querySelector('button[type="submit"]');
-                const origText = btn.textContent;
-                btn.textContent = 'Enviando...';
-                btn.disabled = true;
-
-                const formData = new FormData(form);
-                formData.append('action', 'eme_submit_contact');
-
-                fetch('<?php echo admin_url('admin-ajax.php'); ?>', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(r => r.json())
-                .then(data => {
-                    const msg = (data && data.data && data.data.message) ? data.data.message : 'Obrigado! Sua mensagem foi enviada com sucesso para a EME.';
-                    if (typeof emeToast === 'function') { emeToast(msg, 'success'); } else { alert(msg); }
-                    form.reset();
-                })
-                .catch(err => {
-                    if (typeof emeToast === 'function') { emeToast('Obrigado! Sua mensagem foi enviada com sucesso para a secretaria da EME.', 'success'); } else { alert('Obrigado!'); }
-                    form.reset();
-                })
-                .finally(() => {
-                    btn.textContent = origText;
-                    btn.disabled = false;
-                });
-            });
-        }
-    });
+    // Script removido pois o form manual foi substituído pelo iframe do Emusys
     </script>
     <?php
     return ob_get_clean();
