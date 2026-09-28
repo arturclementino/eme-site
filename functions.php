@@ -159,6 +159,3 @@ add_filter('document_title_separator', function($sep) {
     return '—';
 }, 99999);
 
-
-
-
