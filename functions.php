@@ -16,6 +16,16 @@ add_filter('option_active_plugins', function($plugins) {
     return $plugins;
 }, 0);
 
+// Forçar navegador e CDN a não armazenar cache estático (garante visualização em tempo real)
+add_action('send_headers', function() {
+    if (!is_admin()) {
+        header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0, s-maxage=0', true);
+        header('Pragma: no-cache', true);
+        header('Expires: Wed, 11 Jan 1984 05:00:00 GMT', true);
+    }
+});
+
+
 // 1. Carregar estilos e scripts do tema com versionamento por modificação de arquivo (filemtime)
 add_action('wp_enqueue_scripts', function() {
     $theme_dir = get_stylesheet_directory();
