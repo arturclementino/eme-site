@@ -26,7 +26,7 @@ add_action('send_headers', function() {
 });
 
 // PÁGINA DE MANUTENÇÃO (Banner elegante para visitantes não autenticados)
-add_action('get_header', function() {
+add_action('template_redirect', function() {
     if (!is_user_logged_in() && !is_admin()) {
         wp_die(
             '<div style="font-family:\'Montserrat\',sans-serif; text-align:center; padding:60px 20px; background:#0D1117; color:#FFFFFF; min-height:80vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">' .
@@ -44,6 +44,7 @@ add_action('get_header', function() {
         );
     }
 });
+
 
 
 
