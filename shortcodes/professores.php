@@ -65,7 +65,7 @@ function eme_shortcode_professores($atts) {
             'foto_style' => 'object-fit: cover !important; object-position: center 20% !important;'
         ],
         [
-            'nome' => 'Daniel Henrique de Faria',
+            'nome' => 'Daniel Faria',
             'instr' => 'Guitarra, Arranjo & Produção Musical',
             'form' => 'Bacharelando em Música na UFMG e formado em Guitarra pela Universidade de Música Popular de Barbacena ("Bituca").',
             'bio' => 'Guitarrista, arranjador e produtor já passou por importantes festivais e pontos culturais de música instrumental de Minas Gerais, como o Savassi Festival, Festival Fartura, Café com Letras e Teatro Raul Belém Machado, apresentando seu show autoral "Nascente" e o projeto "Influências". É também idealizador do "Donato Tributo", grupo criado para homenagear João Donato e contemplado para o Savassi Festival. Atualmente, sob coordenação do Doutor André Queiroz, desenvolve a pesquisa de Iniciação Científica "O jazz latino e o potencial pedagógico de João Donato" pela UFMG. Na mesma instituição, é monitor de produção e transcrição na Geraes Big Band. Na cena local, assina a produção musical do single Belo Horizonte do duo "AnaEsther", Disco Elos de Matheus Avelar e do Disco "771" da artista Vitória Ventura e acompanha diversos novos artistas da música instrumental em Belo Horizonte.',
@@ -128,7 +128,7 @@ function eme_shortcode_professores($atts) {
             'foto_style' => 'object-fit: cover !important; object-position: center 15% !important;'
         ],
         [
-            'nome' => 'Rafael Rafles Machado',
+            'nome' => 'Rafael de Preta',
             'instr' => 'Violão, Cavaquinho e Música Instrumental Brasileira',
             'form' => 'Bacharel em Violão pela UEMG e formado pelo CEFART.',
             'bio' => 'Rafael de Preta é violonista, cavaquinista, compositor, arranjador e professor, natural de Chapada do Norte, no Vale do Jequitinhonha (MG), e radicado em Belo Horizonte desde 2010. Bacharel em Violão pela UEMG e formado pelo CEFART, desenvolve seu trabalho entre o violão clássico, o choro, o samba e a música instrumental brasileira. Atua na cena musical de Belo Horizonte como músico e educador, além de desenvolver projetos autorais voltados à música brasileira e às expressões afro-brasileiras.',
