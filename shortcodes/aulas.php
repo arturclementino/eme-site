@@ -232,8 +232,8 @@ function eme_shortcode_aulas($atts) {
                             <p class="eme-aula-desc"><?php echo esc_html($c['desc']); ?></p>
 
                             <div class="eme-aula-details">
-                                <div>👶 <strong>Faixa etária:</strong> <?php echo esc_html($c['etaria']); ?></div>
-                                <div>📊 <strong>Níveis:</strong> <?php echo esc_html($c['nivel']); ?></div>
+                                <div>👶 Faixa etária: <?php echo esc_html($c['etaria']); ?></div>
+                                <div>📊 Níveis: <?php echo esc_html($c['nivel']); ?></div>
                             </div>
 
                             <a href="<?php echo esc_url($wa_url); ?>" target="_blank" class="eme-btn-primary eme-btn-block eme-btn-interesse" style="margin-top: 15px;">

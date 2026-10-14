@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
                     <img src="https://escolaeme.com/wp-content/uploads/2026/08/eme-horizontal-verde-renovo-scaled-e1787075643364.png" alt="Escola de Música Esperança — EME" class="eme-footer-logo" />
                 </a>
                 <p class="eme-footer-about">
-                    Projeto do <strong>Núcleo de Arte e Música Esperança (NAME)</strong>, braço cultural e educacional da Igreja Esperança. Unindo técnica e acolhimento, excelência e acessibilidade para servir Belo Horizonte através do ensino musical com propósito.
+                    Projeto do Núcleo de Arte e Música Esperança (NAME), braço cultural e educacional da Igreja Esperança. Unindo técnica e acolhimento, excelência e acessibilidade para servir Belo Horizonte através do ensino musical com propósito.
                 </p>
                 <div class="eme-footer-pillars">
                     <span>🎵 Arte</span> • <span>✝️ Fé</span> • <span>🎓 Excelência</span>
@@ -67,7 +67,7 @@ if (!defined('ABSPATH')) {
         <!-- Rodapé Inferior (Copyright) -->
         <div class="eme-footer-bottom">
             <p>
-                &copy; <?php echo date('Y'); ?> <strong>Escola de Música Esperança (EME)</strong> — Núcleo de Arte e Música Esperança (NAME) / Igreja Esperança. Todos os direitos reservados.
+                &copy; <?php echo date('Y'); ?> Escola de Música Esperança (EME) — Núcleo de Arte e Música Esperança (NAME) / Igreja Esperança. Todos os direitos reservados.
             </p>
         </div>
     </div>
@@ -82,13 +82,13 @@ if (!defined('ABSPATH')) {
             <span class="eme-modal-sub">Escola de Música Esperança (EME / NAME)</span>
         </div>
         <div class="eme-modal-body">
-            <p><strong>1. Coleta e Finalidade dos Dados:</strong> Os dados pessoais fornecidos neste portal (nome completo, e-mail, telefone/WhatsApp, assunto e curso de interesse) são coletados única e exclusivamente para possibilitar o atendimento da secretaria pedagógica da EME, agendamento de visitas presenciais, envio de orientações sobre turmas e esclarecimento de dúvidas.</p>
+            <p>1. Coleta e Finalidade dos Dados: Os dados pessoais fornecidos neste portal (nome completo, e-mail, telefone/WhatsApp, assunto e curso de interesse) são coletados única e exclusivamente para possibilitar o atendimento da secretaria pedagógica da EME, agendamento de visitas presenciais, envio de orientações sobre turmas e esclarecimento de dúvidas.</p>
             
-            <p><strong>2. Uso Exclusivo e Não Compartilhamento:</strong> A EME compromete-se a não vender, alugar ou compartilhar suas informações com terceiros ou parceiros comerciais para fins de publicidade não solicitada (spam).</p>
+            <p>2. Uso Exclusivo e Não Compartilhamento: A EME compromete-se a não vender, alugar ou compartilhar suas informações com terceiros ou parceiros comerciais para fins de publicidade não solicitada (spam).</p>
             
-            <p><strong>3. Armazenamento Seguro:</strong> Todas as informações fornecidas são tratadas com sigilo e armazenadas em ambiente seguro, em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD).</p>
+            <p>3. Armazenamento Seguro: Todas as informações fornecidas são tratadas com sigilo e armazenadas em ambiente seguro, em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD).</p>
             
-            <p><strong>4. Direitos do Titular:</strong> Você tem o direito de solicitar a atualização, confirmação, correção ou exclusão definitiva dos seus dados de nossos cadastros a qualquer momento pelo e-mail oficial <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a>.</p>
+            <p>4. Direitos do Titular: Você tem o direito de solicitar a atualização, confirmação, correção ou exclusão definitiva dos seus dados de nossos cadastros a qualquer momento pelo e-mail oficial <a href="mailto:contato@escolaeme.com">contato@escolaeme.com</a>.</p>
         </div>
         <div class="eme-modal-footer">
             <button type="button" class="eme-btn-primary eme-modal-accept-btn" style="padding: 10px 26px; font-size: 13.5px;">Compreendi e Aceito</button>

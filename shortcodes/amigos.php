@@ -52,17 +52,17 @@ function eme_shortcode_amigos($atts) {
                         <h2 class="eme-section-title text-left" style="font-size: 32px;">A Música Como Agente de Transformação Social</h2>
                         <div class="eme-divider divider-left"></div>
                         <p style="font-size: 16px; color: #444; line-height: 1.8;">
-                            O programa <strong>Amigos da EME</strong> foi criado com a convicção de que o talento musical e a paixão pela arte não devem ser limitados por barreiras financeiras.
+                            O programa Amigos da EME foi criado com a convicção de que o talento musical e a paixão pela arte não devem ser limitados por barreiras financeiras.
                         </p>
                         <p style="font-size: 16px; color: #444; line-height: 1.8;">
-                            Através de parcerias com membros da comunidade, doadores e apoiadores institucionais, oferecemos <strong>bolsas de estudo de até 85%</strong> para crianças, jovens e adultos que desejam estudar música com propósito e rigor técnico.
+                            Através de parcerias com membros da comunidade, doadores e apoiadores institucionais, oferecemos bolsas de estudo de até 85% para crianças, jovens e adultos que desejam estudar música com propósito e rigor técnico.
                         </p>
                     </div>
                     <div style="background: var(--branco-puro); padding: 35px; border-radius: 16px; box-shadow: var(--sombra-card); border-left: 5px solid var(--terracota);">
                         <h3 style="color: var(--verde-escuro); margin-top: 0; font-size: 22px;">🎯 Como Funciona o Apoio</h3>
                         <ul style="list-style: none; padding: 0; margin: 20px 0 0; line-height: 2.2;">
-                            <li>✅ <strong>Apadrinhamento Individual:</strong> Apoie a mensalidade parcial ou integral de um estudante.</li>
-                            <li>✅ <strong>Empresas Parceiras:</strong> Apoio institucional com incentivo à formação artística local.</li>
+                            <li>✅ Apadrinhamento Individual: Apoie a mensalidade parcial ou integral de um estudante.</li>
+                            <li>✅ Empresas Parceiras: Apoio institucional com incentivo à formação artística local.</li>
                         </ul>
                     </div>
                 </div>

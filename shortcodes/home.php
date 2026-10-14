@@ -62,10 +62,10 @@ function eme_shortcode_home($atts) {
                         <h2 class="eme-section-title text-left">Integrando Fé, Cultura e Ensino de Alta Qualidade</h2>
                         <div class="eme-divider divider-left"></div>
                         <p>
-                            A <strong>Escola de Música Esperança (EME)</strong> é um projeto do <strong>Núcleo de Arte e Música Esperança (NAME)</strong>, braço cultural e educacional vinculado à <strong>Igreja Esperança</strong>, em Belo Horizonte (região Padre Eustáquio / Vila São Vicente).
+                            A Escola de Música Esperança (EME) é um projeto do Núcleo de Arte e Música Esperança (NAME), braço cultural e educacional vinculado à Igreja Esperança, em Belo Horizonte (região Padre Eustáquio / Vila São Vicente).
                         </p>
                         <p>
-                            Oferecemos uma ampla grade didática distribuída em <strong>27 modalidades musicais</strong> com acompanhamento individualizado e um corpo docente experiente composto por músicos graduados, licenciados e mestres.
+                            Oferecemos uma ampla grade didática distribuída em 27 modalidades musicais com acompanhamento individualizado e um corpo docente experiente composto por músicos graduados, licenciados e mestres.
                         </p>
                         <p>
                             Mais do que ensinar técnicas instrumentais ou vocais, a EME forma pessoas por meio da arte, promovendo o desenvolvimento técnico, pessoal e comunitário.
@@ -187,7 +187,7 @@ function eme_shortcode_home($atts) {
                         </div>
                         <div class="eme-event-details">
                             <h3>Recitais de 2º Semestre EME</h3>
-                            <p><strong>Local:</strong> Auditório Principal — Igreja Esperança | Grande momento de apresentação dos alunos da EME.</p>
+                            <p>Local: Auditório Principal — Igreja Esperança | Grande momento de apresentação dos alunos da EME.</p>
                         </div>
                     </div>
                     <div class="eme-event-mini-card">
@@ -197,7 +197,7 @@ function eme_shortcode_home($atts) {
                         </div>
                         <div class="eme-event-details">
                             <h3>Projeto Casa Aberta</h3>
-                            <p><strong>Local:</strong> Sede EME (Área externa). Pocket show gratuito com música ao vivo e integração comunitária.</p>
+                            <p>Local: Sede EME (Área externa). Pocket show gratuito com música ao vivo e integração comunitária.</p>
                         </div>
                     </div>
                     <div class="eme-event-mini-card">
@@ -237,7 +237,7 @@ function eme_shortcode_home($atts) {
                         <div class="eme-quote-icon">“</div>
                         <p class="eme-testimonial-text">A EME une o profissionalismo de grandes professores com um ambiente acolhedor e seguro. Meu filho teve uma evolução fantástica no violão em pouquíssimos meses!</p>
                         <div class="eme-testimonial-author">
-                            <strong>Mariana Ferreira</strong>
+                            Mariana Ferreira
                             <span>Mãe de aluno (Belo Horizonte - Padre Eustáquio)</span>
                         </div>
                     </div>
@@ -245,7 +245,7 @@ function eme_shortcode_home($atts) {
                         <div class="eme-quote-icon">“</div>
                         <p class="eme-testimonial-text">Iniciei o piano na idade adulta e fui extremamente bem acolhido. A coordenação pedagógica se importa com a evolução individual de cada aluno.</p>
                         <div class="eme-testimonial-author">
-                            <strong>Carlos Eduardo Ramos</strong>
+                            Carlos Eduardo Ramos
                             <span>Aluno de Piano & Harmonia Funcional</span>
                         </div>
                     </div>

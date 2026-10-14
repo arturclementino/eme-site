@@ -27,10 +27,10 @@ function eme_shortcode_politicas($atts) {
                 <div class="eme-policy-box">
                     <h2>1. Política de Privacidade (LGPD)</h2>
                     <p>
-                        A <strong>Escola de Música Esperança (EME)</strong> e o <strong>Núcleo de Arte e Música Esperança (NAME)</strong> valorizam a privacidade de seus alunos, responsáveis e visitantes. Todos os dados pessoais coletados por meio dos formulários em nosso site (como nome, e-mail, telefone e curso de interesse) são utilizados exclusivamente para atendimento comercial, agendamento de visitas e comunicação institucional, conforme prevê a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
+                        A Escola de Música Esperança (EME) e o Núcleo de Arte e Música Esperança (NAME) valorizam a privacidade de seus alunos, responsáveis e visitantes. Todos os dados pessoais coletados por meio dos formulários em nosso site (como nome, e-mail, telefone e curso de interesse) são utilizados exclusivamente para atendimento comercial, agendamento de visitas e comunicação institucional, conforme prevê a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
                     </p>
                     <p>
-                        Seus dados jamais serão compartilhados com terceiros não autorizados ou comercializados. A qualquer momento, você pode solicitar a alteração ou exclusão dos seus dados cadastrais através do e-mail <strong>contato@escolaeme.com</strong>.
+                        Seus dados jamais serão compartilhados com terceiros não autorizados ou comercializados. A qualquer momento, você pode solicitar a alteração ou exclusão dos seus dados cadastrais através do e-mail contato@escolaeme.com.
                     </p>
 
                     <hr class="eme-policy-hr" />
@@ -44,10 +44,10 @@ function eme_shortcode_politicas($atts) {
 
                     <h2>3. Resumo do Regulamento Interno</h2>
                     <ul>
-                        <li><strong>Pontualidade:</strong> O horário das aulas é rigorosamente cumprido. Atrasos do aluno não serão compensados ao final da aula.</li>
-                        <li><strong>Faltas e Reposições:</strong> Faltas informadas à secretaria com no mínimo 24 horas de antecedência darão direito a agendamento de reposição dentro do mesmo mês.</li>
-                        <li><strong>Conservação de Instrumentos:</strong> Os equipamentos e instrumentos disponibilizados na escola devem ser manuseados com cuidado e responsabilidade.</li>
-                        <li><strong>Direito de Imagem:</strong> Fotos e gravações de apresentações e recitais da escola poderão ser divulgadas em canais institucionais oficiais mediante autorização no contrato de matrícula.</li>
+                        <li>Pontualidade: O horário das aulas é rigorosamente cumprido. Atrasos do aluno não serão compensados ao final da aula.</li>
+                        <li>Faltas e Reposições: Faltas informadas à secretaria com no mínimo 24 horas de antecedência darão direito a agendamento de reposição dentro do mesmo mês.</li>
+                        <li>Conservação de Instrumentos: Os equipamentos e instrumentos disponibilizados na escola devem ser manuseados com cuidado e responsabilidade.</li>
+                        <li>Direito de Imagem: Fotos e gravações de apresentações e recitais da escola poderão ser divulgadas em canais institucionais oficiais mediante autorização no contrato de matrícula.</li>
                     </ul>
                 </div>
             </div>

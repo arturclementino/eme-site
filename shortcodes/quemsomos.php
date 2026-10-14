@@ -32,13 +32,13 @@ function eme_shortcode_quemsomos($atts) {
                         <h2 class="eme-section-title text-left">Nossa História</h2>
                         <div class="eme-divider divider-left"></div>
                         <p>
-                            A <strong>Escola de Música Esperança (EME)</strong> nasceu como extensão da <strong>Igreja Esperança</strong> na cidade de Belo Horizonte — um projeto vinculado ao <strong>Núcleo de Arte e Música Esperança (NAME)</strong> que une formação musical séria com propósito comunitário.
+                            A Escola de Música Esperança (EME) nasceu como extensão da Igreja Esperança na cidade de Belo Horizonte — um projeto vinculado ao Núcleo de Arte e Música Esperança (NAME) que une formação musical séria com propósito comunitário.
                         </p>
                         <p>
-                            Nossa identidade é pautada por um duplo compromisso fundamental: <strong>técnica e acolhimento, excelência e acessibilidade</strong>. Comunicamos seriedade para pais, alunos e parceiros sem abrir mão da proximidade e do ambiente transformador.
+                            Nossa identidade é pautada por um duplo compromisso fundamental: técnica e acolhimento, excelência e acessibilidade. Comunicamos seriedade para pais, alunos e parceiros sem abrir mão da proximidade e do ambiente transformador.
                         </p>
                         <p>
-                            Com uma grade didática abrangente composta por <strong>27 modalidades musicais</strong>, a EME forma o aluno de maneira integral — unindo prática instrumental, percepção teórica e vivência comunitária em palcos e recitais.
+                            Com uma grade didática abrangente composta por 27 modalidades musicais, a EME forma o aluno de maneira integral — unindo prática instrumental, percepção teórica e vivência comunitária em palcos e recitais.
                         </p>
                     </div>
                     <div class="eme-about-image-box">

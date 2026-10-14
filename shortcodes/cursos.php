@@ -126,8 +126,8 @@ function eme_shortcode_cursos($atts) {
                             <h3 class="eme-aula-title"><?php echo esc_html($c['titulo']); ?></h3>
                             <p class="eme-aula-desc"><?php echo esc_html($c['desc']); ?></p>
                             <div class="eme-aula-details">
-                                <div><strong>🎯 Público:</strong> <?php echo esc_html($c['publico']); ?></div>
-                                <div><strong>📌 Formato:</strong> <?php echo esc_html($c['formato']); ?></div>
+                                <div>🎯 Público: <?php echo esc_html($c['publico']); ?></div>
+                                <div>📌 Formato: <?php echo esc_html($c['formato']); ?></div>
                             </div>
                             <div style="margin-top: 18px;">
                                 <a href="<?php echo esc_url($wa_link); ?>" target="_blank" class="eme-btn-outline eme-btn-block" style="font-size: 12px; padding: 10px 14px;">

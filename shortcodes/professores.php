@@ -119,15 +119,6 @@ function eme_shortcode_professores($atts) {
             'foto_style' => 'object-fit: cover !important; object-position: center 15% !important;'
         ],
         [
-            'nome' => 'Rafael Ávila',
-            'instr' => 'Canto & Fisiologia Vocal',
-            'form' => 'Especialista em Fisiologia Vocal e Técnica Vocal Aplicada.',
-            'bio' => 'Com mais de 20 anos de experiência e mais de 500 alunos formados, une ciência da saúde vocal e sensibilidade artística para potencializar a voz de cantores iniciantes e profissionais.',
-            'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Rafael-Avila.jpeg',
-            'foto_class' => 'eme-img-rafael',
-            'foto_style' => 'object-fit: cover !important; object-position: center 20% !important;'
-        ],
-        [
             'nome' => 'Regiany Carlos',
             'instr' => 'Violino',
             'form' => 'Bacharel em Violino pela UEMG. Ex-Spalla da Orquestra Vale do Aço.',
@@ -211,7 +202,7 @@ function eme_shortcode_professores($atts) {
                 <!-- Introdução Institucional -->
                 <div class="eme-prof-intro-box">
                     <p class="eme-prof-intro-text">
-                        O corpo docente da Escola de Música Esperança é composto por <strong>20 professores qualificados</strong> com formação acadêmica (bacharéis, licenciados e mestres) e vasta vivência de palco, orquestras e estúdios. Conheça a trajetória de quem faz a música acontecer na EME:
+                        O corpo docente da Escola de Música Esperança é composto por 20 professores qualificados com formação acadêmica (bacharéis, licenciados e mestres) e vasta vivência de palco, orquestras e estúdios. Conheça a trajetória de quem faz a música acontecer na EME:
                     </p>
                 </div>
 
@@ -238,7 +229,7 @@ function eme_shortcode_professores($atts) {
                             </div>
                             <div class="eme-prof-body">
                                 <div class="eme-prof-form">
-                                    <strong>🎓 Formação:</strong> <?php echo esc_html($prof['form']); ?>
+                                    🎓 Formação: <?php echo esc_html($prof['form']); ?>
                                 </div>
                                 <div class="eme-prof-bio-box">
                                     <p class="eme-prof-bio eme-bio-truncated"><?php echo esc_html($prof['bio']); ?></p>
