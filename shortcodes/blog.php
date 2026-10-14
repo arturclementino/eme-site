@@ -101,8 +101,8 @@ function eme_shortcode_blog($atts) {
                             </div>
                             <div class="eme-blog-content">
                                 <div class="eme-blog-meta">
-                                    <span>📅 <?php echo esc_html($post['data']); ?></span>
-                                    <span>✍️ <?php echo esc_html($post['autor']); ?></span>
+                                    <span style="display: inline-flex; align-items: center; gap: 5px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <?php echo esc_html($post['data']); ?></span>
+                                    <span style="display: inline-flex; align-items: center; gap: 5px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <?php echo esc_html($post['autor']); ?></span>
                                 </div>
                                 <h3 class="eme-blog-title"><?php echo esc_html($post['titulo']); ?></h3>
                                 <p class="eme-blog-excerpt"><?php echo esc_html($post['resumo']); ?></p>

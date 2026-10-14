@@ -247,7 +247,7 @@ function eme_shortcode_professores($atts) {
                             </div>
                             <div class="eme-prof-body">
                                 <div class="eme-prof-form">
-                                    🎓 Formação: <?php echo esc_html($prof['form']); ?>
+                                    <span class="eme-detail-label">Formação:</span> <?php echo esc_html($prof['form']); ?>
                                 </div>
                                 <div class="eme-prof-bio-box">
                                     <p class="eme-prof-bio eme-bio-truncated"><?php echo esc_html($prof['bio']); ?></p>
@@ -256,7 +256,7 @@ function eme_shortcode_professores($atts) {
                             </div>
                             <div class="eme-prof-footer">
                                 <a href="<?php echo esc_url($wa_link); ?>" target="_blank" class="eme-prof-wa-btn" title="Falar no WhatsApp da Secretaria">
-                                    💬 Quero fazer aula com <?php echo esc_html($primeiro_nome); ?>
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; gap: 6px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Quero fazer aula com <?php echo esc_html($primeiro_nome); ?></span>
                                 </a>
                             </div>
                         </div>
@@ -265,7 +265,9 @@ function eme_shortcode_professores($atts) {
 
                 <!-- Seção Trabalhe Conosco / Recrutamento -->
                 <div class="eme-recruitment-box">
-                    <div class="eme-recruitment-icon">💼</div>
+                    <div class="eme-recruitment-icon" style="color: var(--terracota); display: flex; justify-content: center; margin-bottom: 12px;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
                     <h3>Quer fazer parte do nosso time?</h3>
                     <p>Estamos sempre em busca de educadores e instrumentistas apaixonados pelo ensino da música com excelência e acolhimento.</p>
                     <a href="mailto:coordenacao@escolaeme.com?subject=Curr%C3%ADculo%20-%20Corpo%20Docente%20EME" class="eme-btn-primary">

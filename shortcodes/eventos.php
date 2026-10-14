@@ -92,9 +92,9 @@ function eme_shortcode_eventos($atts) {
         <section class="eme-sympla-banner-section" style="background: linear-gradient(135deg, #0F2E23 0%, #1B4332 100%); color: #FFFFFF; padding: 40px 0; margin-bottom: 30px; border-bottom: 3px solid #C17B4A;">
             <div class="eme-container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
                 <div style="max-width: 650px;">
-                    <span style="background: rgba(193, 123, 74, 0.25); color: #E5A93C; border: 1px solid rgba(229, 169, 60, 0.4); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: inline-block;">Bilheteria Oficial Sympla</span>
+                    <span style="background: rgba(193, 123, 74, 0.25); color: #E5A93C; border: 1px solid rgba(229, 169, 60, 0.4); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: inline-block;">Bilheteria Oficial Sympla</span>
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin: 14px 0 8px; color: #FFFFFF !important;">Bilheteria & Inscrições EME no Sympla</h2>
-                    <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #FDFBF7 !important; opacity: 0.95;">
+                    <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #FDFBF7 !important; opacity: 0.95; font-weight: 400;">
                         Garanta sua presença em nossos workshops, cursos complementares e recitais através do perfil produtor oficial da EME.
                     </p>
                 </div>
@@ -124,15 +124,15 @@ function eme_shortcode_eventos($atts) {
                                 <span class="eme-event-tag"><?php echo esc_html($evt['categoria']); ?></span>
                             </div>
                             <div class="eme-event-content">
-                                <div class="eme-event-meta" style="color: #1B4332; font-weight: 600;">
+                                <div class="eme-event-meta" style="color: #1B4332; font-weight: 500;">
                                     <span>Data: <?php echo esc_html($evt['data']); ?></span>
                                     <span>Horário: <?php echo esc_html($evt['horario']); ?></span>
                                     <span>Local: <?php echo esc_html($evt['local']); ?></span>
                                 </div>
-                                <h3 style="color: #0F2E23 !important; font-size: 22px; margin: 12px 0 8px;"><?php echo esc_html($evt['titulo']); ?></h3>
-                                <p style="color: #444444 !important; font-size: 15px; line-height: 1.6; margin-bottom: 16px;"><?php echo esc_html($evt['desc']); ?></p>
+                                <h3 style="color: #0F2E23 !important; font-size: 22px; margin: 12px 0 8px; font-weight: 700;"><?php echo esc_html($evt['titulo']); ?></h3>
+                                <p style="color: #444444 !important; font-size: 15px; line-height: 1.6; margin-bottom: 16px; font-weight: 400;"><?php echo esc_html($evt['desc']); ?></p>
                                 <div class="eme-event-footer">
-                                    <span class="eme-event-target" style="color: #6B7280; font-size: 13px; font-weight: 600;">Público: <?php echo esc_html($evt['publico']); ?></span>
+                                    <span class="eme-event-target" style="color: #6B7280; font-size: 13px; font-weight: 500;">Público: <?php echo esc_html($evt['publico']); ?></span>
                                     <?php if ($is_em_breve): ?>
                                         <a href="<?php echo esc_url($sympla_link); ?>" target="_blank" rel="noopener noreferrer" class="eme-btn-outline">
                                             Em Breve no Sympla
@@ -158,10 +158,10 @@ function eme_shortcode_eventos($atts) {
                 <div class="eme-grid-2">
                     <?php foreach ($eventos_anteriores as $prev): ?>
                         <div class="eme-prev-event-card" style="padding: 28px; background: #FFFFFF; border-radius: 14px; border: 1px solid #E2DACD;">
-                            <span class="eme-prev-date" style="color: #C17B4A; font-weight: 700; font-size: 13px; display: block; margin-bottom: 6px;"><?php echo esc_html($prev['data']); ?></span>
-                            <h4 style="color: #0F2E23; font-size: 18px; margin: 0 0 10px;"><?php echo esc_html($prev['titulo']); ?></h4>
-                            <p style="color: #555555; font-size: 14px; margin: 0 0 12px; line-height: 1.6;"><?php echo esc_html($prev['desc']); ?></p>
-                            <span class="eme-prev-badge" style="background: rgba(45,106,79,0.1); color: #2D6A4F; font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 20px; display: inline-block;"><?php echo esc_html($prev['badge']); ?></span>
+                            <span class="eme-prev-date" style="color: #C17B4A; font-weight: 600; font-size: 13px; display: block; margin-bottom: 6px;"><?php echo esc_html($prev['data']); ?></span>
+                            <h4 style="color: #0F2E23; font-size: 18px; margin: 0 0 10px; font-weight: 600;"><?php echo esc_html($prev['titulo']); ?></h4>
+                            <p style="color: #555555; font-size: 14px; margin: 0 0 12px; line-height: 1.6; font-weight: 400;"><?php echo esc_html($prev['desc']); ?></p>
+                            <span class="eme-prev-badge" style="background: rgba(45,106,79,0.1); color: #2D6A4F; font-weight: 500; font-size: 12px; padding: 4px 12px; border-radius: 20px; display: inline-block;"><?php echo esc_html($prev['badge']); ?></span>
                         </div>
                     <?php endforeach; ?>
                 </div>

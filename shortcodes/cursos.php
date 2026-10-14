@@ -8,12 +8,33 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+if (!function_exists('eme_get_category_svg')) {
+    function eme_get_category_svg($cat) {
+        switch ($cat) {
+            case 'teclas':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line><line x1="6" y1="15" x2="6" y2="15"></line><line x1="10" y1="15" x2="10" y2="15"></line><line x1="14" y1="15" x2="14" y2="15"></line><line x1="18" y1="15" x2="18" y2="15"></line></svg>';
+            case 'cordas':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18"></path><path d="M16 4v16"></path><path d="M8 4v16"></path></svg>';
+            case 'voz':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line></svg>';
+            case 'ritmo':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="8" rx="9" ry="4"></ellipse><path d="M3 8v8c0 2.21 4.03 4 9 4s9-1.79 9-4V8"></path></svg>';
+            case 'sopros':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" y1="12" x2="22" y2="12"></line><circle cx="6" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="18" cy="12" r="2"></circle></svg>';
+            case 'infantil':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>';
+            case 'teoria':
+            default:
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>';
+        }
+    }
+}
+
 function eme_shortcode_cursos($atts) {
     $cursos = [
         [
             'cat' => 'teclas',
             'titulo' => 'Piano Erudito & Popular',
-            'icon' => '🎹',
             'desc' => 'Desenvolvimento técnico, leitura de partitura, percepção harmônica e repertório erudito ou popular.',
             'publico' => 'Crianças, Jovens e Adultos (Iniciante ao Avançado)',
             'formato' => 'Aulas Individuais | Presencial'
@@ -21,7 +42,6 @@ function eme_shortcode_cursos($atts) {
         [
             'cat' => 'cordas',
             'titulo' => 'Violão & Guitarra',
-            'icon' => '🎸',
             'desc' => 'Técnica de digitação, acordes, ritmos, harmonia funcional e improvisação em diversos estilos musicais.',
             'publico' => 'A partir dos 7 anos',
             'formato' => 'Aulas Individuais ou em Dupla'
@@ -29,7 +49,6 @@ function eme_shortcode_cursos($atts) {
         [
             'cat' => 'voz',
             'titulo' => 'Canto Popular & Lírico',
-            'icon' => '🎤',
             'desc' => 'Técnica vocal, apoio diafragmático, afinação, fisiologia vocal, interpretação e expressão cênica.',
             'publico' => 'Jovens e Adultos',
             'formato' => 'Aulas Individuais'
@@ -37,15 +56,13 @@ function eme_shortcode_cursos($atts) {
         [
             'cat' => 'ritmo',
             'titulo' => 'Bateria & Percussão',
-            'icon' => '🥁',
-            'desc' => 'Independência dos membros, rudiemntos, grooves, coordenação motora e leitura de partitura rítmica.',
+            'desc' => 'Independência dos membros, rudimentos, grooves, coordenação motora e leitura de partitura rítmica.',
             'publico' => 'A partir dos 8 anos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'cordas',
             'titulo' => 'Violino, Viola & Violoncelo',
-            'icon' => '🎻',
             'desc' => 'Postura, arco, afinação, sonoridade orquestral e repertório de câmara e erudito com excelência.',
             'publico' => 'Todas as idades',
             'formato' => 'Aulas Individuais'
@@ -53,7 +70,6 @@ function eme_shortcode_cursos($atts) {
         [
             'cat' => 'cordas',
             'titulo' => 'Contrabaixo Elétrico & Acústico',
-            'icon' => '🎸',
             'desc' => 'Condução harmônica, slaps, grooves, leitura em clave de fá e integração com a cozinha rítmica.',
             'publico' => 'Jovens e Adultos',
             'formato' => 'Aulas Individuais'
@@ -61,7 +77,6 @@ function eme_shortcode_cursos($atts) {
         [
             'cat' => 'sopros',
             'titulo' => 'Flauta Transversal & Sopros',
-            'icon' => '🎷',
             'desc' => 'Embocadura, controle de coluna de ar, afinação, expressividade e leitura de partitura.',
             'publico' => 'A partir dos 9 anos',
             'formato' => 'Aulas Individuais'
@@ -69,7 +84,6 @@ function eme_shortcode_cursos($atts) {
         [
             'cat' => 'infantil',
             'titulo' => 'Musicalização Infantil',
-            'icon' => '🎨',
             'desc' => 'Desenvolvimento de percepção auditiva, ritmo e sensibilidade através de jogos e vivências musicais.',
             'publico' => 'Crianças de 3 a 6 anos',
             'formato' => 'Turmas Reduzidas'
@@ -77,7 +91,6 @@ function eme_shortcode_cursos($atts) {
         [
             'cat' => 'teoria',
             'titulo' => 'Harmonia Funcional & Teoria',
-            'icon' => '🎼',
             'desc' => 'Análise harmônica, rearmonização, modulação, percepção de intervalos e estruturação musical.',
             'publico' => 'Músicos e Estudantes Intermediários/Avançados',
             'formato' => 'Módulos Práticos e Coletivos'
@@ -120,18 +133,19 @@ function eme_shortcode_cursos($atts) {
                     ?>
                         <div class="eme-aula-card" data-cat="<?php echo esc_attr($c['cat']); ?>" data-category="<?php echo esc_attr($c['cat']); ?>">
                             <div class="eme-aula-header">
-                                <span class="eme-aula-icon"><?php echo esc_html($c['icon']); ?></span>
+                                <span class="eme-aula-icon"><?php echo eme_get_category_svg($c['cat']); ?></span>
                                 <span class="eme-aula-cat-badge"><?php echo esc_html(strtoupper($c['cat'])); ?></span>
                             </div>
                             <h3 class="eme-aula-title"><?php echo esc_html($c['titulo']); ?></h3>
                             <p class="eme-aula-desc"><?php echo esc_html($c['desc']); ?></p>
                             <div class="eme-aula-details">
-                                <div>🎯 Público: <?php echo esc_html($c['publico']); ?></div>
-                                <div>📌 Formato: <?php echo esc_html($c['formato']); ?></div>
+                                <div><span class="eme-detail-label">Público:</span> <?php echo esc_html($c['publico']); ?></div>
+                                <div><span class="eme-detail-label">Formato:</span> <?php echo esc_html($c['formato']); ?></div>
                             </div>
                             <div style="margin-top: 18px;">
-                                <a href="<?php echo esc_url($wa_link); ?>" target="_blank" class="eme-btn-outline eme-btn-block" style="font-size: 12px; padding: 10px 14px;">
-                                    💬 Quero Agendar Aula Experimental
+                                <a href="<?php echo esc_url($wa_link); ?>" target="_blank" class="eme-btn-outline eme-btn-block" style="font-size: 13px; padding: 11px 16px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    <span>Agendar Aula Experimental</span>
                                 </a>
                             </div>
                         </div>
@@ -140,11 +154,14 @@ function eme_shortcode_cursos($atts) {
 
                 <!-- Banner Agendamento -->
                 <div class="eme-recruitment-box" style="margin-top: 60px;">
-                    <div class="eme-recruitment-icon">🎶</div>
+                    <div class="eme-recruitment-icon" style="color: var(--terracota); display: flex; justify-content: center; margin-bottom: 12px;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                    </div>
                     <h3>Não encontrou a sua modalidade ou prefere atendimento personalizado?</h3>
                     <p>Oferecemos mais de 27 opções de aulas práticas e teóricas. Fale com nossa secretaria e descubra o plano ideal para seu objetivo.</p>
-                    <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20todas%20as%20modalidades%20dispon%C3%ADveis%20na%20EME." target="_blank" class="eme-btn-primary">
-                        Falar com a Secretaria no WhatsApp
+                    <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20todas%20as%20modalidades%20dispon%C3%ADveis%20na%20EME." target="_blank" class="eme-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Falar com a Secretaria no WhatsApp</span>
                     </a>
                 </div>
             </div>

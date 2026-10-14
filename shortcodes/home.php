@@ -16,7 +16,7 @@ function eme_shortcode_home($atts) {
         <section class="eme-hero">
             <div class="eme-container">
                 <div class="eme-hero-badge">
-                    <span class="eme-stars">★★★★★</span> Núcleo de Arte e Música Esperança (NAME) | Igreja Esperança
+                    Núcleo de Arte e Música Esperança (NAME) • Igreja Esperança
                 </div>
                 <h1 class="eme-hero-title">Escola de Música Esperança</h1>
                 <p class="eme-hero-subtitle">
@@ -34,20 +34,20 @@ function eme_shortcode_home($atts) {
             <div class="eme-container">
                 <div class="eme-stats-grid">
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 26px; color: #FFFFFF !important;">🎵 27 Modalidades</span>
-                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 600;">Erudito & Popular</span>
+                        <span class="eme-stat-number" style="font-size: 28px; color: #FFFFFF !important; font-weight: 700;">27</span>
+                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 500;">Modalidades (Erudito & Popular)</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 26px; color: #FFFFFF !important;">🎓 Corpo Docente</span>
-                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 600;">Professores Graduados & Mestres</span>
+                        <span class="eme-stat-number" style="font-size: 28px; color: #FFFFFF !important; font-weight: 700;">21</span>
+                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 500;">Professores Graduados & Mestres</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 26px; color: #FFFFFF !important;">🏡 Estrutura Completa</span>
-                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 600;">Salas Climatizadas & Equipadas</span>
+                        <span class="eme-stat-number" style="font-size: 28px; color: #FFFFFF !important; font-weight: 700;">100%</span>
+                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 500;">Salas Climatizadas & Equipadas</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 26px; color: #FFFFFF !important;">🤝 Formação Humana</span>
-                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 600;">Ensino com Propósito & Excelência</span>
+                        <span class="eme-stat-number" style="font-size: 28px; color: #FFFFFF !important; font-weight: 700;">NAME</span>
+                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 500;">Ensino com Propósito & Excelência</span>
                     </div>
                 </div>
             </div>
@@ -88,32 +88,44 @@ function eme_shortcode_home($atts) {
 
                 <div class="eme-grid-3">
                     <div class="eme-diff-card">
-                        <div class="eme-diff-icon">🎵</div>
+                        <div class="eme-diff-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--terracota)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                        </div>
                         <h3>27 Modalidades Musicais</h3>
                         <p>Do erudito ao popular: instrumentos de cordas, sopros, teclas, percussão, canto e formação teórica.</p>
                     </div>
                     <div class="eme-diff-card">
-                        <div class="eme-diff-icon">🎓</div>
+                        <div class="eme-diff-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--terracota)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </div>
                         <h3>Corpo Docente Qualificado</h3>
                         <p>Docentes experientes, graduados e atuantes em orquestras, estúdios e palcos nacionais e internacionais.</p>
                     </div>
                     <div class="eme-diff-card">
-                        <div class="eme-diff-icon">🏡</div>
+                        <div class="eme-diff-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--terracota)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        </div>
                         <h3>Estrutura Acolhedora</h3>
                         <p>Salas climatizadas, equipadas com instrumentos de alta qualidade, acústica adequada e ambiente seguro.</p>
                     </div>
                     <div class="eme-diff-card">
-                        <div class="eme-diff-icon">🎼</div>
+                        <div class="eme-diff-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--terracota)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                        </div>
                         <h3>Acompanhamento Pedagógico Contínuo</h3>
                         <p>Acompanhamento próximo dos estudantes e professores para garantir o progresso didático individual.</p>
                     </div>
                     <div class="eme-diff-card">
-                        <div class="eme-diff-icon">🎭</div>
+                        <div class="eme-diff-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--terracota)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
                         <h3>Recitais & Projeto Casa Aberta</h3>
                         <p>Apresentações semestrais com público da comunidade e pocket shows na última quinta-feira do mês.</p>
                     </div>
                     <div class="eme-diff-card">
-                        <div class="eme-diff-icon">🤝</div>
+                        <div class="eme-diff-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--terracota)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
                         <h3>Projeto Amigos da EME</h3>
                         <p>Programa de bolsas de estudo para inclusão social e desenvolvimento de novos talentos.</p>
                     </div>
@@ -128,42 +140,58 @@ function eme_shortcode_home($atts) {
                 <div class="eme-divider"></div>
                 <div class="eme-grid-4">
                     <div class="eme-card-item">
-                        <div class="eme-icon">🎸</div>
+                        <div class="eme-icon" style="color: var(--terracota);">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18"></path><path d="M16 4v16"></path><path d="M8 4v16"></path></svg>
+                        </div>
                         <h3>Violão & Guitarra</h3>
                         <p>Técnica, leitura, acordes, dedilhados e solos do nível iniciante ao avançado.</p>
                     </div>
                     <div class="eme-card-item">
-                        <div class="eme-icon">🎹</div>
+                        <div class="eme-icon" style="color: var(--terracota);">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line><line x1="6" y1="15" x2="6" y2="15"></line><line x1="10" y1="15" x2="10" y2="15"></line><line x1="14" y1="15" x2="14" y2="15"></line><line x1="18" y1="15" x2="18" y2="15"></line></svg>
+                        </div>
                         <h3>Piano & Teclado</h3>
                         <p>Leitura de partitura, percepção, repertório clássico, popular e correpetição.</p>
                     </div>
                     <div class="eme-card-item">
-                        <div class="eme-icon">🥁</div>
+                        <div class="eme-icon" style="color: var(--terracota);">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="8" rx="9" ry="4"></ellipse><path d="M3 8v8c0 2.21 4.03 4 9 4s9-1.79 9-4V8"></path></svg>
+                        </div>
                         <h3>Bateria & Percussão</h3>
                         <p>Independência motora, ritmos variados, afinação e prática de conjunto.</p>
                     </div>
                     <div class="eme-card-item">
-                        <div class="eme-icon">🎻</div>
+                        <div class="eme-icon" style="color: var(--terracota);">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
                         <h3>Violino & Violoncelo</h3>
                         <p>Técnica de arco, postura ergonômica, afinação e execução orquestral.</p>
                     </div>
                     <div class="eme-card-item">
-                        <div class="eme-icon">🎸</div>
+                        <div class="eme-icon" style="color: var(--terracota);">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line></svg>
+                        </div>
                         <h3>Contrabaixo Elétrico e Acústico</h3>
                         <p>Condução rítmica, grooves, slap, harmonia e formação de base sólida.</p>
                     </div>
                     <div class="eme-card-item">
-                        <div class="eme-icon">🎤</div>
+                        <div class="eme-icon" style="color: var(--terracota);">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line></svg>
+                        </div>
                         <h3>Canto & Fisiologia Vocal</h3>
                         <p>Técnica vocal consciente, saúde da voz, respiração e interpretação artística.</p>
                     </div>
                     <div class="eme-card-item">
-                        <div class="eme-icon">🎼</div>
+                        <div class="eme-icon" style="color: var(--terracota);">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                        </div>
                         <h3>Harmonia Funcional</h3>
                         <p>Curso modular prático para modulação, rearmonização e arranjos instrumentais.</p>
                     </div>
                     <div class="eme-card-item">
-                        <div class="eme-icon">👶</div>
+                        <div class="eme-icon" style="color: var(--terracota);">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                        </div>
                         <h3>Musicalização Infantil</h3>
                         <p>Desenvolvimento cognitivo e lúdico para crianças a partir de 4 anos.</p>
                     </div>
@@ -258,13 +286,22 @@ function eme_shortcode_home($atts) {
             <div class="eme-container">
                 <div class="eme-grid-2 eme-align-center">
                     <div class="eme-lead-info">
-                        <span class="eme-badge-tag" style="background: rgba(255,255,255,0.18) !important; color: #F59E0B !important; border: 1px solid rgba(245,158,11,0.5) !important; font-weight: 700; padding: 6px 16px; border-radius: 30px; display: inline-block; margin-bottom: 14px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Técnica & Acolhimento</span>
-                        <h2 style="color: #FFFFFF !important; font-size: 38px !important; font-weight: 800 !important; text-shadow: 0 2px 10px rgba(0,0,0,0.35) !important; margin-bottom: 18px !important; line-height: 1.2 !important;">Venha conhecer a EME de perto</h2>
-                        <p style="color: rgba(255, 255, 255, 0.94) !important; font-size: 18px !important; line-height: 1.65 !important; margin-bottom: 28px !important;">Agende uma visita presencial para conhecer nossas instalações, conversar com nossa coordenação didática e encontrar a modalidade perfeita para o seu desenvolvimento musical.</p>
-                        <ul class="eme-lead-check-list">
-                            <li style="color: #FFFFFF !important;">✓ Tour guiado pelas salas climatizadas e equipadas</li>
-                            <li style="color: #FFFFFF !important;">✓ Orientação pedagógica para escolha de instrumento e docente</li>
-                            <li style="color: #FFFFFF !important;">✓ Atendimento acolhedor de segunda a sexta, das 8h às 22h</li>
+                        <span class="eme-badge-tag" style="background: rgba(255,255,255,0.18) !important; color: #F59E0B !important; border: 1px solid rgba(245,158,11,0.5) !important; font-weight: 600; padding: 6px 16px; border-radius: 30px; display: inline-block; margin-bottom: 14px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Técnica & Acolhimento</span>
+                        <h2 style="color: #FFFFFF !important; font-size: 36px !important; font-weight: 700 !important; text-shadow: 0 2px 10px rgba(0,0,0,0.3) !important; margin-bottom: 18px !important; line-height: 1.25 !important;">Venha conhecer a EME de perto</h2>
+                        <p style="color: rgba(255, 255, 255, 0.94) !important; font-size: 17px !important; line-height: 1.65 !important; margin-bottom: 28px !important; font-weight: 400;">Agende uma visita presencial para conhecer nossas instalações, conversar com nossa coordenação didática e encontrar a modalidade perfeita para o seu desenvolvimento musical.</p>
+                        <ul class="eme-lead-check-list" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+                            <li style="color: #FFFFFF !important; display: flex; align-items: center; gap: 10px; font-weight: 400;">
+                                <svg class="eme-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E5A93C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Tour guiado pelas salas climatizadas e equipadas</span>
+                            </li>
+                            <li style="color: #FFFFFF !important; display: flex; align-items: center; gap: 10px; font-weight: 400;">
+                                <svg class="eme-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E5A93C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Orientação pedagógica para escolha de instrumento e docente</span>
+                            </li>
+                            <li style="color: #FFFFFF !important; display: flex; align-items: center; gap: 10px; font-weight: 400;">
+                                <svg class="eme-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E5A93C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Atendimento acolhedor de segunda a sexta, das 8h às 22h</span>
+                            </li>
                         </ul>
                     </div>
                     <div class="eme-lead-form-box">
@@ -301,7 +338,7 @@ function eme_shortcode_home($atts) {
                             <div class="eme-form-group" style="margin-bottom: 24px;">
                                 <label class="eme-checkbox-label" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; margin: 0; padding: 4px 0; width: 100%;">
                                     <input type="checkbox" id="eme-lgpd-check-home" name="lgpd_agree" required style="width: 22px; height: 22px; min-width: 22px; min-height: 22px; accent-color: #C17B4A; cursor: pointer; flex-shrink: 0; margin-top: 2px; opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; display: inline-block !important; -webkit-appearance: checkbox !important; appearance: checkbox !important; z-index: 10 !important;" />
-                                    <span style="font-size: 14px; color: #111827; font-weight: 600; line-height: 1.5; cursor: pointer;">
+                                    <span style="font-size: 14px; color: #111827; font-weight: 400; line-height: 1.5; cursor: pointer;">
                                         Concordo com o contato da equipe da EME conforme os <a href="javascript:void(0);" class="eme-link-modal-btn eme-open-lgpd-modal" id="eme-open-modal-home-btn" role="button">Termos de Privacidade e LGPD</a>. *
                                     </span>
                                 </label>
@@ -317,7 +354,6 @@ function eme_shortcode_home($atts) {
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const homeForm = document.getElementById('eme-home-contact-form');
-
 
         if (homeForm) {
             homeForm.addEventListener('submit', function(e) {

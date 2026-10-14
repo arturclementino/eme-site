@@ -8,6 +8,22 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+if (!function_exists('eme_get_aula_svg')) {
+    function eme_get_aula_svg($cat) {
+        switch ($cat) {
+            case 'instrumentos':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18"></path><path d="M16 4v16"></path><path d="M8 4v16"></path></svg>';
+            case 'formacao':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>';
+            case 'coletiva':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>';
+            case 'complementar':
+            default:
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>';
+        }
+    }
+}
+
 function eme_shortcode_aulas($atts) {
     $cursos = [
         // INSTRUMENTOS
@@ -15,7 +31,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Violão',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🎸',
             'etaria' => 'A partir de 7 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Postura, dedilhados, batidas rítmicas, leitura de cifras e repertório erudito ou popular.'
@@ -24,7 +39,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Guitarra',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🎸',
             'etaria' => 'A partir de 10 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Escalas, palhetada alternada, arpejos, harmonia funcional, solos e timbragem de pedais.'
@@ -33,7 +47,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Piano / Teclado',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🎹',
             'etaria' => 'A partir de 6 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Leitura em partitura (clave de sol e fá), independência das mãos, técnica clássica e popular.'
@@ -42,7 +55,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Bateria',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🥁',
             'etaria' => 'A partir de 8 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Coordenação motora, rudimentos, independências rítmicas, grooves e dinâmica de palco.'
@@ -51,7 +63,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Violino',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🎻',
             'etaria' => 'A partir de 6 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Golpe de arco, postura ergonômica, afinação fina, leitura e prática orquestral.'
@@ -60,7 +71,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Violoncelo',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🎻',
             'etaria' => 'A partir de 8 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Sonoridade aveludada do cello, leitura em clave de fá e dó, técnica de arco e afinação.'
@@ -69,7 +79,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Contrabaixo',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🎸',
             'etaria' => 'A partir de 10 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Condução rítmica (groove), slap, harmonia aplicada ao baixo e entrosamento com a bateria.'
@@ -78,7 +87,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Flauta Doce e Flauta Transversal',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🎺',
             'etaria' => 'A partir de 8 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Controle de embocadura, apoio diafragmático, articulação, afinação e peças eruditas e populares.'
@@ -87,7 +95,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Saxofone',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
-            'icone' => '🎷',
             'etaria' => 'A partir de 10 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Emissão de som, escalas, afinação, frases de jazz, bossa nova, pop e música sacra.'
@@ -96,7 +103,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Canto',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento / Voz',
-            'icone' => '🎤',
             'etaria' => 'A partir de 12 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
             'desc' => 'Fisiologia vocal, apoio respiratório, afinação, ressonância e saúde da voz.'
@@ -107,7 +113,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Teoria Musical',
             'cat' => 'formacao',
             'cat_label' => 'Formação Musical',
-            'icone' => '🎼',
             'etaria' => 'Livre (a partir de 8 anos)',
             'nivel' => 'Todos os níveis',
             'desc' => 'Estruturação de escalas, intervalos, tonalidades, armaduras de clave e análise estrutural.'
@@ -116,7 +121,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Percepção Auditiva',
             'cat' => 'formacao',
             'cat_label' => 'Formação Musical',
-            'icone' => '🎧',
             'etaria' => 'A partir de 10 anos',
             'nivel' => 'Todos os níveis',
             'desc' => 'Reconhecimento de intervalos de ouvido, ditado melódico, rítmico e harmônico.'
@@ -125,7 +129,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Leitura de Partitura',
             'cat' => 'formacao',
             'cat_label' => 'Formação Musical',
-            'icone' => '📜',
             'etaria' => 'Livre',
             'nivel' => 'Iniciante ao Avançado',
             'desc' => 'Fluência na leitura rítmica e melódica nas claves de Sol, Fá e Dó.'
@@ -134,7 +137,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Musicalização Infantil',
             'cat' => 'formacao',
             'cat_label' => 'Formação Musical',
-            'icone' => '👶',
             'etaria' => 'A partir de 4 anos',
             'nivel' => 'Iniciante',
             'desc' => 'Vivência lúdica, desenvolvimento auditivo, motor e rítmico para os pequenos.'
@@ -145,7 +147,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Prática de Conjunto',
             'cat' => 'coletiva',
             'cat_label' => 'Prática Coletiva',
-            'icone' => '👥',
             'etaria' => 'A partir de 10 anos',
             'nivel' => 'Intermediário / Avançado',
             'desc' => 'Ensaio em grupo combinando diferentes instrumentos em arranjos bem estruturados.'
@@ -154,7 +155,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Coral',
             'cat' => 'coletiva',
             'cat_label' => 'Prática Coletiva',
-            'icone' => '🗣️',
             'etaria' => 'Crianças, Jovens e Adultos',
             'nivel' => 'Livre',
             'desc' => 'Canto a vozes (soprano, contralto, tenor, baixo), afinação coletiva e recitais corais.'
@@ -163,7 +163,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Banda da Escola',
             'cat' => 'coletiva',
             'cat_label' => 'Prática Coletiva',
-            'icone' => '🎸',
             'etaria' => 'A partir de 12 anos',
             'nivel' => 'Intermediário / Avançado',
             'desc' => 'Integração de baixo, bateria, guitarra, teclado e vozes com direção musical e apresentações.'
@@ -172,7 +171,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Regência Coral',
             'cat' => 'coletiva',
             'cat_label' => 'Prática Coletiva',
-            'icone' => '🪄',
             'etaria' => 'A partir de 15 anos',
             'nivel' => 'Intermediário / Avançado',
             'desc' => 'Técnicas de gesticulação, marcação rítmica, ensaio de coros e liderança musical.'
@@ -183,7 +181,6 @@ function eme_shortcode_aulas($atts) {
             'nome' => 'Harmonia Funcional',
             'cat' => 'complementar',
             'cat_label' => 'Curso Complementar',
-            'icone' => '🎼',
             'etaria' => 'A partir de 12 anos',
             'nivel' => 'Intermediário / Avançado',
             'desc' => 'Curso modular (8h-aula em 4 encontros) ministrado pelo Prof. João Camilo. Módulo I teve 17 inscritos no 1º sem. Módulo II previsto para o 2º sem.'
@@ -195,13 +192,13 @@ function eme_shortcode_aulas($atts) {
     <div class="eme-aulas-wrapper">
         <section class="eme-hero-sub">
             <div class="eme-container">
-                <span class="eme-badge-tag">27 Modalidades Musicais | 19 Professores</span>
+                <span class="eme-badge-tag">27 Modalidades Musicais • 21 Professores</span>
                 <h1 class="eme-hero-title">Aulas e Cursos de Música</h1>
                 <p class="eme-hero-subtitle">
                     Aulas presenciais individuais ou em grupo, com horários flexíveis e acompanhamento pedagógico contínuo.
                 </p>
                 <div style="margin-top: 20px;">
-                    <a href="#contato" class="eme-btn-primary">Solicitar aula experimental</a>
+                    <a href="<?php echo esc_url(home_url('/contato')); ?>" class="eme-btn-primary">Solicitar aula experimental</a>
                 </div>
             </div>
         </section>
@@ -225,19 +222,20 @@ function eme_shortcode_aulas($atts) {
                     ?>
                         <div class="eme-aula-card" data-category="<?php echo esc_attr($c['cat']); ?>">
                             <div class="eme-aula-header">
-                                <span class="eme-aula-icon"><?php echo esc_html($c['icone']); ?></span>
+                                <span class="eme-aula-icon"><?php echo eme_get_aula_svg($c['cat']); ?></span>
                                 <span class="eme-aula-cat-badge"><?php echo esc_html($c['cat_label']); ?></span>
                             </div>
                             <h3 class="eme-aula-title"><?php echo esc_html($c['nome']); ?></h3>
                             <p class="eme-aula-desc"><?php echo esc_html($c['desc']); ?></p>
 
                             <div class="eme-aula-details">
-                                <div>👶 Faixa etária: <?php echo esc_html($c['etaria']); ?></div>
-                                <div>📊 Níveis: <?php echo esc_html($c['nivel']); ?></div>
+                                <div><span class="eme-detail-label">Faixa etária:</span> <?php echo esc_html($c['etaria']); ?></div>
+                                <div><span class="eme-detail-label">Níveis:</span> <?php echo esc_html($c['nivel']); ?></div>
                             </div>
 
-                            <a href="<?php echo esc_url($wa_url); ?>" target="_blank" class="eme-btn-primary eme-btn-block eme-btn-interesse" style="margin-top: 15px;">
-                                Tenho interesse neste curso
+                            <a href="<?php echo esc_url($wa_url); ?>" target="_blank" class="eme-btn-primary eme-btn-block eme-btn-interesse" style="margin-top: 15px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>Tenho interesse neste curso</span>
                             </a>
                         </div>
                     <?php endforeach; ?>
@@ -248,5 +246,4 @@ function eme_shortcode_aulas($atts) {
     <?php
     return ob_get_clean();
 }
-add_shortcode('eme_aulas', 'eme_shortcode_aulas');
-
+add_shortcode('eme_aulas_grid', 'eme_shortcode_aulas');

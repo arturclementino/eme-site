@@ -19,8 +19,8 @@ add_action('wp_enqueue_scripts', function() {
     // Parent Theme CSS
     wp_enqueue_style('hello-elementor-parent', get_template_directory_uri() . '/style.css', array(), '1.0.0');
 
-    // Google Fonts (com display=swap para não bloquear renderização)
-    wp_enqueue_style('eme-fonts', 'https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap', array(), null);
+    // Google Fonts Sans-Serif (Montserrat para títulos/marca e Source Sans 3 para textos de leitura fluida)
+    wp_enqueue_style('eme-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap', array(), null);
 
     // EME Child Styles
     wp_enqueue_style('eme-root-style', $theme_uri . '/style.css', array('hello-elementor-parent'), $style_ver);

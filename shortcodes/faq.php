@@ -70,15 +70,12 @@ function eme_shortcode_faq($atts) {
                 <div class="eme-faq-accordion-list" style="display: flex; flex-direction: column; gap: 16px;">
                     <?php foreach ($faqs as $index => $faq): ?>
                         <div class="eme-faq-item" style="background: #FFFFFF; border-radius: 12px; border: 1px solid #E2DACD; overflow: hidden; box-shadow: 0 4px 15px rgba(15, 46, 35, 0.04); transition: border-color 0.3s ease;">
-                            <button type="button" class="eme-faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: none; border: none; text-align: left; cursor: pointer; font-family: 'Montserrat', 'Open Sans', sans-serif; font-size: 17px; font-weight: 700; color: #0F2E23; transition: color 0.2s ease;">
-                                <span style="display: flex; align-items: center; gap: 12px;">
-                                    <span style="color: #C17B4A; font-size: 18px;">❓</span>
-                                    <span><?php echo esc_html($faq['pergunta']); ?></span>
-                                </span>
-                                <span class="eme-faq-icon" style="font-size: 20px; color: #C17B4A; font-weight: 700; transition: transform 0.3s ease;">+</span>
+                            <button type="button" class="eme-faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: none; border: none; text-align: left; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 16.5px; font-weight: 600; color: #0F2E23; transition: color 0.2s ease;">
+                                <span><?php echo esc_html($faq['pergunta']); ?></span>
+                                <span class="eme-faq-icon" style="font-size: 20px; color: #C17B4A; font-weight: 500; transition: transform 0.3s ease;">+</span>
                             </button>
-                            <div class="eme-faq-answer" style="display: none; padding: 0 24px 22px 56px; color: #374151; font-size: 15px; line-height: 1.7; border-top: 1px solid #F4EFE6; margin-top: 4px; padding-top: 16px;">
-                                <p style="margin: 0;"><?php echo esc_html($faq['resposta']); ?></p>
+                            <div class="eme-faq-answer" style="display: none; padding: 0 24px 22px 24px; color: #374151; font-size: 15px; line-height: 1.7; border-top: 1px solid #F4EFE6; margin-top: 4px; padding-top: 16px;">
+                                <p style="margin: 0; font-weight: 400;"><?php echo esc_html($faq['resposta']); ?></p>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -86,10 +83,11 @@ function eme_shortcode_faq($atts) {
 
                 <!-- Dúvida adicional -->
                 <div class="eme-faq-help-box" style="margin-top: 50px; background: linear-gradient(135deg, #0F2E23 0%, #1B4332 100%); color: #FFFFFF; border-radius: 16px; padding: 36px 30px; text-align: center; box-shadow: 0 14px 35px rgba(15, 46, 35, 0.15);">
-                    <h3 style="color: #FFFFFF !important; font-size: 22px; font-weight: 700; margin-bottom: 10px;">Não encontrou a resposta que procurava?</h3>
-                    <p style="color: rgba(255, 255, 255, 0.92) !important; font-size: 15px; margin-bottom: 22px;">Nossa equipe de atendimento está pronta para conversar com você no WhatsApp.</p>
-                    <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20as%20aulas%20da%20EME." target="_blank" class="eme-btn-primary" style="background: #25D366; border-color: #25D366; color: #FFFFFF !important; padding: 12px 28px; font-size: 14px;">
-                        💬 Falar no WhatsApp (31) 98420-1358
+                    <h3 style="color: #FFFFFF !important; font-size: 22px; font-weight: 600; margin-bottom: 10px;">Não encontrou a resposta que procurava?</h3>
+                    <p style="color: rgba(255, 255, 255, 0.92) !important; font-size: 15px; margin-bottom: 22px; font-weight: 400;">Nossa equipe de atendimento está pronta para conversar com você no WhatsApp.</p>
+                    <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20as%20aulas%20da%20EME." target="_blank" class="eme-btn-primary" style="background: #25D366; border-color: #25D366; color: #FFFFFF !important; padding: 12px 28px; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Falar no WhatsApp (31) 98420-1358</span>
                     </a>
                 </div>
             </div>
