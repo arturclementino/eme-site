@@ -1,7 +1,7 @@
 <?php
 /**
  * Shortcode Professores: [eme_professores]
- * EME - Escola de Música Esperança (Corpo Docente: 18 Professores)
+ * EME - Escola de Música Esperança (Corpo Docente: 21 Professores)
  */
 
 if (!defined('ABSPATH')) {
@@ -65,6 +65,15 @@ function eme_shortcode_professores($atts) {
             'foto_style' => 'object-fit: cover !important; object-position: center 20% !important;'
         ],
         [
+            'nome' => 'Daniel Henrique de Faria',
+            'instr' => 'Guitarra, Arranjo & Produção Musical',
+            'form' => 'Bacharelando em Música na UFMG e formado em Guitarra pela Universidade de Música Popular de Barbacena ("Bituca").',
+            'bio' => 'Guitarrista, arranjador e produtor já passou por importantes festivais e pontos culturais de música instrumental de Minas Gerais, como o Savassi Festival, Festival Fartura, Café com Letras e Teatro Raul Belém Machado, apresentando seu show autoral "Nascente" e o projeto "Influências". É também idealizador do "Donato Tributo", grupo criado para homenagear João Donato e contemplado para o Savassi Festival. Atualmente, sob coordenação do Doutor André Queiroz, desenvolve a pesquisa de Iniciação Científica "O jazz latino e o potencial pedagógico de João Donato" pela UFMG. Na mesma instituição, é monitor de produção e transcrição na Geraes Big Band. Na cena local, assina a produção musical do single Belo Horizonte do duo "AnaEsther", Disco Elos de Matheus Avelar e do Disco "771" da artista Vitória Ventura e acompanha diversos novos artistas da música instrumental em Belo Horizonte.',
+            'foto' => 'https://escolaeme.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-14-at-17.00.22.jpeg',
+            'foto_class' => 'eme-img-daniel-faria',
+            'foto_style' => 'object-fit: cover !important; object-position: center 20% !important;'
+        ],
+        [
             'nome' => 'Daniel Matos',
             'instr' => 'Regência Coral, Bateria e Violão',
             'form' => 'Licenciatura em Música. Violão Erudito (Conservatório de Vitória da Conquista) e Regência (Sesi-SP).',
@@ -117,6 +126,15 @@ function eme_shortcode_professores($atts) {
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/joao-pedro-goncalves.jpeg',
             'foto_class' => 'eme-img-joao-pedro',
             'foto_style' => 'object-fit: cover !important; object-position: center 15% !important;'
+        ],
+        [
+            'nome' => 'Rafael Rafles Machado',
+            'instr' => 'Violão, Cavaquinho e Música Instrumental Brasileira',
+            'form' => 'Bacharel em Violão pela UEMG e formado pelo CEFART.',
+            'bio' => 'Rafael de Preta é violonista, cavaquinista, compositor, arranjador e professor, natural de Chapada do Norte, no Vale do Jequitinhonha (MG), e radicado em Belo Horizonte desde 2010. Bacharel em Violão pela UEMG e formado pelo CEFART, desenvolve seu trabalho entre o violão clássico, o choro, o samba e a música instrumental brasileira. Atua na cena musical de Belo Horizonte como músico e educador, além de desenvolver projetos autorais voltados à música brasileira e às expressões afro-brasileiras.',
+            'foto' => 'https://escolaeme.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-14-at-16.58.11.jpeg',
+            'foto_class' => 'eme-img-rafael-machado',
+            'foto_style' => 'object-fit: cover !important; object-position: center 20% !important;'
         ],
         [
             'nome' => 'Regiany Carlos',
@@ -189,7 +207,7 @@ function eme_shortcode_professores($atts) {
         <!-- Hero Sub-header -->
         <section class="eme-hero-sub">
             <div class="eme-container">
-                <span class="eme-badge-tag">Corpo Docente EME (20 Professores)</span>
+                <span class="eme-badge-tag">Corpo Docente EME (21 Professores)</span>
                 <h1 class="eme-hero-title">Nossos Professores</h1>
                 <p class="eme-hero-subtitle">
                     Músicos e educadores altamente capacitados, apaixonados pela arte de ensinar e transformar vidas através da música.
@@ -202,7 +220,7 @@ function eme_shortcode_professores($atts) {
                 <!-- Introdução Institucional -->
                 <div class="eme-prof-intro-box">
                     <p class="eme-prof-intro-text">
-                        O corpo docente da Escola de Música Esperança é composto por 20 professores qualificados com formação acadêmica (bacharéis, licenciados e mestres) e vasta vivência de palco, orquestras e estúdios. Conheça a trajetória de quem faz a música acontecer na EME:
+                        O corpo docente da Escola de Música Esperança é composto por 21 professores qualificados com formação acadêmica (bacharéis, licenciados e mestres) e vasta vivência de palco, orquestras e estúdios. Conheça a trajetória de quem faz a música acontecer na EME:
                     </p>
                 </div>
 
