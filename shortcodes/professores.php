@@ -30,7 +30,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Artley Fernandes',
-            'instr' => 'Contrabaixo',
+            'instr' => 'Contrabaixo Acústico e Elétrico',
             'form' => 'Bacharelado em Música — Habilitação em Contrabaixo Acústico pela UEMG (em andamento).',
             'bio' => 'Músico multi-instrumentista com trajetória iniciada aos 8 anos. Domina violão, contrabaixo acústico e elétrico, flauta transversal, trompete, trombone, saxofone e bateria. Atuou no programa Escola Aberta (PBH) e integrou a Orquestra Parque Sagrada Geração. É professor de contrabaixo na EME, unindo vivência prática, formação técnica e paixão pelo ensino.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Artley.png',
@@ -48,7 +48,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Bruna Garcia',
-            'instr' => 'Piano e Teclado',
+            'instr' => 'Piano Erudito e Popular',
             'form' => 'Bacharelado em Música com habilitação em Piano pela UEMG.',
             'bio' => 'Pianista com premiações no Concurso Nacional de Piano do Conservatório Souza Lima e 2º lugar no concurso Segunda Musical (ALMG 2024). Professora qualificada para o ensino de piano em todas as idades.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Bruna-1-scaled.jpg',
@@ -165,7 +165,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Samuel Gomes',
-            'instr' => 'Contrabaixo',
+            'instr' => 'Contrabaixo Acústico e Elétrico',
             'form' => 'Formado em Baixo Elétrico pela Bituca e Música Popular pela UFMG. Prêmio BDMG Jovem Instrumentista (2012).',
             'bio' => 'Contrabaxista com apresentações e gravações ao lado de grandes nomes como Alok, André Valadão, Gabriel Elias, Melim, Marcos Almeida, Preto no Branco, Márcio Bahia e Nivaldo Ornelas.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Samuel-Gomes-2.jpeg',
@@ -183,7 +183,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Talita Braga Olivetti',
-            'instr' => 'Piano',
+            'instr' => 'Piano Erudito',
             'form' => 'Bacharel em Piano (UNICSUL), Licenciada (Claretiano) e Pós em Cognição Musical (UNINTER).',
             'bio' => 'Pianista com 2º lugar no V Concurso Villa-Lobos. Atuou como correpetidora no Grupo Experimental de Ópera Eloisa Baldin e participou do prestigiado Festival Música nas Montanhas.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Talita-Braga.jpg',

@@ -150,15 +150,15 @@ function eme_shortcode_home($atts) {
                         <div class="eme-icon" style="color: var(--terracota);">
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line><line x1="6" y1="15" x2="6" y2="15"></line><line x1="10" y1="15" x2="10" y2="15"></line><line x1="14" y1="15" x2="14" y2="15"></line><line x1="18" y1="15" x2="18" y2="15"></line></svg>
                         </div>
-                        <h3>Piano & Teclado</h3>
-                        <p>Leitura de partitura, percepção, repertório clássico, popular e correpetição.</p>
+                        <h3>Piano Erudito & Popular</h3>
+                        <p>Leitura de partitura, percepção, repertório clássico e popular para todas as idades.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="8" rx="9" ry="4"></ellipse><path d="M3 8v8c0 2.21 4.03 4 9 4s9-1.79 9-4V8"></path></svg>
                         </div>
                         <h3>Bateria</h3>
-                        <p>Independência motora, ritmos variados, afinação e prática de conjunto.</p>
+                        <p>Independência motora, ritmos variados, afinação e prática instrumental.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
@@ -171,8 +171,8 @@ function eme_shortcode_home($atts) {
                         <div class="eme-icon" style="color: var(--terracota);">
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line></svg>
                         </div>
-                        <h3>Contrabaixo</h3>
-                        <p>Condução rítmica, grooves, slap, harmonia e formação de base sólida.</p>
+                        <h3>Contrabaixo Acústico & Elétrico</h3>
+                        <p>Condução rítmica, grooves, slap, harmonia e formação de base sólida no baixo elétrico e acústico.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
@@ -183,10 +183,10 @@ function eme_shortcode_home($atts) {
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                         </div>
-                        <h3>Harmonia Funcional</h3>
-                        <p>Curso modular prático para modulação, rearmonização e arranjos instrumentais.</p>
+                        <h3>Prática de Banda</h3>
+                        <p>Dinâmica de conjunto, arranjos coletivos e vivência prática de ensaio e palco.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
@@ -324,11 +324,12 @@ function eme_shortcode_home($atts) {
                                 <select id="eme-home-curso" name="curso" required>
                                     <option value="" disabled selected>Selecione uma modalidade</option>
                                     <option value="violao">Violão / Guitarra</option>
-                                    <option value="piano">Piano / Teclado</option>
+                                    <option value="piano">Piano Erudito e Popular / Teclado</option>
                                     <option value="bateria">Bateria</option>
-                                    <option value="violino">Violino / Violoncelo</option>
-                                    <option value="contrabaixo">Contrabaixo</option>
+                                    <option value="pratica-banda">Prática de Banda</option>
+                                    <option value="contrabaixo">Contrabaixo Acústico e Elétrico</option>
                                     <option value="canto">Canto</option>
+                                    <option value="violino">Violino / Violoncelo</option>
                                     <option value="flauta">Flauta Doce / Transversal</option>
                                     <option value="saxofone">Saxofone</option>
                                     <option value="harmonia">Harmonia Funcional</option>

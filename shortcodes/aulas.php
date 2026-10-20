@@ -44,12 +44,12 @@ function eme_shortcode_aulas($atts) {
             'desc' => 'Escalas, palhetada alternada, arpejos, harmonia funcional, solos e timbragem de pedais.'
         ],
         [
-            'nome' => 'Piano / Teclado',
+            'nome' => 'Piano Erudito e Popular',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
             'etaria' => 'A partir de 6 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
-            'desc' => 'Leitura em partitura (clave de sol e fá), independência das mãos, técnica clássica e popular.'
+            'desc' => 'Leitura em partitura (clave de sol e fá), técnica clássica e popular, independência das mãos e repertório.'
         ],
         [
             'nome' => 'Bateria',
@@ -76,12 +76,12 @@ function eme_shortcode_aulas($atts) {
             'desc' => 'Sonoridade aveludada do cello, leitura em clave de fá e dó, técnica de arco e afinação.'
         ],
         [
-            'nome' => 'Contrabaixo',
+            'nome' => 'Contrabaixo Acústico e Elétrico',
             'cat' => 'instrumentos',
             'cat_label' => 'Instrumento',
             'etaria' => 'A partir de 10 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
-            'desc' => 'Condução rítmica (groove), slap, harmonia aplicada ao baixo e entrosamento com a bateria.'
+            'desc' => 'Condução rítmica (groove), slap, harmonia aplicada ao contrabaixo acústico e elétrico, e entrosamento com a bateria.'
         ],
         [
             'nome' => 'Flauta Doce e Flauta Transversal',
@@ -160,12 +160,12 @@ function eme_shortcode_aulas($atts) {
             'desc' => 'Canto a vozes (soprano, contralto, tenor, baixo), afinação coletiva e recitais corais.'
         ],
         [
-            'nome' => 'Banda da Escola',
+            'nome' => 'Prática de Banda',
             'cat' => 'coletiva',
             'cat_label' => 'Prática Coletiva',
             'etaria' => 'A partir de 12 anos',
             'nivel' => 'Intermediário / Avançado',
-            'desc' => 'Integração de baixo, bateria, guitarra, teclado e vozes com direção musical e apresentações.'
+            'desc' => 'Integração de baixo, bateria, guitarra, teclado e vozes com direção musical, arranjos e apresentações.'
         ],
         [
             'nome' => 'Regência Coral',

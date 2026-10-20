@@ -23,6 +23,8 @@ if (!function_exists('eme_get_category_svg')) {
                 return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" y1="12" x2="22" y2="12"></line><circle cx="6" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="18" cy="12" r="2"></circle></svg>';
             case 'infantil':
                 return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>';
+            case 'coletiva':
+                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>';
             case 'teoria':
             default:
                 return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>';
@@ -34,8 +36,8 @@ function eme_shortcode_cursos($atts) {
     $cursos = [
         [
             'cat' => 'teclas',
-            'titulo' => 'Piano e Teclado',
-            'desc' => 'Desenvolvimento técnico, leitura de partitura, percepção harmônica e repertório.',
+            'titulo' => 'Piano Erudito e Popular',
+            'desc' => 'Desenvolvimento técnico, leitura de partitura, percepção harmônica e repertório clássico e popular.',
             'publico' => 'Crianças, Jovens e Adultos (Iniciante ao Avançado)',
             'formato' => 'Aulas Individuais | Presencial'
         ],
@@ -69,8 +71,8 @@ function eme_shortcode_cursos($atts) {
         ],
         [
             'cat' => 'cordas',
-            'titulo' => 'Contrabaixo',
-            'desc' => 'Condução harmônica, grooves, leitura e entrosamento com a bateria.',
+            'titulo' => 'Contrabaixo Acústico e Elétrico',
+            'desc' => 'Condução harmônica, grooves, leitura, slap e entrosamento rítmico no baixo acústico e elétrico.',
             'publico' => 'Jovens e Adultos',
             'formato' => 'Aulas Individuais'
         ],
@@ -94,6 +96,13 @@ function eme_shortcode_cursos($atts) {
             'desc' => 'Estruturação de escalas, intervalos, tonalidades e percepção musical.',
             'publico' => 'Músicos e Estudantes Intermediários/Avançados',
             'formato' => 'Módulos Práticos e Coletivos'
+        ],
+        [
+            'cat' => 'coletiva',
+            'titulo' => 'Prática de Banda',
+            'desc' => 'Integração de baixo, bateria, guitarra, teclado e vozes, arranjos e dinâmica de palco.',
+            'publico' => 'A partir dos 12 anos (Intermediário e Avançado)',
+            'formato' => 'Aulas Coletivas / Ensaio Orientado'
         ]
     ];
 
@@ -116,11 +125,12 @@ function eme_shortcode_cursos($atts) {
                 <!-- Filtros por Categoria -->
                 <div class="eme-filter-bar">
                     <button class="eme-filter-btn active" data-filter="all">Todas as Modalidades</button>
-                    <button class="eme-filter-btn" data-filter="teclas">Piano & Teclado</button>
-                    <button class="eme-filter-btn" data-filter="cordas">Cordas</button>
+                    <button class="eme-filter-btn" data-filter="teclas">Piano Erudito & Popular</button>
+                    <button class="eme-filter-btn" data-filter="cordas">Cordas & Baixo</button>
                     <button class="eme-filter-btn" data-filter="voz">Canto</button>
                     <button class="eme-filter-btn" data-filter="ritmo">Bateria</button>
                     <button class="eme-filter-btn" data-filter="sopros">Sopros</button>
+                    <button class="eme-filter-btn" data-filter="coletiva">Prática de Banda</button>
                     <button class="eme-filter-btn" data-filter="infantil">Infantil</button>
                     <button class="eme-filter-btn" data-filter="teoria">Teoria & Harmonia</button>
                 </div>
