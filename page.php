@@ -37,6 +37,18 @@ if (have_posts()) {
             case 'cursos':
                 echo do_shortcode('[eme_cursos]');
                 break;
+            case 'faq':
+                echo do_shortcode('[eme_faq]');
+                break;
+            case 'amigos-da-eme':
+                echo do_shortcode('[eme_amigos]');
+                break;
+            case 'estudio':
+                echo do_shortcode('[eme_estudio]');
+                break;
+            case 'projetos':
+                echo do_shortcode('[eme_projetos]');
+                break;
             default:
                 the_content();
                 break;

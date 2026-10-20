@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
     });
 
     // ─── 4. Acordeão FAQ ─────────────────────────────────────────────────────
-    $('.eme-faq-question').on('click', function() {
+    $(document).on('click', '.eme-faq-question', function() {
         var $item    = $(this).closest('.eme-faq-item');
         var $answer  = $item.find('.eme-faq-answer');
         var isOpen   = $item.hasClass('active');
@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
         } else {
             $item.addClass('active');
             $answer.slideDown(280);
-            $(this).find('.eme-faq-icon').text('-');
+            $(this).find('.eme-faq-icon').text('−');
         }
     });
 

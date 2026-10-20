@@ -11,44 +11,52 @@ if (!defined('ABSPATH')) {
 function eme_shortcode_faq($atts) {
     $faqs = [
         [
+            'pergunta' => 'Quais modalidades estão disponíveis?',
+            'resposta' => 'Oferecemos aulas de Violão, Guitarra, Piano Erudito e Popular, Teclado, Canto, Bateria, Violino, Viola de Arco, Violoncelo, Contrabaixo Acústico e Elétrico, Flauta Doce e Transversal, Saxofone, Cavaquinho, Ukulele, Musicalização Infantil, Teoria Musical e Percepção, e Prática de Banda. Consulte nossa página de Aulas para a grade completa.'
+        ],
+        [
+            'pergunta' => 'A EME recebe alunos iniciantes?',
+            'resposta' => 'Sim! Atendemos desde quem nunca tocou um instrumento até músicos em nível avançado, incluindo crianças, jovens e adultos, com acompanhamento pedagógico personalizado para o ritmo e objetivo de cada aluno.'
+        ],
+        [
+            'pergunta' => 'Quais são os horários das aulas?',
+            'resposta' => 'As aulas acontecem de segunda a sexta-feira, das 8h às 22h, e aos sábados pela manhã, conforme a disponibilidade de horários e professores.'
+        ],
+        [
             'pergunta' => 'Como funciona a matrícula?',
-            'resposta' => 'Entre em contato pelo formulário do site ou WhatsApp. Agende uma visita à escola para conhecer o espaço e conversar com a coordenação. A matrícula é feita após a definição do curso, professor e horário.'
+            'resposta' => 'Entre em contato pelo formulário do site ou WhatsApp. Agende uma visita à escola para conhecer o espaço e conversar com a coordenação pedagógica. A matrícula é feita após a definição da modalidade, professor e horário.'
         ],
         [
             'pergunta' => 'Qual a faixa etária mínima?',
-            'resposta' => 'A musicalização infantil atende a partir de 4 anos. A maioria dos instrumentos aceita alunos a partir de 6 a 8 anos, dependendo do instrumento. Consulte a página de Aulas para detalhes.'
+            'resposta' => 'A musicalização infantil atende a partir de 4 anos com metodologia lúdica e sensorial. A maioria das aulas individuais de instrumentos aceita alunos a partir de 6 a 8 anos, dependendo do instrumento. Adultos e idosos também são muito bem-vindos!'
         ],
         [
             'pergunta' => 'É preciso ter instrumento próprio?',
-            'resposta' => 'A escola possui instrumentos para uso durante as aulas, mas recomendamos que o aluno tenha seu próprio instrumento para estudo em casa. Para cursos como musicalização infantil, os instrumentos são fornecidos pela escola.'
+            'resposta' => 'A escola possui instrumentos de alta qualidade para uso durante as aulas na sede. Recomendamos que o aluno adquira seu próprio instrumento para prática regular em casa, e nossos professores orientam na escolha do modelo ideal.'
         ],
         [
             'pergunta' => 'As aulas são presenciais ou online?',
-            'resposta' => 'As aulas são presenciais, na sede da EME em Belo Horizonte. Eventuais aulas online podem ser combinadas diretamente com o professor, em casos excepcionais.'
+            'resposta' => 'As aulas são presenciais na sede da EME em Belo Horizonte (bairro Padre Eustáquio), proporcionando contato direto com o professor e prática em salas tratadas acusticamente. Em casos excepcionais, aulas online podem ser combinadas diretamente com o professor.'
         ],
         [
             'pergunta' => 'Como agendar uma visita?',
-            'resposta' => 'Use o formulário "Agende uma visita" no site ou entre em contato pelo WhatsApp. A visita inclui tour pelo espaço, conversa com a coordenação e demonstração dos cursos disponíveis.'
+            'resposta' => 'Use o botão "Agende uma visita" no site ou nos chame no WhatsApp pelo número (31) 98420-1358. A visita inclui tour pelo espaço, apresentação das salas, conversa com a coordenação e esclarecimento de dúvidas.'
         ],
         [
-            'pergunta' => 'Como funcionam os pagamentos?',
-            'resposta' => 'As mensalidades são geridas pelo aplicativo Emusys. A escola trabalha com os bancos Cora e PagBank. Para detalhes sobre valores, entre em contato pelo e-mail financeiro@escolaeme.com.'
+            'pergunta' => 'A EME oferece bolsas de estudo (Projeto Amigos da EME)?',
+            'resposta' => 'Sim! O programa Amigos da EME oferece bolsas de estudo parciais e integrais para alunos com vulnerabilidade socioeconômica e vocação musical. Acesse a aba do Projeto Amigos da EME no site ou entre em contato para saber sobre processos seletivos.'
+        ],
+        [
+            'pergunta' => 'Como funcionam os pagamentos e mensalidades?',
+            'resposta' => 'As mensalidades são geridas de forma transparente e prática através do aplicativo Emusys. A escola trabalha com os bancos Cora e PagBank (boleto e PIX). Para valores detalhados de cada modalidade, entre em contato com nosso atendimento.'
         ],
         [
             'pergunta' => 'Como funciona a reposição de aulas?',
-            'resposta' => 'A reposição de aulas segue o regulamento interno da escola. Em caso de ausência, comunique com antecedência para que a reposição seja agendada conforme a disponibilidade do professor.'
+            'resposta' => 'A reposição segue o regulamento interno da escola. Ausências comunicadas com antecedência podem ser repostas conforme a disponibilidade do professor.'
         ],
         [
             'pergunta' => 'Como participar dos recitais?',
-            'resposta' => 'Todos os alunos ativos da EME participam dos recitais semestrais. Os eventos são abertos a familiares e comunidade. Os recitais do segundo semestre de 2026 acontecem nos dias 10 e 11 de novembro.'
-        ],
-        [
-            'pergunta' => 'O que é o Projeto Amigos da EME?',
-            'resposta' => 'É um programa de bolsas de estudo que oferece bolsas para alunos com vulnerabilidade socioeconômica e demonstrado talento musical. Para apoiar o projeto, entre em contato pelo e-mail contato@escolaeme.com.'
-        ],
-        [
-            'pergunta' => 'A EME tem parcerias?',
-            'resposta' => 'Sim. A escola possui parcerias para desenvolvimento de comunicação, apoio a recursos culturais e aplicativo de gestão acadêmica.'
+            'resposta' => 'Todos os alunos ativos da EME têm a oportunidade de se apresentar nos recitais semestrais em auditório profissional, vivenciando a experiência de palco com familiares e amigos.'
         ]
     ];
 
@@ -60,69 +68,39 @@ function eme_shortcode_faq($atts) {
                 <span class="eme-badge-tag">Dúvidas Frequentes</span>
                 <h1 class="eme-hero-title">Perguntas Frequentes (FAQ)</h1>
                 <p class="eme-hero-subtitle">
-                    Tire suas dúvidas sobre matrículas, visitas, instrumentos, recitais e política pedagógica da EME.
+                    Tire suas dúvidas sobre matrículas, modalidades, horários, instrumentos, bolsas e metodologia da EME.
                 </p>
             </div>
         </section>
 
-        <section class="eme-section">
-            <div class="eme-container" style="max-width: 860px;">
-                <div class="eme-faq-accordion-list" style="display: flex; flex-direction: column; gap: 16px;">
+        <section class="eme-faq-section">
+            <div class="eme-container">
+                <div class="eme-faq-accordion-list">
                     <?php foreach ($faqs as $index => $faq): ?>
-                        <div class="eme-faq-item" style="background: #FFFFFF; border-radius: 12px; border: 1px solid #E2DACD; overflow: hidden; box-shadow: 0 4px 15px rgba(15, 46, 35, 0.04); transition: border-color 0.3s ease;">
-                            <button type="button" class="eme-faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: none; border: none; text-align: left; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 16.5px; font-weight: 600; color: #0F2E23; transition: color 0.2s ease;">
+                        <div class="eme-faq-item">
+                            <button type="button" class="eme-faq-question" aria-expanded="false">
                                 <span><?php echo esc_html($faq['pergunta']); ?></span>
-                                <span class="eme-faq-icon" style="font-size: 20px; color: #C17B4A; font-weight: 500; transition: transform 0.3s ease;">+</span>
+                                <span class="eme-faq-icon">+</span>
                             </button>
-                            <div class="eme-faq-answer" style="display: none; padding: 0 24px 22px 24px; color: #374151; font-size: 15px; line-height: 1.7; border-top: 1px solid #F4EFE6; margin-top: 4px; padding-top: 16px;">
-                                <p style="margin: 0; font-weight: 400;"><?php echo esc_html($faq['resposta']); ?></p>
+                            <div class="eme-faq-answer">
+                                <p style="margin: 0;"><?php echo esc_html($faq['resposta']); ?></p>
                             </div>
                         </div>
                     <?php endforeach; ?>
                 </div>
 
                 <!-- Dúvida adicional -->
-                <div class="eme-faq-help-box" style="margin-top: 50px; background: linear-gradient(135deg, #0F2E23 0%, #1B4332 100%); color: #FFFFFF; border-radius: 16px; padding: 36px 30px; text-align: center; box-shadow: 0 14px 35px rgba(15, 46, 35, 0.15);">
-                    <h3 style="color: #FFFFFF !important; font-size: 22px; font-weight: 600; margin-bottom: 10px;">Não encontrou a resposta que procurava?</h3>
-                    <p style="color: rgba(255, 255, 255, 0.92) !important; font-size: 15px; margin-bottom: 22px; font-weight: 400;">Nossa equipe de atendimento está pronta para conversar com você no WhatsApp.</p>
-                    <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20as%20aulas%20da%20EME." target="_blank" class="eme-btn-primary" style="background: #25D366; border-color: #25D366; color: #FFFFFF !important; padding: 12px 28px; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <div class="eme-faq-help-box">
+                    <h3>Não encontrou a resposta que procurava?</h3>
+                    <p>Nossa equipe de atendimento pedagógico está pronta para conversar com você no WhatsApp.</p>
+                    <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20as%20aulas%20da%20EME." target="_blank" class="eme-btn-primary" style="background: #25D366; border-color: #25D366; color: #FFFFFF !important; padding: 13px 30px; font-size: 15px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 999px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         <span>Falar no WhatsApp (31) 98420-1358</span>
                     </a>
                 </div>
             </div>
         </section>
     </div>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const faqItems = document.querySelectorAll('.eme-faq-item');
-        faqItems.forEach(item => {
-            const btn = item.querySelector('.eme-faq-question');
-            const ans = item.querySelector('.eme-faq-answer');
-            const icon = item.querySelector('.eme-faq-icon');
-            if (btn && ans) {
-                btn.addEventListener('click', function() {
-                    const isOpen = ans.style.display === 'block';
-                    // Fechar todos
-                    document.querySelectorAll('.eme-faq-answer').forEach(a => a.style.display = 'none');
-                    document.querySelectorAll('.eme-faq-icon').forEach(i => {
-                        i.textContent = '+';
-                        i.style.transform = 'rotate(0deg)';
-                    });
-                    document.querySelectorAll('.eme-faq-item').forEach(i => i.style.borderColor = '#E2DACD');
-
-                    if (!isOpen) {
-                        ans.style.display = 'block';
-                        icon.textContent = '−';
-                        icon.style.transform = 'rotate(180deg)';
-                        item.style.borderColor = '#C17B4A';
-                    }
-                });
-            }
-        });
-    });
-    </script>
     <?php
     return ob_get_clean();
 }
