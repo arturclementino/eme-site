@@ -9,6 +9,12 @@ if (!defined('ABSPATH')) {
 }
 
 if (!function_exists('eme_get_category_svg')) {
+    /**
+     * Retorna o ícone SVG da categoria do curso.
+     *
+     * @param string $cat Identificador da categoria
+     * @return string Código SVG
+     */
     function eme_get_category_svg($cat) {
         switch ($cat) {
             case 'teclas':
