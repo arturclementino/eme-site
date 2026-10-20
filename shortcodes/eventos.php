@@ -35,13 +35,13 @@ function eme_shortcode_eventos($atts) {
             'status' => 'disponivel'
         ],
         [
-            'titulo' => 'Workshop Prático de Bateria',
+            'titulo' => 'Workshop de Bateria',
             'data' => 'Edição Semestral',
             'horario' => '09:00 - 11:30 (Duração: 2h30)',
             'local' => 'Estúdio EME (Rua Bonaparte, 86 — Padre Eustáquio, BH)',
             'categoria' => 'Workshop Técnico',
             'publico' => 'Bateristas e Estudantes',
-            'desc' => 'Ministrado pelo Prof. Rodrigo Leles. Afinação de peles, dinâmicas de estúdio, regulagem de hardware e prática de gravação.',
+            'desc' => 'Ministrado pelo Prof. Rodrigo Leles. Regulagem de hardware, afinação e práticas de estúdio.',
             'img' => 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=600&q=75',
             'sympla_url' => 'https://www.sympla.com.br/produtor/escolaeme',
             'status' => 'disponivel'

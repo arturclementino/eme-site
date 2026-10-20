@@ -12,21 +12,14 @@ if (!function_exists('eme_get_aula_svg')) {
     /**
      * Retorna o ícone SVG da categoria da aula.
      *
-     * @param string $cat Identificador da categoria
+     * @param string $cat Identificador da categoria ou nome
      * @return string Código SVG
      */
     function eme_get_aula_svg($cat) {
-        switch ($cat) {
-            case 'instrumentos':
-                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18"></path><path d="M16 4v16"></path><path d="M8 4v16"></path></svg>';
-            case 'formacao':
-                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>';
-            case 'coletiva':
-                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>';
-            case 'complementar':
-            default:
-                return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>';
+        if (function_exists('eme_get_instrument_svg')) {
+            return eme_get_instrument_svg($cat, 22);
         }
+        return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>';
     }
 }
 
@@ -228,7 +221,7 @@ function eme_shortcode_aulas($atts) {
                     ?>
                         <div class="eme-aula-card" data-category="<?php echo esc_attr($c['cat']); ?>">
                             <div class="eme-aula-header">
-                                <span class="eme-aula-icon"><?php echo eme_get_aula_svg($c['cat']); ?></span>
+                                <span class="eme-aula-icon"><?php echo function_exists('eme_get_instrument_svg') ? eme_get_instrument_svg($c['nome'], 24) : eme_get_aula_svg($c['cat']); ?></span>
                                 <span class="eme-aula-cat-badge"><?php echo esc_html($c['cat_label']); ?></span>
                             </div>
                             <h3 class="eme-aula-title"><?php echo esc_html($c['nome']); ?></h3>

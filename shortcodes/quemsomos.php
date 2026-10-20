@@ -15,7 +15,7 @@ function eme_shortcode_quemsomos($atts) {
         <!-- Hero Sobre -->
         <section class="eme-hero-sub">
             <div class="eme-container">
-                <span class="eme-badge-tag">Sobre a EME & NAME</span>
+                <span class="eme-badge-tag">Sobre a EME</span>
                 <h1 class="eme-hero-title">Quem Somos</h1>
                 <p class="eme-hero-subtitle">
                     Integrando fé, cultura e transformação social por meio da arte e do ensino musical de excelência.
@@ -32,7 +32,7 @@ function eme_shortcode_quemsomos($atts) {
                         <h2 class="eme-section-title text-left">Nossa História</h2>
                         <div class="eme-divider divider-left"></div>
                         <p>
-                            A Escola de Música Esperança (EME) nasceu como extensão da Igreja Esperança na cidade de Belo Horizonte — um projeto vinculado ao Núcleo de Arte e Música Esperança (NAME) que une formação musical séria com propósito comunitário.
+                            A Escola de Música Esperança (EME) nasceu como extensão da Igreja Esperança na cidade de Belo Horizonte — unindo formação musical séria com propósito comunitário.
                         </p>
                         <p>
                             Nossa identidade é pautada por um duplo compromisso fundamental: técnica e acolhimento, excelência e acessibilidade. Comunicamos seriedade para pais, alunos e parceiros sem abrir mão da proximidade e do ambiente transformador.
@@ -180,14 +180,7 @@ function eme_shortcode_quemsomos($atts) {
             <div class="eme-container">
                 <h2 class="eme-section-title">Parceiros Institucionais</h2>
                 <div class="eme-divider"></div>
-                <div class="eme-grid-3">
-                    <div class="eme-partner-card">
-                        <div class="eme-partner-logo" style="color: var(--terracota); display: flex; justify-content: center; margin-bottom: 12px;">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
-                        </div>
-                        <h3>Agência Casus</h3>
-                        <p style="font-weight: 400;">Gestão de comunicação estratégica, presença digital e redes sociais institucionais da EME.</p>
-                    </div>
+                <div class="eme-grid-2">
                     <div class="eme-partner-card">
                         <div class="eme-partner-logo" style="color: var(--terracota); display: flex; justify-content: center; margin-bottom: 12px;">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>

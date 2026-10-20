@@ -16,7 +16,7 @@ function eme_shortcode_home($atts) {
         <section class="eme-hero">
             <div class="eme-container">
                 <div class="eme-hero-badge">
-                    Núcleo de Arte e Música Esperança (NAME) • Igreja Esperança
+                    Igreja Esperança • Belo Horizonte
                 </div>
                 <h1 class="eme-hero-title">Escola de Música Esperança</h1>
                 <p class="eme-hero-subtitle">
@@ -46,7 +46,7 @@ function eme_shortcode_home($atts) {
                         <span class="eme-stat-label">Salas Climatizadas & Equipadas</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-highlight">NAME</span>
+                        <span class="eme-stat-highlight">Propósito</span>
                         <span class="eme-stat-label">Ensino com Propósito & Excelência</span>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ function eme_shortcode_home($atts) {
                         <h2 class="eme-section-title text-left">Integrando Fé, Cultura e Ensino de Alta Qualidade</h2>
                         <div class="eme-divider divider-left"></div>
                         <p>
-                            A Escola de Música Esperança (EME) é um projeto do Núcleo de Arte e Música Esperança (NAME), braço cultural e educacional vinculado à Igreja Esperança, em Belo Horizonte (região Padre Eustáquio / Vila São Vicente).
+                            A Escola de Música Esperança (EME) é um projeto vinculado à Igreja Esperança, em Belo Horizonte (região Padre Eustáquio / Vila São Vicente).
                         </p>
                         <p>
                             Oferecemos uma ampla grade didática em diversas modalidades musicais com acompanhamento individualizado e um corpo docente qualificado composto por músicos graduados, licenciados e mestres.
@@ -141,56 +141,56 @@ function eme_shortcode_home($atts) {
                 <div class="eme-grid-4">
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18"></path><path d="M16 4v16"></path><path d="M8 4v16"></path></svg>
+                            <?php echo eme_get_instrument_svg('violao', 36); ?>
                         </div>
                         <h3>Violão & Guitarra</h3>
                         <p>Técnica, leitura, acordes, dedilhados e solos do nível iniciante ao avançado.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line><line x1="6" y1="15" x2="6" y2="15"></line><line x1="10" y1="15" x2="10" y2="15"></line><line x1="14" y1="15" x2="14" y2="15"></line><line x1="18" y1="15" x2="18" y2="15"></line></svg>
+                            <?php echo eme_get_instrument_svg('piano', 36); ?>
                         </div>
                         <h3>Piano Erudito & Popular</h3>
                         <p>Leitura de partitura, percepção, repertório clássico e popular para todas as idades.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="8" rx="9" ry="4"></ellipse><path d="M3 8v8c0 2.21 4.03 4 9 4s9-1.79 9-4V8"></path></svg>
+                            <?php echo eme_get_instrument_svg('bateria', 36); ?>
                         </div>
                         <h3>Bateria</h3>
                         <p>Independência motora, ritmos variados, afinação e prática instrumental.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            <?php echo eme_get_instrument_svg('violino', 36); ?>
                         </div>
                         <h3>Violino & Violoncelo</h3>
                         <p>Técnica de arco, postura ergonômica, afinação e execução orquestral.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line></svg>
+                            <?php echo eme_get_instrument_svg('baixo', 36); ?>
                         </div>
                         <h3>Contrabaixo Acústico & Elétrico</h3>
                         <p>Condução rítmica, grooves, slap, harmonia e formação de base sólida no baixo elétrico e acústico.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line></svg>
+                            <?php echo eme_get_instrument_svg('canto', 36); ?>
                         </div>
                         <h3>Canto</h3>
                         <p>Técnica vocal consciente, saúde da voz, respiração e interpretação artística.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <?php echo eme_get_instrument_svg('banda', 36); ?>
                         </div>
                         <h3>Prática de Banda</h3>
                         <p>Dinâmica de conjunto, arranjos coletivos e vivência prática de ensaio e palco.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                            <?php echo eme_get_instrument_svg('infantil', 36); ?>
                         </div>
                         <h3>Musicalização Infantil</h3>
                         <p>Desenvolvimento cognitivo e lúdico para crianças a partir de 4 anos.</p>
@@ -244,8 +244,8 @@ function eme_shortcode_home($atts) {
                             <span class="month">BATERIA</span>
                         </div>
                         <div class="eme-event-details">
-                            <h3>Workshop: Afinação de Bateria</h3>
-                            <p>Ministrante: Prof. Rodrigo Leles. Escolha de peles, regulagem de hardware e prática de estúdio.</p>
+                            <h3>Workshop de Bateria</h3>
+                            <p>Ministrante: Prof. Rodrigo Leles. Regulagem de hardware, afinação e práticas de estúdio.</p>
                         </div>
                     </div>
                 </div>

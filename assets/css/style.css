@@ -426,6 +426,12 @@ header:not(.eme-main-header),
     gap: 25px;
 }
 
+.eme-grid-2 > *,
+.eme-grid-3 > *,
+.eme-grid-4 > * {
+    min-width: 0; /* Previne estouro de layout e quebra de grid por palavras longas */
+}
+
 .eme-align-center {
     align-items: center;
 }
@@ -681,12 +687,16 @@ header:not(.eme-main-header),
 .eme-blog-card,
 .eme-info-card,
 .eme-social-box,
-.eme-prev-event-card {
+.eme-prev-event-card,
+.eme-partner-card {
     background: var(--branco-puro);
     border-radius: 14px;
     box-shadow: var(--sombra-card);
     border: 1px solid var(--cinza-borda);
     transition: var(--transicao);
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .eme-card-item:hover,
@@ -700,41 +710,178 @@ header:not(.eme-main-header),
 .eme-gallery-card:hover,
 .eme-blog-card:hover,
 .eme-info-card:hover,
-.eme-prev-event-card:hover {
+.eme-prev-event-card:hover,
+.eme-partner-card:hover {
     transform: translateY(-7px);
     box-shadow: var(--sombra-hover);
     border-color: rgba(193, 123, 74, 0.5);
 }
 
+/* Diferenciais e Cursos na Home */
 .eme-diff-card,
 .eme-card-item {
-    padding: 32px 24px;
+    padding: 34px 24px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .eme-diff-icon,
 .eme-card-item .eme-icon {
-    font-size: 44px;
+    font-size: 40px;
     margin-bottom: 16px;
     transition: transform 0.3s ease;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .eme-diff-card:hover .eme-diff-icon,
 .eme-card-item:hover .eme-icon {
-    transform: scale(1.18);
+    transform: scale(1.15);
 }
 
 .eme-diff-card h3,
 .eme-card-item h3 {
-    font-size: 19px;
+    font-size: 18px;
     margin: 0 0 10px;
     color: var(--verde-escuro);
+    line-height: 1.35;
+    font-weight: 700;
 }
 
 .eme-diff-card p,
 .eme-card-item p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--cinza-suave);
+    margin: 0;
+    flex: 1;
+}
+
+/* Missão, Visão e Valores (Quem Somos) */
+.eme-pillar-card {
+    padding: 36px 28px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.eme-pillar-icon {
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.eme-pillar-card h3 {
+    font-size: 20px;
+    margin: 0 0 12px;
+    color: var(--verde-escuro);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.eme-pillar-card p {
     font-size: 15px;
+    line-height: 1.65;
+    color: var(--cinza-suave);
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Metodologia 01, 02, 03, 04 (Quem Somos) */
+.eme-method-card {
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.eme-method-step {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--terracota);
+    background: var(--off-white-escuro);
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.eme-method-card h4 {
+    font-size: 16.5px;
+    margin: 0 0 8px;
+    color: var(--verde-escuro);
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.eme-method-card p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--cinza-suave);
+    margin: 0;
+}
+
+/* Salas de Infraestrutura (Quem Somos) */
+.eme-facility-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.eme-facility-info {
+    padding: 24px 22px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.eme-facility-info p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--cinza-suave);
+    margin: 0;
+}
+
+/* Parceiros Institucionais */
+.eme-partner-card {
+    padding: 34px 28px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.eme-partner-card h3 {
+    font-size: 19px;
+    margin: 0 0 10px;
+    color: var(--verde-escuro);
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.eme-partner-card p {
+    font-size: 14.5px;
+    line-height: 1.6;
     color: var(--cinza-suave);
     margin: 0;
 }
