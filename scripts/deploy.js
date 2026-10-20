@@ -93,7 +93,7 @@ async function main() {
 
     // Arquivos para upload (apenas arquivos do tema)
     const baseDir = path.join(__dirname, '..');
-    const ignoreList = new Set(['.git', '.vscode', '.agents', 'node_modules', '.env', 'test_ftp.ps1', 'scripts']);
+    const ignoreList = new Set(['.git', '.vscode', '.agents', 'node_modules', '.env', 'test_ftp.ps1', 'scripts', '.stubs']);
 
     function collectFiles(dir, relativeTo) {
         let results = [];
