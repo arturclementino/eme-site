@@ -1,7 +1,7 @@
 <?php
 /**
  * Shortcode Professores: [eme_professores]
- * EME - Escola de Música Esperança (Corpo Docente: 21 Professores)
+ * EME - Escola de Música Esperança
  */
 
 if (!defined('ABSPATH')) {
@@ -12,7 +12,7 @@ function eme_shortcode_professores($atts) {
     $professores = [
         [
             'nome' => 'Ana Calina',
-            'instr' => 'Violino, Viola e Teoria Musical',
+            'instr' => 'Violino e Viola',
             'form' => 'Bacharel em Música pela UEMG, sob orientação do prof. Luciano Gatelli.',
             'bio' => 'Atuou como monitora, professora e musicista da Orquestra Jovem do TJ e Orquestra Stradivarius. Acompanhou artistas como Flávio Venturini, Eli Soares, Dudu Nobre, Leila Pinheiro e Ed Motta. Integra a Academia da Orquestra Ouro Preto e o Quarteto de Cordas da Rede Batista.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Ana-Calina-1-scaled.jpg',
@@ -30,7 +30,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Artley Fernandes',
-            'instr' => 'Contrabaixo Elétrico, Acústico e Sopro',
+            'instr' => 'Contrabaixo',
             'form' => 'Bacharelado em Música — Habilitação em Contrabaixo Acústico pela UEMG (em andamento).',
             'bio' => 'Músico multi-instrumentista com trajetória iniciada aos 8 anos. Domina violão, contrabaixo acústico e elétrico, flauta transversal, trompete, trombone, saxofone e bateria. Atuou no programa Escola Aberta (PBH) e integrou a Orquestra Parque Sagrada Geração. É professor de contrabaixo na EME, unindo vivência prática, formação técnica e paixão pelo ensino.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Artley.png',
@@ -39,7 +39,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Ayelén Pacheco',
-            'instr' => 'Canto Lírico, Canto Popular & Expressão Cênica / Teatro',
+            'instr' => 'Canto',
             'form' => 'Bacharelado em Canto Lírico (ESMU-UEMG - 7º Período) e Canto Erudito (CEFART - Palácio das Artes).',
             'bio' => 'Soprano argentina residente no Brasil desde 2011. Corista do naipe de Sopranos 1 do Coral Ars Nova da UFMG desde 2023, atuou em óperas renomadas no Palácio das Artes (Suor Angélica, Dido e Aeneas) e como solista convidada no CIAAR/FAB. Professora de canto e teatro desde 2019, desenvolve pesquisa acadêmica em "Artes Cênicas para Músicos", unindo expressão vocal e presença de palco.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/ayelen.png',
@@ -48,7 +48,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Bruna Garcia',
-            'instr' => 'Piano Erudito e Popular',
+            'instr' => 'Piano e Teclado',
             'form' => 'Bacharelado em Música com habilitação em Piano pela UEMG.',
             'bio' => 'Pianista com premiações no Concurso Nacional de Piano do Conservatório Souza Lima e 2º lugar no concurso Segunda Musical (ALMG 2024). Professora qualificada para o ensino de piano em todas as idades.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Bruna-1-scaled.jpg',
@@ -66,7 +66,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Daniel Faria',
-            'instr' => 'Guitarra, Arranjo & Produção Musical',
+            'instr' => 'Guitarra',
             'form' => 'Bacharelando em Música na UFMG e formado em Guitarra pela Universidade de Música Popular de Barbacena ("Bituca").',
             'bio' => 'Guitarrista, arranjador e produtor já passou por importantes festivais e pontos culturais de música instrumental de Minas Gerais, como o Savassi Festival, Festival Fartura, Café com Letras e Teatro Raul Belém Machado, apresentando seu show autoral "Nascente" e o projeto "Influências". É também idealizador do "Donato Tributo", grupo criado para homenagear João Donato e contemplado para o Savassi Festival. Atualmente, sob coordenação do Doutor André Queiroz, desenvolve a pesquisa de Iniciação Científica "O jazz latino e o potencial pedagógico de João Donato" pela UFMG. Na mesma instituição, é monitor de produção e transcrição na Geraes Big Band. Na cena local, assina a produção musical do single Belo Horizonte do duo "AnaEsther", Disco Elos de Matheus Avelar e do Disco "771" da artista Vitória Ventura e acompanha diversos novos artistas da música instrumental em Belo Horizonte.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-14-at-17.00.22.jpeg',
@@ -93,7 +93,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Esther de Oliveira',
-            'instr' => 'Violino, Violão e Ukulele',
+            'instr' => 'Violino e Violão',
             'form' => 'Bacharelado em Música pela UEMG. Integrante do Quarteto de Cordas da Rede Batista.',
             'bio' => 'Violinista com passagem pelas orquestras Jovem Sesi Minas, TJ-MG e Inhotim. Cantora, compositora e produtora (AnaEstherDuo), leciona violino, violão e ukulele com sensibilidade e excelente técnica.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Esther-Oliveira-scaled.jpg',
@@ -102,7 +102,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Glênio Vilas Boas',
-            'instr' => 'Piano, Teoria e Educação Musical',
+            'instr' => 'Piano e Teoria',
             'form' => 'Licenciado em Piano (UEMG), Esp. Metodologia (FACEL) e Mestre em Música (UFPE).',
             'bio' => 'Músico e educador com mais de 30 anos de experiência. Ex-professor da graduação em música do IF Sertão Pernambucano e atual docente do Colégio Militar de Belo Horizonte (CMBH), promovendo a educação musical com sensibilidade e fé.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Glenio-1.jpeg',
@@ -111,7 +111,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'João Marcos',
-            'instr' => 'Harmonia Funcional, Violão e Teoria',
+            'instr' => 'Harmonia e Violão',
             'form' => 'Músico, arranjador e especialista em Harmonia Funcional e Percepção.',
             'bio' => 'Especialista em Harmonia Funcional, modulação e rearmonização aplicada. Conduz cursos modulares e práticos na EME direcionados a instrumentistas e arranjadores que buscam aprimoramento harmônico.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Joao-marcos.jpg',
@@ -129,7 +129,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Rafael de Preta',
-            'instr' => 'Violão, Cavaquinho e Música Instrumental Brasileira',
+            'instr' => 'Violão e Cavaquinho',
             'form' => 'Bacharel em Violão pela UEMG e formado pelo CEFART.',
             'bio' => 'Rafael de Preta é violonista, cavaquinista, compositor, arranjador e professor, natural de Chapada do Norte, no Vale do Jequitinhonha (MG), e radicado em Belo Horizonte desde 2010. Bacharel em Violão pela UEMG e formado pelo CEFART, desenvolve seu trabalho entre o violão clássico, o choro, o samba e a música instrumental brasileira. Atua na cena musical de Belo Horizonte como músico e educador, além de desenvolver projetos autorais voltados à música brasileira e às expressões afro-brasileiras.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-14-at-16.58.11.jpeg',
@@ -147,7 +147,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Roberta Fernandes',
-            'instr' => 'Canto & Pedagogia Vocal',
+            'instr' => 'Canto',
             'form' => 'Licenciatura em Música (Canto - UFOP) e Pós-Graduada em Canto e Pedagogia Vocal (Instituto JK).',
             'bio' => 'Cantora e educadora vocal com atuação docente desde 2024. Graduada pela UFOP e pós-graduada em Pedagogia Vocal, leciona para alunos iniciantes a avançados (dos 13 aos 80 anos) em gêneros como gospel, pop, rock e erudito. Atuou em projetos operísticos como Don Giovanni, La Clemenza di Tito e Le Nozze di Figaro no Teatro da Ópera de Ouro Preto.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/roberta-fernandes.jpeg',
@@ -156,7 +156,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Rodrigo Leles',
-            'instr' => 'Bateria & Percussão',
+            'instr' => 'Bateria',
             'form' => 'Baterista há 25 anos, professor há 18 anos. Prêmio BDMG Jovem Instrumentista (2015).',
             'bio' => 'Coordenador musical da PIB Belo Horizonte e escola Catedral. Acompanha o cantor Marcos Almeida em turnês pelo Brasil, integra a banda Canto Verbo e atua em gravações para produtores nacionais e internacionais.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Rodrigo-Leles.jpeg',
@@ -165,7 +165,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Samuel Gomes',
-            'instr' => 'Contrabaixo Elétrico & Acústico',
+            'instr' => 'Contrabaixo',
             'form' => 'Formado em Baixo Elétrico pela Bituca e Música Popular pela UFMG. Prêmio BDMG Jovem Instrumentista (2012).',
             'bio' => 'Contrabaxista com apresentações e gravações ao lado de grandes nomes como Alok, André Valadão, Gabriel Elias, Melim, Marcos Almeida, Preto no Branco, Márcio Bahia e Nivaldo Ornelas.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Samuel-Gomes-2.jpeg',
@@ -174,7 +174,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Sandra Alves',
-            'instr' => 'Flauta Transversal, Flauta Doce e Teoria',
+            'instr' => 'Flauta Transversal e Flauta Doce',
             'form' => 'Graduada (1998), Especialista (2001) e Mestre em Performance pela UFMG. Esp. em Neurociência Aplicada.',
             'bio' => 'Primeira flautista e chefe de naipe da Orquestra Sinfônica de Minas Gerais desde 2009. Apresentou-se como solista em diversas orquestras do país e realizou aperfeiçoamento na Itália.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-01-05-at-10.47.29.jpeg',
@@ -183,7 +183,7 @@ function eme_shortcode_professores($atts) {
         ],
         [
             'nome' => 'Talita Braga Olivetti',
-            'instr' => 'Piano Erudito e Correpetição',
+            'instr' => 'Piano',
             'form' => 'Bacharel em Piano (UNICSUL), Licenciada (Claretiano) e Pós em Cognição Musical (UNINTER).',
             'bio' => 'Pianista com 2º lugar no V Concurso Villa-Lobos. Atuou como correpetidora no Grupo Experimental de Ópera Eloisa Baldin e participou do prestigiado Festival Música nas Montanhas.',
             'foto' => 'https://escolaeme.com/wp-content/uploads/2026/09/Talita-Braga.jpg',
@@ -207,7 +207,7 @@ function eme_shortcode_professores($atts) {
         <!-- Hero Sub-header -->
         <section class="eme-hero-sub">
             <div class="eme-container">
-                <span class="eme-badge-tag">Corpo Docente EME (21 Professores)</span>
+                <span class="eme-badge-tag">Corpo Docente EME</span>
                 <h1 class="eme-hero-title">Nossos Professores</h1>
                 <p class="eme-hero-subtitle">
                     Músicos e educadores altamente capacitados, apaixonados pela arte de ensinar e transformar vidas através da música.
@@ -220,7 +220,7 @@ function eme_shortcode_professores($atts) {
                 <!-- Introdução Institucional -->
                 <div class="eme-prof-intro-box">
                     <p class="eme-prof-intro-text">
-                        O corpo docente da Escola de Música Esperança é composto por 21 professores qualificados com formação acadêmica (bacharéis, licenciados e mestres) e vasta vivência de palco, orquestras e estúdios. Conheça a trajetória de quem faz a música acontecer na EME:
+                        O corpo docente da Escola de Música Esperança é composto por professores qualificados com formação acadêmica (bacharéis, licenciados e mestres) e vasta vivência de palco, orquestras e estúdios. Conheça a trajetória de quem faz a música acontecer na EME:
                     </p>
                 </div>
 

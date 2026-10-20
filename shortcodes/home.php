@@ -24,7 +24,7 @@ function eme_shortcode_home($atts) {
                 </p>
                 <div class="eme-hero-actions">
                     <a href="<?php echo esc_url(home_url('/contato')); ?>" class="eme-btn-primary eme-cta-pulse">Agende uma visita presencial</a>
-                    <a href="<?php echo esc_url(home_url('/aulas')); ?>" class="eme-btn-outline">Conheça nossas 27 modalidades</a>
+                    <a href="<?php echo esc_url(home_url('/aulas')); ?>" class="eme-btn-outline">Conheça nossas modalidades</a>
                 </div>
             </div>
         </section>
@@ -34,20 +34,20 @@ function eme_shortcode_home($atts) {
             <div class="eme-container">
                 <div class="eme-stats-grid">
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 28px; color: #FFFFFF !important; font-weight: 700;">27</span>
-                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 500;">Modalidades (Erudito & Popular)</span>
+                        <span class="eme-stat-highlight">Erudito & Popular</span>
+                        <span class="eme-stat-label">Diversas Modalidades Musicais</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 28px; color: #FFFFFF !important; font-weight: 700;">21</span>
-                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 500;">Professores Graduados & Mestres</span>
+                        <span class="eme-stat-highlight">Corpo Docente</span>
+                        <span class="eme-stat-label">Professores Graduados & Mestres</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 28px; color: #FFFFFF !important; font-weight: 700;">100%</span>
-                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 500;">Salas Climatizadas & Equipadas</span>
+                        <span class="eme-stat-highlight">Estrutura Própria</span>
+                        <span class="eme-stat-label">Salas Climatizadas & Equipadas</span>
                     </div>
                     <div class="eme-stat-item">
-                        <span class="eme-stat-number" style="font-size: 28px; color: #FFFFFF !important; font-weight: 700;">NAME</span>
-                        <span class="eme-stat-label" style="color: #FFFFFF !important; opacity: 0.95; font-weight: 500;">Ensino com Propósito & Excelência</span>
+                        <span class="eme-stat-highlight">NAME</span>
+                        <span class="eme-stat-label">Ensino com Propósito & Excelência</span>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ function eme_shortcode_home($atts) {
                             A Escola de Música Esperança (EME) é um projeto do Núcleo de Arte e Música Esperança (NAME), braço cultural e educacional vinculado à Igreja Esperança, em Belo Horizonte (região Padre Eustáquio / Vila São Vicente).
                         </p>
                         <p>
-                            Oferecemos uma ampla grade didática distribuída em 27 modalidades musicais com acompanhamento individualizado e um corpo docente experiente composto por músicos graduados, licenciados e mestres.
+                            Oferecemos uma ampla grade didática em diversas modalidades musicais com acompanhamento individualizado e um corpo docente qualificado composto por músicos graduados, licenciados e mestres.
                         </p>
                         <p>
                             Mais do que ensinar técnicas instrumentais ou vocais, a EME forma pessoas por meio da arte, promovendo o desenvolvimento técnico, pessoal e comunitário.
@@ -91,8 +91,8 @@ function eme_shortcode_home($atts) {
                         <div class="eme-diff-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--terracota)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
                         </div>
-                        <h3>27 Modalidades Musicais</h3>
-                        <p>Do erudito ao popular: instrumentos de cordas, sopros, teclas, percussão, canto e formação teórica.</p>
+                        <h3>Diversas Modalidades</h3>
+                        <p>Do erudito ao popular: instrumentos de cordas, sopros, teclas, bateria, canto e formação teórica.</p>
                     </div>
                     <div class="eme-diff-card">
                         <div class="eme-diff-icon">
@@ -157,7 +157,7 @@ function eme_shortcode_home($atts) {
                         <div class="eme-icon" style="color: var(--terracota);">
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="8" rx="9" ry="4"></ellipse><path d="M3 8v8c0 2.21 4.03 4 9 4s9-1.79 9-4V8"></path></svg>
                         </div>
-                        <h3>Bateria & Percussão</h3>
+                        <h3>Bateria</h3>
                         <p>Independência motora, ritmos variados, afinação e prática de conjunto.</p>
                     </div>
                     <div class="eme-card-item">
@@ -171,14 +171,14 @@ function eme_shortcode_home($atts) {
                         <div class="eme-icon" style="color: var(--terracota);">
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line></svg>
                         </div>
-                        <h3>Contrabaixo Elétrico e Acústico</h3>
+                        <h3>Contrabaixo</h3>
                         <p>Condução rítmica, grooves, slap, harmonia e formação de base sólida.</p>
                     </div>
                     <div class="eme-card-item">
                         <div class="eme-icon" style="color: var(--terracota);">
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line></svg>
                         </div>
-                        <h3>Canto & Fisiologia Vocal</h3>
+                        <h3>Canto</h3>
                         <p>Técnica vocal consciente, saúde da voz, respiração e interpretação artística.</p>
                     </div>
                     <div class="eme-card-item">
@@ -197,7 +197,7 @@ function eme_shortcode_home($atts) {
                     </div>
                 </div>
                 <div style="text-align: center; margin-top: 35px;">
-                    <a href="<?php echo esc_url(home_url('/aulas')); ?>" class="eme-btn-primary">Ver todas as 27 modalidades &rarr;</a>
+                    <a href="<?php echo esc_url(home_url('/aulas')); ?>" class="eme-btn-primary">Ver todas as modalidades &rarr;</a>
                 </div>
             </div>
         </section>
@@ -325,12 +325,12 @@ function eme_shortcode_home($atts) {
                                     <option value="" disabled selected>Selecione uma modalidade</option>
                                     <option value="violao">Violão / Guitarra</option>
                                     <option value="piano">Piano / Teclado</option>
-                                    <option value="bateria">Bateria & Percussão</option>
+                                    <option value="bateria">Bateria</option>
                                     <option value="violino">Violino / Violoncelo</option>
-                                    <option value="contrabaixo">Contrabaixo Elétrico e Acústico</option>
-                                    <option value="canto">Canto & Fisiologia Vocal</option>
+                                    <option value="contrabaixo">Contrabaixo</option>
+                                    <option value="canto">Canto</option>
                                     <option value="flauta">Flauta Doce / Transversal</option>
-                                    <option value="saxofone">Saxofone & Sopros</option>
+                                    <option value="saxofone">Saxofone</option>
                                     <option value="harmonia">Harmonia Funcional</option>
                                     <option value="musicalizacao">Musicalização Infantil</option>
                                 </select>

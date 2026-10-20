@@ -1,7 +1,7 @@
 <?php
 /**
  * Shortcode Aulas e Cursos: [eme_aulas]
- * EME - Escola de Música Esperança (27 Modalidades Musicais)
+ * EME - Escola de Música Esperança
  */
 
 if (!defined('ABSPATH')) {
@@ -102,10 +102,10 @@ function eme_shortcode_aulas($atts) {
         [
             'nome' => 'Canto',
             'cat' => 'instrumentos',
-            'cat_label' => 'Instrumento / Voz',
+            'cat_label' => 'Canto',
             'etaria' => 'A partir de 12 anos',
             'nivel' => 'Iniciante, Intermediário e Avançado',
-            'desc' => 'Fisiologia vocal, apoio respiratório, afinação, ressonância e saúde da voz.'
+            'desc' => 'Técnica vocal, respiração, afinação, expressão e saúde da voz.'
         ],
 
         // FORMAÇÃO MUSICAL
@@ -192,7 +192,7 @@ function eme_shortcode_aulas($atts) {
     <div class="eme-aulas-wrapper">
         <section class="eme-hero-sub">
             <div class="eme-container">
-                <span class="eme-badge-tag">27 Modalidades Musicais • 21 Professores</span>
+                <span class="eme-badge-tag">Cursos & Modalidades • Corpo Docente Qualificado</span>
                 <h1 class="eme-hero-title">Aulas e Cursos de Música</h1>
                 <p class="eme-hero-subtitle">
                     Aulas presenciais individuais ou em grupo, com horários flexíveis e acompanhamento pedagógico contínuo.
@@ -207,7 +207,7 @@ function eme_shortcode_aulas($atts) {
             <div class="eme-container">
                 <!-- Filtros por Categoria -->
                 <div class="eme-filter-bar">
-                    <button class="eme-filter-btn active" data-filter="all">Todas as 27 Modalidades</button>
+                    <button class="eme-filter-btn active" data-filter="all">Todas as Modalidades</button>
                     <button class="eme-filter-btn" data-filter="instrumentos">Instrumentos</button>
                     <button class="eme-filter-btn" data-filter="formacao">Formação Musical</button>
                     <button class="eme-filter-btn" data-filter="coletiva">Prática Coletiva</button>

@@ -38,7 +38,7 @@ function eme_shortcode_quemsomos($atts) {
                             Nossa identidade é pautada por um duplo compromisso fundamental: técnica e acolhimento, excelência e acessibilidade. Comunicamos seriedade para pais, alunos e parceiros sem abrir mão da proximidade e do ambiente transformador.
                         </p>
                         <p>
-                            Com uma grade didática abrangente composta por 27 modalidades musicais, a EME forma o aluno de maneira integral — unindo prática instrumental, percepção teórica e vivência comunitária em palcos e recitais.
+                            Com uma grade didática abrangente com diversas modalidades musicais, a EME forma o aluno de maneira integral — unindo prática instrumental, percepção teórica e vivência comunitária em palcos e recitais.
                         </p>
                     </div>
                     <div class="eme-about-image-box">
@@ -160,9 +160,9 @@ function eme_shortcode_quemsomos($atts) {
                         </div>
                     </div>
                     <div class="eme-facility-card">
-                        <div class="eme-room-header">Sala de Bateria & Percussão</div>
+                        <div class="eme-room-header">Sala de Bateria</div>
                         <div class="eme-facility-info">
-                            <p style="font-weight: 400;">Equipada com bateria acústica, instrumentos de percussão e isolamento reforçado.</p>
+                            <p style="font-weight: 400;">Equipada com bateria acústica e isolamento acústico reforçado.</p>
                         </div>
                     </div>
                     <div class="eme-facility-card">

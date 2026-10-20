@@ -36,6 +36,7 @@
 /* ─── Base & Scroll ─────────────────────────────────────────────────────── */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -49,6 +50,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 h1, h2, h3, h4, .eme-heading {
@@ -170,9 +173,11 @@ header:not(.eme-main-header),
 }
 
 /* ─── Navegação ─────────────────────────────────────────────────────────── */
-.eme-main-nav {
-    display: flex !important;
-    align-items: center !important;
+@media (min-width: 993px) {
+    .eme-main-nav {
+        display: flex !important;
+        align-items: center !important;
+    }
 }
 
 .eme-nav-list {
@@ -608,15 +613,18 @@ header:not(.eme-main-header),
     align-items: center;
 }
 
-.eme-stat-number {
+.eme-stat-number,
+.eme-stat-highlight {
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+    font-size: 21px;
     font-weight: 700;
-    color: var(--ambar-ouro);
-    line-height: 1.1;
-    margin-bottom: 4px;
-    letter-spacing: -0.02em;
+    color: #FFFFFF !important;
+    line-height: 1.25;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
     text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    text-align: center;
+    display: block;
 }
 
 .eme-stat-label {
@@ -1739,252 +1747,600 @@ header:not(.eme-main-header),
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   RESPONSIVIDADE — TABLET (≤ 992px)
+   RESPONSIVIDADE — TABLET & MOBILE GLOBAL (≤ 992px)
    ═══════════════════════════════════════════════════════════════════════════ */
 @media (max-width: 992px) {
+    :root {
+        --header-height: 70px;
+        --header-height-scrolled: 60px;
+    }
 
-    /* — Menu mobile dropdown — */
+    .eme-header-spacer {
+        height: var(--header-height) !important;
+    }
+    .eme-header-spacer.scrolled {
+        height: var(--header-height-scrolled) !important;
+    }
+
+    /* — Botão Hambúrguer Mobile — */
+    .eme-mobile-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
+        padding: 8px;
+    }
+
+    /* — Painel do Menu Mobile — */
     .eme-main-nav {
-        display: none;
-        position: fixed;
-        top: var(--header-height);
-        left: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.99);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        padding: 20px 24px 28px;
-        border-bottom: 3px solid var(--terracota);
-        z-index: 999;
-        overflow-y: auto;
-        max-height: calc(100vh - var(--header-height));
+        display: none !important;
+        position: fixed !important;
+        top: var(--header-height) !important;
+        left: 0 !important;
+        width: 100% !important;
+        background: #FFFFFF !important;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18) !important;
+        padding: 16px 20px 32px !important;
+        border-bottom: 4px solid var(--terracota) !important;
+        z-index: 99999 !important;
+        overflow-y: auto !important;
+        max-height: calc(100vh - var(--header-height)) !important;
+        -webkit-overflow-scrolling: touch !important;
     }
 
     .eme-main-nav.active {
-        display: block;
+        display: block !important;
     }
 
-    /* Ajusta top quando header está scrolled */
-    .eme-main-header.scrolled ~ .eme-main-nav,
     .eme-main-header.scrolled .eme-main-nav {
-        top: var(--header-height-scrolled);
+        top: var(--header-height-scrolled) !important;
+        max-height: calc(100vh - var(--header-height-scrolled)) !important;
     }
 
     .eme-nav-list {
         flex-direction: column !important;
         gap: 0 !important;
+        width: 100% !important;
     }
 
     .eme-nav-list li {
-        border-bottom: 1px solid var(--cinza-borda);
+        width: 100% !important;
+        border-bottom: 1px solid var(--cinza-borda) !important;
     }
 
     .eme-nav-list li:last-child {
-        border-bottom: none;
+        border-bottom: none !important;
     }
 
     .eme-nav-list a {
-        display: block !important;
-        padding: 14px 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 14px 4px !important;
         font-size: 16px !important;
+        color: var(--verde-escuro) !important;
     }
 
-    .eme-mobile-toggle {
-        display: flex !important;
+    .eme-nav-list a::after {
+        display: none !important;
+    }
+
+    /* Dropdown no menu mobile (Acordeão) */
+    .eme-dropdown-menu {
+        position: static !important;
+        display: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        background: var(--off-white) !important;
+        border-radius: 8px !important;
+        margin: 4px 0 10px 10px !important;
+        padding: 4px 10px !important;
+        min-width: 0 !important;
+        width: calc(100% - 10px) !important;
+    }
+
+    .eme-nav-dropdown.open .eme-dropdown-menu {
+        display: block !important;
+    }
+
+    .eme-dropdown-menu li {
+        border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+    }
+
+    .eme-dropdown-menu li:last-child {
+        border-bottom: none !important;
+    }
+
+    .eme-dropdown-menu a {
+        padding: 10px 8px !important;
+        font-size: 14px !important;
+        color: var(--verde-escuro) !important;
+        white-space: normal !important;
     }
 
     .eme-header-cta {
         display: none !important;
     }
 
-    /* — Grids — */
+    /* Grids Tablet */
     .eme-footer-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .eme-grid-4 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .eme-grid-3 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .eme-grid-contato,
     .eme-event-card {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
-    .eme-event-card .eme-event-img {
-        height: 220px;
-    }
-
-    /* — Lead form — */
     .eme-cta-lead-section .eme-grid-2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .eme-lead-form-box {
-        padding: 28px 24px;
+        padding: 28px 24px !important;
     }
 
-    /* — Seções — */
     .eme-section {
-        padding: 60px 0;
-    }
-
-    .eme-recruitment-box {
-        padding: 30px 24px;
+        padding: 55px 0 !important;
     }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   RESPONSIVIDADE — MOBILE (≤ 576px)
+   RESPONSIVIDADE — MOBILE PADRÃO (≤ 768px)
    ═══════════════════════════════════════════════════════════════════════════ */
-@media (max-width: 576px) {
-
-    /* — Container — */
-    .eme-container {
-        padding: 0 16px;
+@media (max-width: 768px) {
+    :root {
+        --header-height: 64px;
+        --header-height-scrolled: 56px;
     }
 
-    /* — Seções — */
-    .eme-section {
-        padding: 50px 0;
+    .eme-header-logo {
+        height: 42px !important;
+        max-height: 42px !important;
     }
 
-    /* — Hero — */
-    .eme-hero {
-        padding: 70px 0 60px;
+    .eme-main-header.scrolled .eme-header-logo {
+        height: 36px !important;
+        max-height: 36px !important;
     }
 
-    .eme-hero-title {
-        font-size: 30px;
+    /* — Barra de Estatísticas / Destaques — */
+    .eme-stats-bar {
+        padding: 24px 0 !important;
     }
 
-    .eme-hero-subtitle {
-        font-size: 17px;
+    .eme-stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px 12px !important;
     }
 
-    .eme-hero-badge {
-        font-size: 12px;
-        padding: 7px 14px;
+    .eme-stat-item {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 12px;
+        padding: 14px 10px;
     }
 
-    .eme-hero-actions {
-        flex-direction: column;
-        align-items: center;
-        gap: 14px;
+    .eme-stat-number,
+    .eme-stat-highlight {
+        font-size: 16.5px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 4px !important;
     }
 
-    .eme-hero-actions a {
-        width: 100%;
-        text-align: center;
+    .eme-stat-label {
+        font-size: 11.5px !important;
+        line-height: 1.35 !important;
+        letter-spacing: 0.5px !important;
     }
 
-    /* — Títulos — */
-    .eme-section-title {
-        font-size: 26px;
+    /* — Barra de Filtros Mobile (Carrossel Horizontal Deslizável) — */
+    .eme-filter-bar {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        padding: 4px 4px 12px 4px !important;
+        margin-bottom: 24px !important;
+        scrollbar-width: none !important;
     }
 
-    .eme-section-desc {
-        font-size: 16px;
+    .eme-filter-bar::-webkit-scrollbar {
+        display: none !important;
     }
 
-    /* — Grids — */
+    .eme-filter-btn {
+        flex-shrink: 0 !important;
+        white-space: nowrap !important;
+        padding: 9px 18px !important;
+        font-size: 12.5px !important;
+        min-height: 40px !important;
+    }
+
+    /* — Grids para 1 coluna no mobile — */
     .eme-grid-2,
     .eme-grid-3,
     .eme-grid-4,
     .eme-grid-contato {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
     }
 
     .eme-footer-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
     }
 
-    .eme-form-row {
-        grid-template-columns: 1fr;
+    /* Imagem Institucional na Home */
+    .eme-home-about-img {
+        margin-top: 18px !important;
     }
 
-    /* — Footer — */
-    .eme-footer-newsletter .eme-newsletter-form {
-        flex-direction: column;
+    .eme-home-about-img .eme-img-card {
+        width: 100% !important;
+        max-height: 260px !important;
+        object-fit: cover !important;
+        border-radius: 12px !important;
     }
 
-    .eme-newsletter-form button {
-        width: 100%;
-    }
-
-    /* — Hero sub — */
-    .eme-hero-sub {
-        padding: 50px 0;
-    }
-
-    .eme-hero-sub .eme-hero-title {
-        font-size: 28px;
-    }
-
-    /* — Lead section — */
-    .eme-lead-info h2 {
-        font-size: 28px;
-    }
-
-    .eme-lead-form-box {
-        padding: 24px 18px;
-    }
-
-    /* — WhatsApp float — */
-    .eme-whatsapp-float {
-        bottom: 20px;
-        right: 20px;
-        width: 54px;
-        height: 54px;
-    }
-
-    /* — Event mini cards — */
+    /* Cards de Eventos */
     .eme-event-mini-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 14px !important;
+        padding: 16px 14px !important;
     }
 
-    /* — Testimonials — */
-    .eme-testimonial-card {
-        padding: 28px 22px;
+    .eme-event-date-badge {
+        min-width: 65px !important;
+        padding: 8px 6px !important;
+        flex-shrink: 0 !important;
     }
 
-    /* — Professores — */
-    .eme-prof-card {
-        padding: 22px 18px;
+    .eme-event-details h3 {
+        font-size: 15.5px !important;
+        margin-bottom: 4px !important;
     }
 
-    /* — Botões — */
-    .eme-btn-primary,
-    .eme-btn-outline {
-        padding: 14px 26px;
+    .eme-event-details p {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
     }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   RESPONSIVIDADE — MOBILE PEQUENO (≤ 360px)
+   RESPONSIVIDADE — SMARTPHONES COMPACTOS (≤ 576px)
    ═══════════════════════════════════════════════════════════════════════════ */
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .eme-container {
-        padding: 0 12px;
+        padding: 0 16px !important;
+    }
+
+    .eme-section {
+        padding: 42px 0 !important;
+    }
+
+    /* — Hero Principal — */
+    .eme-hero {
+        padding: 45px 16px 40px !important;
+        background-attachment: scroll !important;
+    }
+
+    .eme-hero-badge {
+        font-size: 11.5px !important;
+        padding: 6px 14px !important;
+        max-width: 100% !important;
+        line-height: 1.4 !important;
+        margin-bottom: 18px !important;
     }
 
     .eme-hero-title {
-        font-size: 26px;
+        font-size: 27px !important;
+        line-height: 1.22 !important;
+        margin: 0 0 14px !important;
     }
 
+    .eme-hero-subtitle {
+        font-size: 15.5px !important;
+        line-height: 1.5 !important;
+        margin: 0 auto 24px !important;
+    }
+
+    .eme-hero-actions {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .eme-hero-actions a {
+        width: 100% !important;
+        text-align: center !important;
+        min-height: 48px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 13px 20px !important;
+        font-size: 14.5px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* — Hero Subpáginas — */
+    .eme-hero-sub {
+        padding: 38px 16px !important;
+    }
+
+    .eme-hero-sub .eme-hero-title {
+        font-size: 26px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .eme-hero-sub .eme-hero-subtitle {
+        font-size: 14.5px !important;
+        line-height: 1.5 !important;
+    }
+
+    /* — Títulos de Seção — */
     .eme-section-title {
-        font-size: 22px;
+        font-size: 23px !important;
+        line-height: 1.3 !important;
+    }
+
+    .eme-section-desc {
+        font-size: 14.5px !important;
+        line-height: 1.55 !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* — Cards Gerais — */
+    .eme-card-item,
+    .eme-diff-card,
+    .eme-pillar-card,
+    .eme-method-card,
+    .eme-facility-card,
+    .eme-partner-card,
+    .eme-aula-card,
+    .eme-prof-card {
+        padding: 20px 16px !important;
+        border-radius: 14px !important;
+    }
+
+    /* — Professores — */
+    .eme-prof-header {
+        gap: 14px !important;
+        margin-bottom: 14px !important;
+        padding-bottom: 14px !important;
+    }
+
+    .eme-prof-avatar {
+        width: 62px !important;
+        height: 62px !important;
+        min-width: 62px !important;
+    }
+
+    .eme-prof-name {
+        font-size: 17.5px !important;
+    }
+
+    .eme-prof-instr {
+        font-size: 13px !important;
+    }
+
+    .eme-prof-form {
+        font-size: 12.5px !important;
+        padding: 8px 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .eme-prof-bio {
+        font-size: 13.5px !important;
+        line-height: 1.55 !important;
+    }
+
+    .eme-prof-wa-btn {
+        width: 100% !important;
+        min-height: 46px !important;
+        padding: 12px 14px !important;
+        font-size: 13px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* — Formulário / Seção de Visita Presencial — */
+    .eme-cta-lead-section {
+        padding: 38px 0 !important;
+    }
+
+    .eme-lead-info h2 {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+    }
+
+    .eme-lead-info p {
+        font-size: 14.5px !important;
+        line-height: 1.55 !important;
+        margin-bottom: 18px !important;
+    }
+
+    .eme-lead-check-list li {
+        font-size: 13.5px !important;
+        gap: 8px !important;
     }
 
     .eme-lead-form-box {
-        padding: 18px 14px;
+        padding: 20px 16px !important;
+        margin-top: 22px !important;
+        border-radius: 14px !important;
+    }
+
+    .eme-lead-form-box h3 {
+        font-size: 20px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .eme-form-group {
+        margin-bottom: 14px !important;
+    }
+
+    .eme-form input,
+    .eme-form select,
+    .eme-form textarea {
+        padding: 11px 14px !important;
+        font-size: 14.5px !important;
+        min-height: 46px !important;
+    }
+
+    .eme-checkbox-label span {
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+    }
+
+    /* — Contato & Mapa — */
+    .eme-contato-form-box {
+        padding: 20px 16px !important;
+        border-radius: 14px !important;
+    }
+
+    .eme-info-card {
+        padding: 18px 16px !important;
+        gap: 14px !important;
+    }
+
+    .eme-map-responsive iframe {
+        height: 280px !important;
+    }
+
+    /* — Banner Sympla em Eventos — */
+    .eme-sympla-banner-section {
+        padding: 26px 0 !important;
+    }
+
+    .eme-sympla-banner-section .eme-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 16px !important;
+    }
+
+    .eme-sympla-banner-section h2 {
+        font-size: 1.35rem !important;
+    }
+
+    .eme-sympla-banner-section p {
+        font-size: 13.5px !important;
+    }
+
+    .eme-sympla-banner-section a.eme-btn-primary {
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    /* — Recrutamento Box — */
+    .eme-recruitment-box {
+        padding: 24px 16px !important;
+    }
+
+    .eme-recruitment-box h3 {
+        font-size: 19px !important;
+    }
+
+    .eme-recruitment-box p {
+        font-size: 13.5px !important;
+    }
+
+    .eme-recruitment-box a {
+        width: 100% !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    /* — Depoimentos — */
+    .eme-testimonial-card {
+        padding: 22px 18px !important;
+    }
+
+    /* — Botões Flutuantes — */
+    .eme-whatsapp-float {
+        bottom: 16px !important;
+        right: 16px !important;
+        width: 50px !important;
+        height: 50px !important;
+        z-index: 9999 !important;
+    }
+
+    .eme-whatsapp-float svg {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .eme-back-to-top {
+        bottom: 74px !important;
+        right: 18px !important;
+        width: 38px !important;
+        height: 38px !important;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   RESPONSIVIDADE — DISPOSITIVOS MUITO PEQUENOS (≤ 380px)
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 380px) {
+    .eme-container {
+        padding: 0 12px !important;
+    }
+
+    .eme-hero-title {
+        font-size: 24px !important;
+    }
+
+    .eme-section-title {
+        font-size: 21px !important;
+    }
+
+    .eme-stats-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+    }
+
+    .eme-stat-item {
+        padding: 10px 6px !important;
+    }
+
+    .eme-stat-number,
+    .eme-stat-highlight {
+        font-size: 14px !important;
+    }
+
+    .eme-stat-label {
+        font-size: 10.5px !important;
+    }
+
+    .eme-lead-form-box {
+        padding: 16px 12px !important;
+    }
+
+    .eme-btn-primary,
+    .eme-btn-outline {
+        font-size: 13px !important;
+        padding: 11px 16px !important;
     }
 }
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * Shortcode Cursos: [eme_cursos]
- * EME - Escola de Música Esperança (27+ Modalidades & Cursos)
+ * EME - Escola de Música Esperança
  */
 
 if (!defined('ABSPATH')) {
@@ -34,64 +34,64 @@ function eme_shortcode_cursos($atts) {
     $cursos = [
         [
             'cat' => 'teclas',
-            'titulo' => 'Piano Erudito & Popular',
-            'desc' => 'Desenvolvimento técnico, leitura de partitura, percepção harmônica e repertório erudito ou popular.',
+            'titulo' => 'Piano e Teclado',
+            'desc' => 'Desenvolvimento técnico, leitura de partitura, percepção harmônica e repertório.',
             'publico' => 'Crianças, Jovens e Adultos (Iniciante ao Avançado)',
             'formato' => 'Aulas Individuais | Presencial'
         ],
         [
             'cat' => 'cordas',
-            'titulo' => 'Violão & Guitarra',
-            'desc' => 'Técnica de digitação, acordes, ritmos, harmonia funcional e improvisação em diversos estilos musicais.',
+            'titulo' => 'Violão e Guitarra',
+            'desc' => 'Técnica de digitação, acordes, ritmos, harmonia e repertório prático.',
             'publico' => 'A partir dos 7 anos',
             'formato' => 'Aulas Individuais ou em Dupla'
         ],
         [
             'cat' => 'voz',
-            'titulo' => 'Canto Popular & Lírico',
-            'desc' => 'Técnica vocal, apoio diafragmático, afinação, fisiologia vocal, interpretação e expressão cênica.',
+            'titulo' => 'Canto',
+            'desc' => 'Técnica vocal, respiração, afinação, repertório e interpretação musical.',
             'publico' => 'Jovens e Adultos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'ritmo',
-            'titulo' => 'Bateria & Percussão',
-            'desc' => 'Independência dos membros, rudimentos, grooves, coordenação motora e leitura de partitura rítmica.',
+            'titulo' => 'Bateria',
+            'desc' => 'Independência motora, ritmos, grooves, coordenação e prática musical.',
             'publico' => 'A partir dos 8 anos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'cordas',
-            'titulo' => 'Violino, Viola & Violoncelo',
-            'desc' => 'Postura, arco, afinação, sonoridade orquestral e repertório de câmara e erudito com excelência.',
+            'titulo' => 'Violino e Violoncelo',
+            'desc' => 'Postura, arco, afinação, sonoridade e repertório prático.',
             'publico' => 'Todas as idades',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'cordas',
-            'titulo' => 'Contrabaixo Elétrico & Acústico',
-            'desc' => 'Condução harmônica, slaps, grooves, leitura em clave de fá e integração com a cozinha rítmica.',
+            'titulo' => 'Contrabaixo',
+            'desc' => 'Condução harmônica, grooves, leitura e entrosamento com a bateria.',
             'publico' => 'Jovens e Adultos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'sopros',
-            'titulo' => 'Flauta Transversal & Sopros',
-            'desc' => 'Embocadura, controle de coluna de ar, afinação, expressividade e leitura de partitura.',
+            'titulo' => 'Flauta e Saxofone',
+            'desc' => 'Embocadura, coluna de ar, afinação, leitura e repertório.',
             'publico' => 'A partir dos 9 anos',
             'formato' => 'Aulas Individuais'
         ],
         [
             'cat' => 'infantil',
             'titulo' => 'Musicalização Infantil',
-            'desc' => 'Desenvolvimento de percepção auditiva, ritmo e sensibilidade através de jogos e vivências musicais.',
+            'desc' => 'Desenvolvimento de percepção auditiva, ritmo e sensibilidade através de vivências musicais.',
             'publico' => 'Crianças de 3 a 6 anos',
             'formato' => 'Turmas Reduzidas'
         ],
         [
             'cat' => 'teoria',
-            'titulo' => 'Harmonia Funcional & Teoria',
-            'desc' => 'Análise harmônica, rearmonização, modulação, percepção de intervalos e estruturação musical.',
+            'titulo' => 'Teoria e Harmonia',
+            'desc' => 'Estruturação de escalas, intervalos, tonalidades e percepção musical.',
             'publico' => 'Músicos e Estudantes Intermediários/Avançados',
             'formato' => 'Módulos Práticos e Coletivos'
         ]
@@ -116,10 +116,10 @@ function eme_shortcode_cursos($atts) {
                 <!-- Filtros por Categoria -->
                 <div class="eme-filter-bar">
                     <button class="eme-filter-btn active" data-filter="all">Todas as Modalidades</button>
-                    <button class="eme-filter-btn" data-filter="teclas">Teclas & Piano</button>
+                    <button class="eme-filter-btn" data-filter="teclas">Piano & Teclado</button>
                     <button class="eme-filter-btn" data-filter="cordas">Cordas</button>
-                    <button class="eme-filter-btn" data-filter="voz">Voz & Canto</button>
-                    <button class="eme-filter-btn" data-filter="ritmo">Bateria & Percussão</button>
+                    <button class="eme-filter-btn" data-filter="voz">Canto</button>
+                    <button class="eme-filter-btn" data-filter="ritmo">Bateria</button>
                     <button class="eme-filter-btn" data-filter="sopros">Sopros</button>
                     <button class="eme-filter-btn" data-filter="infantil">Infantil</button>
                     <button class="eme-filter-btn" data-filter="teoria">Teoria & Harmonia</button>
@@ -158,7 +158,7 @@ function eme_shortcode_cursos($atts) {
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
                     </div>
                     <h3>Não encontrou a sua modalidade ou prefere atendimento personalizado?</h3>
-                    <p>Oferecemos mais de 27 opções de aulas práticas e teóricas. Fale com nossa secretaria e descubra o plano ideal para seu objetivo.</p>
+                    <p>Oferecemos diversas opções de aulas práticas e teóricas. Fale com nossa secretaria e descubra o plano ideal para seu objetivo.</p>
                     <a href="https://wa.me/5531984201358?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20todas%20as%20modalidades%20dispon%C3%ADveis%20na%20EME." target="_blank" class="eme-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         <span>Falar com a Secretaria no WhatsApp</span>

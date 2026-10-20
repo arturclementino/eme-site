@@ -114,7 +114,7 @@ add_action('wp_head', function() {
     <meta property="og:site_name" content="Escola de Música Esperança — EME" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Escola de Música Esperança — EME | Arte, Fé e Excelência" />
-    <meta property="og:description" content="Escola de Música Esperança (EME). Formação musical completa com 27 modalidades, corpo docente qualificado e estrutura de ponta em Belo Horizonte (Padre Eustáquio)." />
+    <meta property="og:description" content="Escola de Música Esperança (EME). Formação musical completa em diversas modalidades musicais, corpo docente qualificado e estrutura de ponta em Belo Horizonte (Padre Eustáquio)." />
     <meta property="og:url" content="https://escolaeme.com/" />
     <meta name="description" content="Escola de Música Esperança (EME / NAME) — Projeto da Igreja Esperança. Cursos didáticos de música, instrumentos e canto com foco em excelência e propósito comunitário em Belo Horizonte." />
     

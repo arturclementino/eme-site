@@ -35,12 +35,12 @@ function eme_shortcode_eventos($atts) {
             'status' => 'disponivel'
         ],
         [
-            'titulo' => 'Workshop Prático de Bateria & Percussão',
+            'titulo' => 'Workshop Prático de Bateria',
             'data' => 'Edição Semestral',
             'horario' => '09:00 - 11:30 (Duração: 2h30)',
             'local' => 'Estúdio EME (Rua Bonaparte, 86 — Padre Eustáquio, BH)',
             'categoria' => 'Workshop Técnico',
-            'publico' => 'Bateristas, Percussionistas e Estudantes',
+            'publico' => 'Bateristas e Estudantes',
             'desc' => 'Ministrado pelo Prof. Rodrigo Leles. Afinação de peles, dinâmicas de estúdio, regulagem de hardware e prática de gravação.',
             'img' => 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=600&q=75',
             'sympla_url' => 'https://www.sympla.com.br/produtor/escolaeme',
@@ -53,7 +53,7 @@ function eme_shortcode_eventos($atts) {
             'local' => 'Auditório Principal — Igreja Esperança (Belo Horizonte / MG)',
             'categoria' => 'Recital Semestral',
             'publico' => 'Alunos, Familiares e Comunidade',
-            'desc' => 'Grande audição de encerramento semestral reunindo apresentações solo e turmas de prática de conjunto de todas as 27 modalidades da EME.',
+            'desc' => 'Grande audição de encerramento semestral reunindo apresentações solo e turmas de prática de conjunto de todas as modalidades da EME.',
             'img' => 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=75',
             'sympla_url' => 'https://www.sympla.com.br/produtor/escolaeme',
             'status' => 'em_breve'
